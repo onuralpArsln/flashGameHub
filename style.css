@@ -131,15 +131,16 @@ a:hover {
   color: #079f00;
 }
 #logo {
-  width: 444px;
+  width: 450px;
   margin-top: 10px;
   float: left;
 }
-#logo a{
-  width: 444px;
-  margin-top: 10px;
-  float: left;
+#logo img {
+  width: 100%;
+  height: 50px;
+  display: block;
 }
+
 #arama {
   width: 300px;
     margin-top: 10px;
@@ -204,6 +205,18 @@ a:hover {
   background-repeat: no-repeat;
   background-position: 7px 8px;
 }
+#araClick i {
+  color: white;
+  font-size: 18px; /* isteğe bağlı, büyüklüğü ayarlar */
+}
+#araClick {
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 input:focus ~ span > #araClick {
   background: #d83c3c;
   background-image: url(images/ara.png);
