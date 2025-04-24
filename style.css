@@ -1,12 +1,68 @@
-
-.banner {
-  background: linear-gradient(to right, #4a90e2, #007aff);
-  color: white;
-  padding: 60px 20px;
-  font-size: 2em;
-  font-weight: bold;
+.ust-reklam{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
-
+.ust-reklam-banner{
+  background-color: #e3005b;
+  color: white;
+  border: none;
+  margin-top: 0px;
+ width: 1000px;
+ height: 250px;
+  font-size: 16px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.ust-reklam-inner{
+  margin-top: 25px;
+}
+.sol-reklam{
+  position: fixed;
+  top: 100px; /* Sayfanın üstünden ne kadar aşağıda başlayacak */
+  left: 200px; /* Sağ kenara yapıştır */
+  width: 100px;
+  z-index: 999; /* Diğer içeriklerin üstünde kalsın */
+}
+.sol-reklam-banner{
+  background-color: #e3005b;
+  color: white;
+  border: none;
+  width: 200px;
+  height: 800px;
+  font-size: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.sol-reklam-inner{
+  margin-top: 25px;
+}
+.sag-reklam {
+  position: fixed;
+  top: 100px; /* Sayfanın üstünden ne kadar aşağıda başlayacak */
+  right: 250px; /* Sağ kenara yapıştır */
+  width: 100px;
+  z-index: 999; /* Diğer içeriklerin üstünde kalsın */
+}
+.sag-reklam-banner{
+  background-color: #e3005b;
+  color: white;
+  border: none;
+ width: 200px;
+ height: 800px;
+  font-size: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.sag-reklam-inner{
+  margin-top: 25px;
+}
 .button-container {
   margin-top: 50px;
   display: flex;
@@ -70,7 +126,7 @@ a:hover {
 }
 #ust {
   width: 1322px;
-  height: 100px;
+  height: 70px;
   overflow: hidden;
   margin: 0 auto;
   margin-bottom: 15px;
@@ -143,7 +199,7 @@ a:hover {
 
 #arama {
   width: 300px;
-    margin-top: 10px;
+  margin-top: 10px;
   height: 55px;
   float: left;
 }
@@ -287,10 +343,11 @@ input:focus ~ span > #araClick {
 }
 #oyunlar2 {
   width: 1350px;
+  justify-content: center;
   overflow: hidden;
 }
 #oyunlar2 ol {
-  margin: 0 0 0 -23px;
+  margin: 10px 0 0 -10px;
   padding: 0;
   list-style-type: none;
 }
@@ -356,9 +413,12 @@ input:focus ~ span > #araClick {
 }
 #oyunlar3 {
   width: 1350px;
+  justify-content: center;
   overflow: hidden;
 }
 #oyunlar3 ol {
+  max-width: 100%; /* Ekranı aşmasın */
+  margin: 0 auto;  /* Ortalamayı garanti altına alır */
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* Ortalar */
@@ -368,28 +428,28 @@ input:focus ~ span > #araClick {
 #oyunlar3 ol li {
   position: relative;
   background: #eee;
-  width: 250px;
-  height: 200px;
+  width: 290px;
+  height: 250px;
   overflow: hidden;
   border: 1px solid #000;
-  border-radius: 11px;
+  border-radius: 10px;
   margin: 10px;
   text-align: center;
 }
 #oyunlar3 ol li:hover {
-  width: 300px;
-  height: 250px;
+  width: 340px;
+  height: 300px;
   border: 3px solid #000;
 }
 #oyunlar3 ol li img {
-  width: 250px;
-  height: 200px;
+  width: 300px;
+  height: 250px;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
 }
 #oyunlar3 ol li a:hover img {
-  width: 300px;
-  height: 250px;
+  width: 350px;
+  height: 300px;
 }
 #oyunlar3 ol li b {
   position: absolute;
