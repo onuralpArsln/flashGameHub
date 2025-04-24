@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TubiGame | Aşkla Yapıldı</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <style>
-
     </style>
-</head>
+  </head>
 
-<body>
-
-    <div class="banner">
-        TubiGame yapıyoruz
+  <body>
+    <div id="ustb">
+      <div id="ust">
+        <div id="kategoriler">
+          <a href="/erkekler-icin-oyunlar.html" class="button1 erkek"
+            >ERKEK OYUNLARI</a
+          >
+          <a href="/kizlar-icin-oyunlar.html" class="button1 kiz"
+            >KIZ OYUNLARI</a
+          ><a href="/kategoriler.html" class="button1 kategori">KATEGORİLER</a>
+        </div>
+        <div id="logo">
+          <a href="https://www.tubigame.com/" title="TubiGame"
+            ><img src="" border="0" alt="TubiGame"
+          /></a>
+        </div>
+        <div id="arama">
+          <form class="ara" method="get" action="/oyun-ara.asp">
+            <input
+              name="aranan"
+              type="text"
+              placeholder="Oyun Ara.."
+              required
+            /><span><button id="araClick" type="submit"></button></span>
+          </form>
+        </div>
+      </div>
     </div>
 
     <div class="button-container">
-        <a href="games/mrMiner.html"> <button class="btn">MrMiner</button></a>
-        <a href="games/clicker.html"> <button class="btn">Services</button> </a>
-        <a href="games/grindCraft.html"> <button class="btn">Grindcraft</button> </a>
+      <a href="games/mrMiner.html"> <button class="btn">MrMiner</button></a>
+      <a href="games/clicker.html"> <button class="btn">Services</button> </a>
+      <a href="games/grindCraft.html">
+        <button class="btn">Grindcraft</button>
+      </a>
     </div>
-
-</body>
-
+  </body>
 </html>
