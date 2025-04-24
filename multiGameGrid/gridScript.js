@@ -1,7 +1,7 @@
 fetch('games.json')
-    .then(res => res.json())
-    .then(games => {
-        const grid = document.getElementById('game-grid');
+    .then(res => res.json()) // fetchin resultunu jsona çevirdik
+    .then(games => {  // gelen resultu games olarak aldık 
+        const grid = document.getElementById('game-grid'); // bağlı olduğu dokümandan game-gridi aldık
 
         games.forEach(game => {
             const card = document.createElement('div');
