@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Oyun Detayı</title>
+    <link rel="stylesheet" href="gamePagestyle.css">
+</head>
+
+<body>
+    <div id="game-detail" class="detail-container">
+        <p>Oyun yükleniyor...</p>
+    </div>
+
+    <script>
+        // URL'den ?id= değerini al
+        const urlParams = new URLSearchParams(window.location.search);
+        const gameId = urlParams.get('id');
+
+        fetch('games.json')
+            .then(res => res.json())
+            .then(games => {
+                const game = games.find(p => p.id == gameId);
+                const detailContainer = document.getElementById('game-detail');
+
+                if (game) {
+                    detailContainer.innerHTML = `
+            <h1>${game.name}</h1>
+            <img src="${game.image}" alt="${game.name}" />
+            <p>Bu oyun hakkında detaylı bilgi yakında burada olacak.</p>
+            <a href="grid.html">← Geri dön</a>
+          `;
+                } else {
+                    detailContainer.innerHTML = `<p>Oyun bulunamadı 😕</p>`;
+                }
+            });
+    </script>
+</body>
+
+</html>
