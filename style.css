@@ -359,66 +359,58 @@ input:focus ~ span > #araClick {
   overflow: hidden;
 }
 #oyunlar3 ol {
-  margin: 0 0 0 -21px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Ortalar */
   padding: 0;
-  list-style-type: none;
+  list-style: none;
 }
 #oyunlar3 ol li {
+  position: relative;
   background: #eee;
-  width: 424px;
-  height: 302px;
+  width: 250px;
+  height: 200px;
   overflow: hidden;
   border: 1px solid #000;
-  -webkit-border-radius: 11px;
-  -moz-border-radius: 11px;
   border-radius: 11px;
-  float: left;
-  margin-left: 21px;
-  margin-right: 1px;
-  margin-bottom: 21px;
-  display: inline;
+  margin: 10px;
   text-align: center;
 }
 #oyunlar3 ol li:hover {
-  width: 420px;
-  height: 298px;
+  width: 300px;
+  height: 250px;
   border: 3px solid #000;
 }
 #oyunlar3 ol li img {
-  width: 424px;
-  height: 302px;
-  margin-left: 0;
-  margin-top: 0;
+  width: 250px;
+  height: 200px;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
 }
 #oyunlar3 ol li a:hover img {
-  width: 424px;
-  height: 302px;
+  width: 300px;
+  height: 250px;
 }
 #oyunlar3 ol li b {
-  font-size: 11px;
+  position: absolute;
+  bottom: 10px; /* resmin altına yakın */
+  left: 50%;
+  transform: translateX(-50%);
+  background: #eee; /* yarı saydam zemin */
   color: #666;
   text-shadow: 1px 1px 3px silver;
-  margin-top: 293px;
-  margin-left: 15px;
-  position: absolute;
-  text-align: center;
-  height: 15px;
-  font-weight: lighter;
+  padding: 4px 10px;
+  font-size: 12px;
   border: 1px solid #000;
-  background: #eee;
-  -webkit-border-radius: 13px;
-  -moz-border-radius: 13px;
-  border-radius: 13px;
-  padding: 2px 8px;
+  border-radius: 10px;
+  font-weight: normal;
+  white-space: nowrap;
 }
 #oyunlar3 ol li a:hover b {
-  font-size: 12px;
+  font-size: 14px;
   color: #fff;
   background-color: #36f;
   height: 17px;
-  margin-left: 13px;
   padding-top: 2px;
 }
 #eniyioyunlar {

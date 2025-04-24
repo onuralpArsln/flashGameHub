@@ -1,0 +1,19 @@
+merhabaaa bunu ben yaptım
+#oyunlar3 ol li b {
+  position: relative;
+  font-size: 11px;
+  color: #666;
+  text-shadow: 1px 1px 3px silver;
+  margin-top: 293px;
+  margin-left: 15px;
+  position: absolute;
+  text-align: center;
+  height: 15px;
+  font-weight: lighter;
+  border: 1px solid #000;
+  background: #eee;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  border-radius: 13px;
+  padding: 2px 8px;
+}
