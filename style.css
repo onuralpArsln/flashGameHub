@@ -45,7 +45,7 @@
 .sag-reklam {
   position: fixed;
   top: 100px; /* Sayfanın üstünden ne kadar aşağıda başlayacak */
-  right: 250px; /* Sağ kenara yapıştır */
+  right: 275px; /* Sağ kenara yapıştır */
   width: 100px;
   z-index: 999; /* Diğer içeriklerin üstünde kalsın */
 }
@@ -61,6 +61,30 @@
   transition: background-color 0.3s;
 }
 .sag-reklam-inner{
+  margin-top: 25px;
+}
+.orta-reklam{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; /* Yatayda ortalar */
+  align-items: center;     /* Dikeyde ortalamak istersen */
+  width: 100%;             /* Genişlik tanımlı olmalı */
+}
+.orta-reklam-banner {
+  background-color: #e3005b;
+  color: white;
+  border: none;
+  width: 1000px;
+  height: 250px;
+  font-size: 16px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center; /* İçeriği ortalar */
+  align-items: center;     /* İçeriği dikeyde ortalar */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.orta-reklam-inner{
   margin-top: 25px;
 }
 .button-container {
@@ -342,7 +366,7 @@ input:focus ~ span > #araClick {
   text-align: center;
 }
 #oyunlar2 {
-  width: 1350px;
+  width: 1400px;
   justify-content: center;
   overflow: hidden;
 }
