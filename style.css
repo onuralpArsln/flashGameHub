@@ -1,16 +1,16 @@
-.ust-reklam{
-  margin-top: 20px;
+.ust-reklam {
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   gap: 30px;
 }
-.ust-reklam-banner{
+.ust-reklam-banner {
   background-color: #e3005b;
   color: white;
   border: none;
   margin-top: 0px;
- width: 1000px;
- height: 250px;
+  width: 1000px;
+  height: 250px;
   font-size: 16px;
   border-radius: 3px;
   display: flex;
@@ -18,17 +18,17 @@
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.ust-reklam-inner{
+.ust-reklam-inner {
   margin-top: 25px;
 }
-.sol-reklam{
+.sol-reklam {
   position: fixed;
   top: 100px; /* Sayfanın üstünden ne kadar aşağıda başlayacak */
   left: 200px; /* Sağ kenara yapıştır */
   width: 100px;
   z-index: 999; /* Diğer içeriklerin üstünde kalsın */
 }
-.sol-reklam-banner{
+.sol-reklam-banner {
   background-color: #e3005b;
   color: white;
   border: none;
@@ -39,36 +39,36 @@
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.sol-reklam-inner{
+.sol-reklam-inner {
   margin-top: 25px;
 }
 .sag-reklam {
   position: fixed;
   top: 100px; /* Sayfanın üstünden ne kadar aşağıda başlayacak */
   right: 275px; /* Sağ kenara yapıştır */
-  width: 100px;
+  max-width: 100px;
   z-index: 999; /* Diğer içeriklerin üstünde kalsın */
 }
-.sag-reklam-banner{
+.sag-reklam-banner {
   background-color: #e3005b;
   color: white;
   border: none;
- width: 200px;
- height: 800px;
+  width: 200px;
+  height: 800px;
   font-size: 16px;
   border-radius: 3px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.sag-reklam-inner{
+.sag-reklam-inner {
   margin-top: 25px;
 }
-.orta-reklam{
+.orta-reklam {
   margin: 0 auto;
   display: flex;
   justify-content: center; /* Yatayda ortalar */
-  align-items: center;     /* Dikeyde ortalamak istersen */
-  width: 100%;             /* Genişlik tanımlı olmalı */
+  align-items: center; /* Dikeyde ortalamak istersen */
+  width: 100%; /* Genişlik tanımlı olmalı */
 }
 .orta-reklam-banner {
   background-color: #e3005b;
@@ -80,19 +80,19 @@
   border-radius: 3px;
   display: flex;
   justify-content: center; /* İçeriği ortalar */
-  align-items: center;     /* İçeriği dikeyde ortalar */
+  align-items: center; /* İçeriği dikeyde ortalar */
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.orta-reklam-inner{
+.orta-reklam-inner {
   margin-top: 25px;
 }
-.alt-reklam{
+.alt-reklam {
   margin: 0 auto;
   display: flex;
   justify-content: center; /* Yatayda ortalar */
-  align-items: center;     /* Dikeyde ortalamak istersen */
-  width: 100%;             /* Genişlik tanımlı olmalı */
+  align-items: center; /* Dikeyde ortalamak istersen */
+  width: 100%; /* Genişlik tanımlı olmalı */
   margin-bottom: 25px;
 }
 .alt-reklam-banner {
@@ -105,11 +105,11 @@
   border-radius: 3px;
   display: flex;
   justify-content: center; /* İçeriği ortalar */
-  align-items: center;     /* İçeriği dikeyde ortalar */
+  align-items: center; /* İçeriği dikeyde ortalar */
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.alt-reklam-inner{
+.alt-reklam-inner {
   margin-top: 25px;
 }
 @font-face {
@@ -139,7 +139,7 @@ a:hover {
   margin: 0 auto;
   height: 80px;
   width: 100%;
-  background-color: #FF6F00;
+  background-color: #ff6f00;
   background-image: -moz-linear-gradient(top, #f0f0ee, #d4dbe0);
   background-image: -webkit-gradient(
     linear,
@@ -162,7 +162,7 @@ ul.kategori {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #FF6F00;
+  background: #ff6f00;
   margin: 0;
   list-style: none;
   font-family: Arial, sans-serif;
@@ -188,7 +188,6 @@ ul.kategori {
   color: #000000; /* Noktanın rengi */
   font-size: 20px;
   margin-right: 3px;
-
 }
 
 #kategoriler {
@@ -396,14 +395,19 @@ input:focus ~ span > #araClick {
   text-align: center;
 }
 #oyunlar2 {
-  width: 1400px;
+  width: 1350px;
   justify-content: center;
   overflow: hidden;
+  gap: 23px; /* Aralarındaki boşluk */
+  margin: 0 auto;
 }
 #oyunlar2 ol {
+  display: flex;
+  flex-wrap: wrap;
   margin: 10px 0 0 -10px;
   padding: 0;
   list-style-type: none;
+  justify-content: flex-start;
 }
 #oyunlar2 ol li {
   background: #eee;
@@ -414,11 +418,7 @@ input:focus ~ span > #araClick {
   -webkit-border-radius: 11px;
   -moz-border-radius: 11px;
   border-radius: 11px;
-  float: left;
-  margin-left: 23px;
-  margin-right: 0;
-  margin-bottom: 23px;
-  display: inline;
+  margin: 0 11px 23px 11px; /* sağ ve sol eşit olacak */
   text-align: center;
 }
 #oyunlar2 ol li:hover {
@@ -472,7 +472,7 @@ input:focus ~ span > #araClick {
 }
 #oyunlar3 ol {
   max-width: 100%; /* Ekranı aşmasın */
-  margin: 0 auto;  /* Ortalamayı garanti altına alır */
+  margin: 0 auto; /* Ortalamayı garanti altına alır */
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* Ortalar */
@@ -528,9 +528,9 @@ input:focus ~ span > #araClick {
   padding-top: 2px;
 }
 #eniyioyunlar {
-    max-width: 1350px;
-    margin: 0 auto;
-padding-left: 40px;
+  max-width: 1350px;
+  margin: 0 auto;
+  padding-left: 40px;
   /*width: 1350px;*/
   justify-content: center;
   overflow: hidden;
@@ -592,3 +592,97 @@ padding-left: 40px;
   padding: 10px;
   text-align: center;
 }
+/*player html css*/
+div.yorumlar {
+  width: 650px;
+  text-align: left;
+  overflow: hidden;
+  font-family: "Segoe", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 16px;
+  float: left;
+  margin-top: 20px;
+  margin-left: 54px;
+  color: #5c5c5c;
+  padding: 20px;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 19px;
+  -moz-border-radius: 19px;
+  border-radius: 19px;
+  background-color: #e9e9e9;
+}
+div.yorumlar h1 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #b1634a;
+}
+div.yorumlar h2 {
+  font-size: 2px;
+}
+div.yorumlar i {
+  color: #393;
+  font-size: 14px;
+}
+div.yorumlar a {
+  font-size: 18px;
+  font-weight: 700;
+  color: #4a77ff;
+}
+div.yorumlar a:hover {
+  font-size: 18px;
+  font-weight: 700;
+  color: #00c;
+  text-decoration: underline;
+}
+#oyuncerceve {
+  display: flex;
+  align-items: center; /* Dikeyde hizalar (isteğe bağlı) */
+  justify-content: center; /* Yatayda ortalar */
+  width: 1322px;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px 0; /* Üst-alt boşluk (opsiyonel) */
+}
+#oyunsutunu {
+  width: 804px;
+  background-color: #fff;
+  margin: 0 auto 24px; /* Ortalar */
+  display: block; /* Ortalamayı garanti altına alır */
+}
+#butonlar {
+  width: 804px;
+  height: 29px;
+  float: left;
+  margin: 0 0 11px -3px;
+}
+.button {
+  border: none;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 0 3px;
+  border: 1px solid #999;
+  -webkit-border-radius: 11px;
+  -moz-border-radius: 11px;
+  border-radius: 11px;
+  background-color: #d4dbe0;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+.button:hover {
+  text-decoration: none;
+  border: 1px solid #35a3dd;
+  background-image: -moz-linear-gradient(top, #81c0e9, #35a3dd);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, #81c0e9),
+    color-stop(1, #35a3dd)
+  );
+  color: #fff;
+}
+/*player html css*/
