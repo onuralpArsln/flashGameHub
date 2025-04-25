@@ -100,7 +100,7 @@
   background-color: #e3005b;
   color: white;
   border: none;
-  width: 1000px;
+   width: calc(100vw - 4vw - 440px);
   height: 250px;
   font-size: 16px;
   border-radius: 3px;
@@ -120,12 +120,19 @@
 body {
   height: 200vh;
   width: 100vw;
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: #ffffff;
   font-family: "Segoe", Verdana, Geneva, sans-serif;
   font-size: 12px;
   margin: 0;
   color: #666;
+  scrollbar-width: none; 
+}
+body::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari */
+}
+::-webkit-scrollbar {
+    display: none;
 }
 a {
   text-decoration: none;
