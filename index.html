@@ -1,611 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TubiGame | Aşkla Yapıldı</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <style></style>
-  </head>
 
-  <body>
-    <div id="ustb">
-      <div id="ust">
-        <div id="kategoriler">
-            <a href="Kategoriler\erkekler.html" class="button1 erkek"
-              >ERKEK OYUNLARI</a
-            >
-            <a href="Kategoriler\kizlar.html" class="button1 kiz"
-              >KIZ OYUNLARI</a
-            >
-          </div>
-          <div id="logo">
-            <a href="index.html" title="TubiGame"
-              ><img src="images\1.jpg" border="0" alt="TubiGame"
-            /></a>
-          </div>
-        <div id="arama">
-          <form class="ara" method="get" action="/oyun-ara.asp">
-            <input
-              name="aranan"
-              type="text"
-              placeholder="Oyun Ara.."
-              required
-            /><span
-              ><button id="araClick" type="submit">
-                <i class="bi bi-search"></i></button
-            ></span>
-          </form>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TubiGame | Aşkla Yapıldı</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <style></style>
+</head>
+
+<body>
+  <div id="ustb">
+    <div id="ust">
+      <div id="kategoriler">
+        <a href="/erkekler-icin-oyunlar.html" class="button1 erkek">ERKEK OYUNLARI</a>
+        <a href="/kizlar-icin-oyunlar.html" class="button1 kiz">KIZ OYUNLARI</a>
       </div>
-      <ul class="kategori">
-        <li class="kategori-item">
-          <a
-            class="kategori-link"
-            href="Kategoriler\2-kisi.html"
-            title="2-Kisilik-Oyunlar"
-            >2 Kişilik Oyunlar</a
-          >
-        </li>
-        <li class="kategori-item">
-          <a
-            class="kategori-link"
-            href="Kategoriler\savas.html"
-            title="Savas-Oyunlari"
-            >Savaş Oyunları</a
-          >
-        </li>
-        <li class="kategori-item">
-          <a
-            class="kategori-link"
-            href="Kategoriler\yaris.html"
-            title="Yarış"
-            >Yarış Oyunları</a
-          >
-        </li>
-        <li class="kategori-item">
-          <a
-            class="kategori-link"
-            href="Kategoriler\cocuk.html"
-            title="Cocuk-oyunları"
-            >Çocuk Oyunları</a
-          >
-        </li>
-        <li class="kategori-item">
-          <a
-            class="kategori-link"
-            href="Kategoriler\macera.html"
-            title="Macera-Oyunlari"
-            >Macera Oyunları</a
-          >
-        </li>
-        <li class="kategori-item">
-          <a
-            class="kategori-link"
-            href="Kategoriler\spor.html"
-            title="Spor-Oyunlari"
-            >Spor Oyunları</a
-          >
-        </li>
-        <li class="kategori-item">
-          <a
-            class="kategori-link"
-            href="Kategoriler\zeka.html"
-            title="Zeka-Oyunlari"
-            >Zeka Oyunları</a
-          >
-        </li>
-        <li class="kategori-item">
-          <a
-            class="kategori-link"
-            href="Kategoriler\beceri.html"
-            title="Beceri-Oyunlari"
-            >Beceri Oyunları</a
-          >
-        </li>
-      </ul>
+      <div id="logo">
+        <a href="https://www.tubigame.com/" title="TubiGame"><img src="images\1.jpg" border="0" alt="TubiGame" /></a>
+      </div>
+      <div id="arama">
+        <form class="ara" method="get" action="/oyun-ara.asp">
+          <input name="aranan" type="text" placeholder="Oyun Ara.." required /><span><button id="araClick"
+              type="submit">
+              <i class="bi bi-search"></i></button></span>
+        </form>
+      </div>
     </div>
-    <div class="sayfa">
-      <div class="ust-reklam">
-        <div class="ust-reklam-banner">
-          <div class="ust-reklam-inner">
-            <div class="ust-reklam-label">En üst orta reklam alanı</div>
-            <div data-sdg-ad="ust"></div>
-          </div>
+    <ul class="kategori">
+      <li class="kategori-item">
+        <a class="kategori-link" href="/Sabit/Haberler" title="2-Kisilik-Oyunlar">2 Kişilik Oyunlar</a>
+      </li>
+      <li class="kategori-item">
+        <a class="kategori-link" href="/Lifestyle-Oyunlari" title="Savas-Oyunlari">Savaş Oyunları</a>
+      </li>
+      <li class="kategori-item">
+        <a class="kategori-link" href="/Yaris-Oyunlari" title="Yarış">Yarış Oyunları</a>
+      </li>
+      <li class="kategori-item">
+        <a class="kategori-link" href="/Birlestirme-Oyunlari" title="Cocuk-oyunları">Çocuk Oyunları</a>
+      </li>
+      <li class="kategori-item">
+        <a class="kategori-link" href="/Macera-Oyunlari" title="Macera-Oyunlari">Macera Oyunları</a>
+      </li>
+      <li class="kategori-item">
+        <a class="kategori-link" href="/Spor-Oyunlari" title="Spor-Oyunlari">Spor Oyunları</a>
+      </li>
+      <li class="kategori-item">
+        <a class="kategori-link" href="/Zeka-Oyunlari" title="Zeka-Oyunlari">Zeka Oyunları</a>
+      </li>
+      <li class="kategori-item">
+        <a class="kategori-link" href="/Beceri-Oyunlari" title="Beceri-Oyunlari">Beceri Oyunları</a>
+      </li>
+    </ul>
+  </div>
+  <div class="sayfa">
+    <div class="ust-reklam">
+      <div class="ust-reklam-banner">
+        <div class="ust-reklam-inner">
+          <div class="ust-reklam-label">En üst orta reklam alanı</div>
+          <div data-sdg-ad="ust"></div>
         </div>
       </div>
-      <div class="sol-reklam">
-        <div class="sol-reklam-banner">
-          <div class="sol-reklam-inner">
-            <div class="sol-reklam-label">Sol Reklam Alanı</div>
-            <div data-sdg-ad="sol"></div>
-          </div>
+    </div>
+    <div class="sol-reklam">
+      <div class="sol-reklam-banner">
+        <div class="sol-reklam-inner">
+          <div class="sol-reklam-label">Sol Reklam Alanı</div>
+          <div data-sdg-ad="sol"></div>
         </div>
       </div>
-      <div class="sag-reklam">
-        <div class="sag-reklam-banner">
-          <div class="sag-reklam-inner">
-            <div class="sag-reklam-label">Sağ Reklam Alanı</div>
-            <div data-sdg-ad="sag"></div>
-          </div>
+    </div>
+    <div class="sag-reklam">
+      <div class="sag-reklam-banner">
+        <div class="sag-reklam-inner">
+          <div class="sag-reklam-label">Sağ Reklam Alanı</div>
+          <div data-sdg-ad="sag"></div>
         </div>
       </div>
-      <div style="margin: 0 auto; width: 1400px">
-        <a href="/yeni-oyunlar.html"
-          ><img
-            src="images/yeni-oyunlar1.gif"
-            alt="Tüm Yeni Oyunlar"
-            width="1322"
-            height="24"
-            border="0"
-        /></a>
-      </div>
-      <div style="margin: 0 auto; width: 1350px; margin-top: 15px">
-        <div id="oyunlar3">
-          <ol>
-            <li>
-              <a href="" title=""><img src="" alt="" /><b>Ölüm Yolu 2</b></a>
-            </li>
-            <li>
-              <a href="" title=""><img src="" alt="" /><b>Alev Okçu</b></a>
-            </li>
-            <li>
-              <a href="" title=""><img src="" alt="" /><b>Ejderha Avcısı</b></a>
-            </li>
-            <li>
-              <a href="" title=""><img src="" alt="" /><b>Aşk Ölçer</b></a>
-            </li>
-          </ol>
-        </div>
+    </div>
+    <div style="margin: 0 auto; width: 1400px">
+      <a href="/yeni-oyunlar.html"><img src="images/yeni-oyunlar1.gif" alt="Tüm Yeni Oyunlar" width="1322" height="24"
+          border="0" /></a>
+    </div>
 
-        <div id="oyunlar2">
-          <ol>
-            <li>
-              <a href="" title=""
-                ><b>Yumurta Macerası 2</b><img src="" alt=""
-              /></a>
-            </li>
-            <li>
-              <a href="" title=""
-                ><b>Boksörün Yükselişi 2077</b><img src="" alt=""
-              /></a>
-            </li>
-            <li>
-              <a href="" title=""><b>Tırnak Boya 2</b><img src="" alt="" /></a>
-            </li>
-            <li>
-              <a href="" title=""
-                ><b>Mağara Macerası</b><img src="" alt=""
-              /></a>
-            </li>
-            <li>
-              <a href="" title=""
-                ><b>Counter Craft MW2</b><img src="" alt=""
-              /></a>
-            </li>
-            <li>
-              <a href="" title=""><b>Kızgın Boğa</b><img src="" alt="" /></a>
-            </li>
-            <li>
-              <a href="" title=""
-                ><b>Yaşamak İçin Yanla</b><img src="" alt=""
-              /></a>
-            </li>
-            <li>
-              <a href="" title=""><b>Süper D</b><img src="" alt="" /></a>
-            </li>
-            <li>
-              <a href="" title=""
-                ><b>Hızlı Top Zıpla</b><img src="" alt=""
-              /></a>
-            </li>
-            <li>
-              <a href="" title=""
-                ><b>Bay Sniper Sessiz Av</b><img src="" alt=""
-              /></a>
-            </li>
-          </ol>
+    <div id="gamesUpper" class="gameGrid">
+      Get Games Here 1
+    </div>
+
+
+    <div class="orta-reklam">
+      <div class="orta-reklam-banner">
+        <div class="orta-reklam-inner">
+          <div class="orta-reklam-label">orta Reklam Alanı</div>
+          <div data-sdg-ad="orta"></div>
         </div>
       </div>
-      <div class="orta-reklam">
-        <div class="orta-reklam-banner">
-          <div class="orta-reklam-inner">
-            <div class="orta-reklam-label">orta Reklam Alanı</div>
-            <div data-sdg-ad="orta"></div>
-          </div>
-        </div>
-      </div>
-      <div
-        style="
+    </div>
+    <div style="
           margin: 0 auto;
           width: 1350px;
           margin-top: 5px;
           padding-left: 20px;
-        "
-      >
-        <img
-          src="/images/io-mıultiplayer.webp"
-          width="1350"
-          height="112"
-          border="0"
-          usemap="#io_oyunlar"
-        /><map name="io_oyunlar" id="io_oyunlar"
-          ><area
-            shape="rect"
-            coords="556,0,844,112"
-            href="/harac/"
-            target="_blank"
-            alt="Haraç" /><area
-            shape="rect"
-            coords="71,27,138,89"
-            href="http://www.oyuncenneti.com/io/slither-io.htm"
-            target="_blank"
-            alt="Slither.io" /><area
-            shape="rect"
-            coords="144,25,207,87"
-            href="https://agar.io/"
-            target="_blank"
-            alt="Agar.io" /><area
-            shape="rect"
-            coords="214,28,277,90"
-            href="/io/bellum-io.htm"
-            target="_blank"
-            alt="Bellum.io" /><area
-            shape="rect"
-            coords="283,26,346,88"
-            href="/io/snix-io.htm"
-            target="_blank"
-            alt="Snix.io" /><area
-            shape="rect"
-            coords="354,29,416,92"
-            href="/io/kugeln-io.htm"
-            target="_blank"
-            alt="Kugeln.io" /><area
-            shape="rect"
-            coords="422,25,485,87"
-            href="/io/goons-io.htm"
-            target="_blank"
-            alt="Goons.io" /><area
-            shape="rect"
-            coords="493,26,555,88"
-            href="/io/oceanar-io.htm"
-            target="_blank"
-            alt="Oceanar.io" /><area
-            shape="rect"
-            coords="845,28,908,90"
-            href="/io/pockey-io.htm"
-            target="_blank"
-            alt="Pockey.io" /><area
-            shape="rect"
-            coords="916,26,978,88"
-            href="/io/ghostz-io.htm"
-            target="_blank"
-            alt="Ghostz.io" /><area
-            shape="rect"
-            coords="984,29,1046,91"
-            href="/io/gartic-io.htm"
-            target="_blank"
-            alt="Gartic.io" /><area
-            shape="rect"
-            coords="1054,26,1116,88"
-            href="/io/wormate-io.htm"
-            target="_blank"
-            alt="Wormate.io" /><area
-            shape="rect"
-            coords="1122,29,1184,92"
-            href="/io/blastarena-io.htm"
-            target="_blank"
-            alt="Blastarena.io" /><area
-            shape="rect"
-            coords="1189,26,1253,88"
-            href="/io/yorg-io.htm"
-            target="_blank"
-            alt="Yorg.io"
-        /></map>
+        ">
+      <img src="/images/io-mıultiplayer.webp" width="1350" height="112" border="0" usemap="#io_oyunlar" /><map
+        name="io_oyunlar" id="io_oyunlar"><area shape="rect" coords="556,0,844,112" href="/harac/" target="_blank"
+          alt="Haraç" /><area shape="rect" coords="71,27,138,89" href="http://www.oyuncenneti.com/io/slither-io.htm"
+          target="_blank" alt="Slither.io" /><area shape="rect" coords="144,25,207,87" href="https://agar.io/"
+          target="_blank" alt="Agar.io" /><area shape="rect" coords="214,28,277,90" href="/io/bellum-io.htm"
+          target="_blank" alt="Bellum.io" /><area shape="rect" coords="283,26,346,88" href="/io/snix-io.htm"
+          target="_blank" alt="Snix.io" /><area shape="rect" coords="354,29,416,92" href="/io/kugeln-io.htm"
+          target="_blank" alt="Kugeln.io" /><area shape="rect" coords="422,25,485,87" href="/io/goons-io.htm"
+          target="_blank" alt="Goons.io" /><area shape="rect" coords="493,26,555,88" href="/io/oceanar-io.htm"
+          target="_blank" alt="Oceanar.io" /><area shape="rect" coords="845,28,908,90" href="/io/pockey-io.htm"
+          target="_blank" alt="Pockey.io" /><area shape="rect" coords="916,26,978,88" href="/io/ghostz-io.htm"
+          target="_blank" alt="Ghostz.io" /><area shape="rect" coords="984,29,1046,91" href="/io/gartic-io.htm"
+          target="_blank" alt="Gartic.io" /><area shape="rect" coords="1054,26,1116,88" href="/io/wormate-io.htm"
+          target="_blank" alt="Wormate.io" /><area shape="rect" coords="1122,29,1184,92" href="/io/blastarena-io.htm"
+          target="_blank" alt="Blastarena.io" /><area shape="rect" coords="1189,26,1253,88" href="/io/yorg-io.htm"
+          target="_blank" alt="Yorg.io" /></map>
+    </div>
+  </div>
+  <div id="eniyioyunlar">
+    <ol>
+      <li>
+        <a href="/psikopat-senaryolar.html" title="Psikopat Senaryolar" target="_blank"><img
+            src="/images/psikopat_senaryolar.webp" alt="Psikopat Senaryolar" /></a>
+      </li>
+      <li>
+        <a href="/tavuklar-kumese.html" title="Tavuklar Kümese" target="_blank"><img src="/images/tavuklar_kumese.webp"
+            alt="Tavuklar Kümese" /></a>
+      </li>
+      <li>
+        <a href="/aya-seyahat.html" title="Aya Seyahat" target="_blank"><img src="/images/aya_seyahat.webp"
+            alt="Aya Seyahat" /></a>
+      </li>
+      <li style="margin-right: 25px">
+        <a href="/tras-et-beni.html" title="Traş Et Beni" target="_blank"><img src="/images/tras_et_beni.webp"
+            alt="Traş Et Beni" /></a>
+      </li>
+      <li>
+        <a href="/en_iyi_50_oyun.htm" title="En Güzel 50 Oyunumuz" target="_blank"><img src="/images/en_iyi_50.gif"
+            alt="En Güzel 50 Oyunumuz" /></a>
+      </li>
+      <li>
+        <a href="/matrak-futbol.html" title="Matrak Futbol" target="_blank"><img src="/images/matrak_futbol.webp"
+            alt="Matrak Futbol" /></a>
+      </li>
+      <li>
+        <a href="/bina-yikici.html" title="Bina Yıkıcı" target="_blank"><img src="/images/bina_yikici.webp"
+            alt="Bina Yıkıcı" /></a>
+      </li>
+      <li style="margin-right: 25px">
+        <a href="/gladyator-2.html" title="Gladyatör 2" target="_blank"><img src="/images/gladyator_2.webp"
+            alt="Gladyatör 2" /></a>
+      </li>
+      <li>
+        <a href="/caglar-boyu-savas.html" title="Çağlar Boyu Savaş 2" target="_blank"><img
+            src="/images/caglar_boyu_savas.webp" alt="Çağlar Boyu Savaş 2" /></a>
+      </li>
+      <li>
+        <a href="/kolsuz-milyoner.html" title="Kolsuz Milyoner" target="_blank"><img src="/images/kolsuz_milyoner.webp"
+            alt="Kolsuz Milyoner" /></a>
+      </li>
+      <li>
+        <a href="/futbol-kariyerim.html" title="Futbol Kariyerim" target="_blank"><img
+            src="/images/futbol_kariyerim.webp" alt="Futbol Kariyerim" /></a>
+      </li>
+      <li style="margin-right: 25px">
+        <a href="/topuk-kir.html" title="Topuk Kır" target="_blank"><img src="/images/topuk_kir.webp"
+            alt="Topuk Kır" /></a>
+      </li>
+      <li>
+        <a href="/cop-adam-savaslari.html" title="Çöp Adam Savaşları" target="_blank"><img
+            src="/images/cop_adam_savaslari.webp" alt="Çöp Adam Savaşları" /></a>
+      </li>
+      <li>
+        <a href="/kim-bir-milyon-ister.html" title="Kim Bir Milyon İster" target="_blank"><img
+            src="/images/kim_bir_milyon_ister.webp" alt="Kim Bir Milyon İster" /></a>
+      </li>
+      <li>
+        <a href="/yonet-ve-fethet.html" title="Yönet ve Fethet" target="_blank"><img src="/images/yonet_ve_fethet.webp"
+            alt="Yönet ve Fethet" /></a>
+      </li>
+      <li style="margin-right: 25px">
+        <a href="/penalti.html" title="Penaltı" target="_blank"><img src="/images/penalti.webp" alt="Penaltı" /></a>
+      </li>
+      <li>
+        <a href="/saldiri-timi.html" title="Saldırı Timi" target="_blank"><img src="/images/saldiri_timi.webp"
+            alt="Saldırı Timi" /></a>
+      </li>
+      <li>
+        <a href="/silahli-arena.html" title="Silahlı Arena" target="_blank"><img src="/images/silahli_arena.webp"
+            alt="Silahlı Arena" /></a>
+      </li>
+      <li>
+        <a href="/aptallik-testi.html" title="Aptallık Testi" target="_blank"><img src="/images/aptallik_testi.webp"
+            alt="Aptallık Testi" /></a>
+      </li>
+      <li style="margin-right: 25px">
+        <a href="/merve-alisveriste.html" title="Merve Alışverişte" target="_blank"><img
+            src="/images/merve_alisveriste.webp" alt="Merve Alışverişte" /></a>
+      </li>
+      <li>
+        <a href="/son-samuray.html" title="Son Samuray" target="_blank"><img src="/images/son_samuray.webp"
+            alt="Son Samuray" /></a>
+      </li>
+      <li>
+        <a href="/hazine-avcisi.html" title="Hazine Avcısı" target="_blank"><img src="/images/hazine_avcisi.webp"
+            alt="Hazine Avcısı" /></a>
+      </li>
+      <li>
+        <a href="/yuzu-vur.html" title="Yüzü Vur" target="_blank"><img src="/images/yuzu_vur.webp" alt="Yüzü Vur" /></a>
+      </li>
+      <li style="margin-right: 25px">
+        <a href="/ali-babanin-ciftligi.html" title="Ali Babanın Çiftliği" target="_blank"><img
+            src="/images/ali_babanin_ciftligi.webp" alt="Ali Babanın Çiftliği" /></a>
+      </li>
+      <li>
+        <a href="/maymunu-mutlu-et.html" title="Maymunu Mutlu Et" target="_blank"><img
+            src="/images/maymunu_mutlu_et.webp" alt="Maymunu Mutlu Et" /></a>
+      </li>
+      <li>
+        <a href="/gece-surusu-turbo.html" title="Gece Sürüşü Turbo" target="_blank"><img
+            src="/images/gece_surusu_turbo.webp" alt="Gece Sürüşü Turbo" /></a>
+      </li>
+      <li>
+        <a href="/zorlu-yaris-6.html" title="Zorlu Yarış 6" target="_blank"><img src="/images/zorlu_yaris_6.webp"
+            alt="Zorlu Yarış 6" /></a>
+      </li>
+      <li style="margin-right: 25px">
+        <a href="/koturum-et-onu-2.html" title="Kötürüm Et Onu 2" target="_blank"><img
+            src="/images/koturum_et_onu_2.webp" alt="Kötürüm Et Onu 2" /></a>
+      </li>
+      <li>
+        <a href="/sinirboyu-akincibeyleri.html" title="Sınırboyu Akıncıbeyleri" target="_blank"><img
+            src="/images/sinirboyu_akincibeyleri.webp" alt="Sınırboyu Akıncıbeyleri" /></a>
+      </li>
+      <li>
+        <a href="/ferhat-ile-sirin.html" title="Ferhat ile Şirin" target="_blank"><img
+            src="/images/ferhat_ile_sirin.webp" alt="Ferhat ile Şirin" /></a>
+      </li>
+      <li>
+        <a href="/tek-bolumluk-oyun.html" title="Tek Bölümlük Oyun" target="_blank"><img
+            src="/images/tek_bolumluk_oyun.webp" alt="Tek Bölümlük Oyun" /></a>
+      </li>
+      <li style="margin-right: 25px">
+        <a href="/catlak-planor.html" title="Çatlak Planör" target="_blank"><img src="/images/catlak_planor.webp"
+            alt="Çatlak Planör" /></a>
+      </li>
+      <li>
+        <a href="/dinamit-lokumu.html" title="Dinamit Lokumu" target="_blank"><img src="/images/dinamit_lokumu.webp"
+            alt="Dinamit Lokumu" /></a>
+      </li>
+      <li>
+        <a href="/top-kovaya.html" title="Top Kovaya" target="_blank"><img src="/images/top_kovaya.webp"
+            alt="Top Kovaya" /></a>
+      </li>
+      <li>
+        <a href="/hazine-avcisi-2.html" title="Hazine Avcısı 2" target="_blank"><img src="/images/hazine_avcisi_2.webp"
+            alt="Hazine Avcısı 2" /></a>
+      </li>
+      <li style="margin-right: 25px">
+        <a href="/cengel-ustasi-2.html" title="Çengel Ustası 2" target="_blank"><img src="/images/cengel_ustasi_2.webp"
+            alt="Çengel Ustası 2" /></a>
+      </li>
+      <li>
+        <a href="/besiktas-bursaspor-derbisi.html" title="Beşiktaş Bursaspor Derbisi" target="_blank"><img
+            src="/images/besiktas_bursaspor_derbisi.webp" alt="Beşiktaş Bursaspor Derbisi" /></a>
+      </li>
+      <li>
+        <a href="/dev-kurtcuk.html" title="Dev Kurtçuk" target="_blank"><img src="/images/dev_kurtcuk.webp"
+            alt="Dev Kurtçuk" /></a>
+      </li>
+      <li>
+        <a href="/cilgin-kamyoncu.html" title="Çılgın Kamyoncu" target="_blank"><img src="/images/cilgin_kamyoncu.webp"
+            alt="Çılgın Kamyoncu" /></a>
+      </li>
+      <li style="margin-right: 25px">
+        <a href="/taktik-suikastci-2.html" title="Taktik Suikastçı 2" target="_blank"><img
+            src="/images/taktik_suikastci_2.webp" alt="Taktik Suikastçı 2" /></a>
+      </li>
+    </ol>
+  </div>
+  <div class="alt-reklam">
+    <div class="alt-reklam-banner">
+      <div class="alt-reklam-inner">
+        <div class="alt-reklam-label">Alt Reklam Alanı</div>
+        <div data-sdg-ad="alt"></div>
       </div>
     </div>
-    <div id="eniyioyunlar">
-      <ol>
-        <li>
-          <a
-            href="/psikopat-senaryolar.html"
-            title="Psikopat Senaryolar"
-            target="_blank"
-            ><img
-              src="/images/psikopat_senaryolar.webp"
-              alt="Psikopat Senaryolar"
-          /></a>
-        </li>
-        <li>
-          <a
-            href="/tavuklar-kumese.html"
-            title="Tavuklar Kümese"
-            target="_blank"
-            ><img src="/images/tavuklar_kumese.webp" alt="Tavuklar Kümese"
-          /></a>
-        </li>
-        <li>
-          <a href="/aya-seyahat.html" title="Aya Seyahat" target="_blank"
-            ><img src="/images/aya_seyahat.webp" alt="Aya Seyahat"
-          /></a>
-        </li>
-        <li style="margin-right: 25px">
-          <a href="/tras-et-beni.html" title="Traş Et Beni" target="_blank"
-            ><img src="/images/tras_et_beni.webp" alt="Traş Et Beni"
-          /></a>
-        </li>
-        <li>
-          <a
-            href="/en_iyi_50_oyun.htm"
-            title="En Güzel 50 Oyunumuz"
-            target="_blank"
-            ><img src="/images/en_iyi_50.gif" alt="En Güzel 50 Oyunumuz"
-          /></a>
-        </li>
-        <li>
-          <a href="/matrak-futbol.html" title="Matrak Futbol" target="_blank"
-            ><img src="/images/matrak_futbol.webp" alt="Matrak Futbol"
-          /></a>
-        </li>
-        <li>
-          <a href="/bina-yikici.html" title="Bina Yıkıcı" target="_blank"
-            ><img src="/images/bina_yikici.webp" alt="Bina Yıkıcı"
-          /></a>
-        </li>
-        <li style="margin-right: 25px">
-          <a href="/gladyator-2.html" title="Gladyatör 2" target="_blank"
-            ><img src="/images/gladyator_2.webp" alt="Gladyatör 2"
-          /></a>
-        </li>
-        <li>
-          <a
-            href="/caglar-boyu-savas.html"
-            title="Çağlar Boyu Savaş 2"
-            target="_blank"
-            ><img
-              src="/images/caglar_boyu_savas.webp"
-              alt="Çağlar Boyu Savaş 2"
-          /></a>
-        </li>
-        <li>
-          <a
-            href="/kolsuz-milyoner.html"
-            title="Kolsuz Milyoner"
-            target="_blank"
-            ><img src="/images/kolsuz_milyoner.webp" alt="Kolsuz Milyoner"
-          /></a>
-        </li>
-        <li>
-          <a
-            href="/futbol-kariyerim.html"
-            title="Futbol Kariyerim"
-            target="_blank"
-            ><img src="/images/futbol_kariyerim.webp" alt="Futbol Kariyerim"
-          /></a>
-        </li>
-        <li style="margin-right: 25px">
-          <a href="/topuk-kir.html" title="Topuk Kır" target="_blank"
-            ><img src="/images/topuk_kir.webp" alt="Topuk Kır"
-          /></a>
-        </li>
-        <li>
-          <a
-            href="/cop-adam-savaslari.html"
-            title="Çöp Adam Savaşları"
-            target="_blank"
-            ><img
-              src="/images/cop_adam_savaslari.webp"
-              alt="Çöp Adam Savaşları"
-          /></a>
-        </li>
-        <li>
-          <a
-            href="/kim-bir-milyon-ister.html"
-            title="Kim Bir Milyon İster"
-            target="_blank"
-            ><img
-              src="/images/kim_bir_milyon_ister.webp"
-              alt="Kim Bir Milyon İster"
-          /></a>
-        </li>
-        <li>
-          <a
-            href="/yonet-ve-fethet.html"
-            title="Yönet ve Fethet"
-            target="_blank"
-            ><img src="/images/yonet_ve_fethet.webp" alt="Yönet ve Fethet"
-          /></a>
-        </li>
-        <li style="margin-right: 25px">
-          <a href="/penalti.html" title="Penaltı" target="_blank"
-            ><img src="/images/penalti.webp" alt="Penaltı"
-          /></a>
-        </li>
-        <li>
-          <a href="/saldiri-timi.html" title="Saldırı Timi" target="_blank"
-            ><img src="/images/saldiri_timi.webp" alt="Saldırı Timi"
-          /></a>
-        </li>
-        <li>
-          <a href="/silahli-arena.html" title="Silahlı Arena" target="_blank"
-            ><img src="/images/silahli_arena.webp" alt="Silahlı Arena"
-          /></a>
-        </li>
-        <li>
-          <a href="/aptallik-testi.html" title="Aptallık Testi" target="_blank"
-            ><img src="/images/aptallik_testi.webp" alt="Aptallık Testi"
-          /></a>
-        </li>
-        <li style="margin-right: 25px">
-          <a
-            href="/merve-alisveriste.html"
-            title="Merve Alışverişte"
-            target="_blank"
-            ><img src="/images/merve_alisveriste.webp" alt="Merve Alışverişte"
-          /></a>
-        </li>
-        <li>
-          <a href="/son-samuray.html" title="Son Samuray" target="_blank"
-            ><img src="/images/son_samuray.webp" alt="Son Samuray"
-          /></a>
-        </li>
-        <li>
-          <a href="/hazine-avcisi.html" title="Hazine Avcısı" target="_blank"
-            ><img src="/images/hazine_avcisi.webp" alt="Hazine Avcısı"
-          /></a>
-        </li>
-        <li>
-          <a href="/yuzu-vur.html" title="Yüzü Vur" target="_blank"
-            ><img src="/images/yuzu_vur.webp" alt="Yüzü Vur"
-          /></a>
-        </li>
-        <li style="margin-right: 25px">
-          <a
-            href="/ali-babanin-ciftligi.html"
-            title="Ali Babanın Çiftliği"
-            target="_blank"
-            ><img
-              src="/images/ali_babanin_ciftligi.webp"
-              alt="Ali Babanın Çiftliği"
-          /></a>
-        </li>
-        <li>
-          <a
-            href="/maymunu-mutlu-et.html"
-            title="Maymunu Mutlu Et"
-            target="_blank"
-            ><img src="/images/maymunu_mutlu_et.webp" alt="Maymunu Mutlu Et"
-          /></a>
-        </li>
-        <li>
-          <a
-            href="/gece-surusu-turbo.html"
-            title="Gece Sürüşü Turbo"
-            target="_blank"
-            ><img src="/images/gece_surusu_turbo.webp" alt="Gece Sürüşü Turbo"
-          /></a>
-        </li>
-        <li>
-          <a href="/zorlu-yaris-6.html" title="Zorlu Yarış 6" target="_blank"
-            ><img src="/images/zorlu_yaris_6.webp" alt="Zorlu Yarış 6"
-          /></a>
-        </li>
-        <li style="margin-right: 25px">
-          <a
-            href="/koturum-et-onu-2.html"
-            title="Kötürüm Et Onu 2"
-            target="_blank"
-            ><img src="/images/koturum_et_onu_2.webp" alt="Kötürüm Et Onu 2"
-          /></a>
-        </li>
-        <li>
-          <a
-            href="/sinirboyu-akincibeyleri.html"
-            title="Sınırboyu Akıncıbeyleri"
-            target="_blank"
-            ><img
-              src="/images/sinirboyu_akincibeyleri.webp"
-              alt="Sınırboyu Akıncıbeyleri"
-          /></a>
-        </li>
-        <li>
-          <a
-            href="/ferhat-ile-sirin.html"
-            title="Ferhat ile Şirin"
-            target="_blank"
-            ><img src="/images/ferhat_ile_sirin.webp" alt="Ferhat ile Şirin"
-          /></a>
-        </li>
-        <li>
-          <a
-            href="/tek-bolumluk-oyun.html"
-            title="Tek Bölümlük Oyun"
-            target="_blank"
-            ><img src="/images/tek_bolumluk_oyun.webp" alt="Tek Bölümlük Oyun"
-          /></a>
-        </li>
-        <li style="margin-right: 25px">
-          <a href="/catlak-planor.html" title="Çatlak Planör" target="_blank"
-            ><img src="/images/catlak_planor.webp" alt="Çatlak Planör"
-          /></a>
-        </li>
-        <li>
-          <a href="/dinamit-lokumu.html" title="Dinamit Lokumu" target="_blank"
-            ><img src="/images/dinamit_lokumu.webp" alt="Dinamit Lokumu"
-          /></a>
-        </li>
-        <li>
-          <a href="/top-kovaya.html" title="Top Kovaya" target="_blank"
-            ><img src="/images/top_kovaya.webp" alt="Top Kovaya"
-          /></a>
-        </li>
-        <li>
-          <a
-            href="/hazine-avcisi-2.html"
-            title="Hazine Avcısı 2"
-            target="_blank"
-            ><img src="/images/hazine_avcisi_2.webp" alt="Hazine Avcısı 2"
-          /></a>
-        </li>
-        <li style="margin-right: 25px">
-          <a
-            href="/cengel-ustasi-2.html"
-            title="Çengel Ustası 2"
-            target="_blank"
-            ><img src="/images/cengel_ustasi_2.webp" alt="Çengel Ustası 2"
-          /></a>
-        </li>
-        <li>
-          <a
-            href="/besiktas-bursaspor-derbisi.html"
-            title="Beşiktaş Bursaspor Derbisi"
-            target="_blank"
-            ><img
-              src="/images/besiktas_bursaspor_derbisi.webp"
-              alt="Beşiktaş Bursaspor Derbisi"
-          /></a>
-        </li>
-        <li>
-          <a href="/dev-kurtcuk.html" title="Dev Kurtçuk" target="_blank"
-            ><img src="/images/dev_kurtcuk.webp" alt="Dev Kurtçuk"
-          /></a>
-        </li>
-        <li>
-          <a
-            href="/cilgin-kamyoncu.html"
-            title="Çılgın Kamyoncu"
-            target="_blank"
-            ><img src="/images/cilgin_kamyoncu.webp" alt="Çılgın Kamyoncu"
-          /></a>
-        </li>
-        <li style="margin-right: 25px">
-          <a
-            href="/taktik-suikastci-2.html"
-            title="Taktik Suikastçı 2"
-            target="_blank"
-            ><img
-              src="/images/taktik_suikastci_2.webp"
-              alt="Taktik Suikastçı 2"
-          /></a>
-        </li>
-      </ol>
-    </div>
-    <div class="alt-reklam">
-      <div class="alt-reklam-banner">
-        <div class="alt-reklam-inner">
-          <div class="alt-reklam-label">Alt Reklam Alanı</div>
-          <div data-sdg-ad="alt"></div>
-        </div>
-      </div>
-    </div>
+  </div>
 
     <div id="altz">
       <div id="alt">

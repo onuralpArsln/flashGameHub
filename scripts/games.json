@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "kategori": "psikopat",
+    "text": "Psikopat Senaryolar oyunu",
+    "cinsiyet": "erkek",
+    "name": "Psikopat Senaryolar",
+    "src": "/psikopat-senaryolar.html",
+    "isim": "Psikopat Senaryolar",
+    "image": "/images/psikopat_senaryolar.webp"
+  },
+  {
+    "id": 2,
+    "kategori": "kız oyunu",
+    "text": "Kümesin içinde eğlenceli bir tavuk yaşamı",
+    "cinsiyet": "kadın",
+    "name": "Tavuklar Kümese",
+    "src": "/tavuklar-kumese.html",
+    "isim": "Tavuklar Kümese",
+    "image": "/images/tavuklar_kumese.webp"
+  },
+  {
+    "id": 3,
+    "kategori": "macera",
+    "text": "Aya Seyahat oyununda uzayda macera sizi bekliyor",
+    "cinsiyet": "erkek",
+    "name": "Aya Seyahat",
+    "src": "/aya-seyahat.html",
+    "isim": "Aya Seyahat",
+    "image": "/images/aya_seyahat.webp"
+  },
+  {
+    "id": 4,
+    "kategori": "komedi",
+    "text": "Traş Et Beni ile komik bir oyun deneyimi",
+    "cinsiyet": "erkek",
+    "name": "Traş Et Beni",
+    "src": "/tras-et-beni.html",
+    "isim": "Traş Et Beni",
+    "image": "/images/tras_et_beni.webp"
+  },
+  {
+    "id": 5,
+    "kategori": "en iyi oyunlar",
+    "text": "En iyi 50 oyun",
+    "cinsiyet": "erkek",
+    "name": "En Güzel 50 Oyunumuz",
+    "src": "/en_iyi_50_oyun.htm",
+    "isim": "En Güzel 50 Oyunumuz",
+    "image": "/images/en_iyi_50.gif"
+  },
+  {
+    "id": 6,
+    "kategori": "spor",
+    "text": "Futbol severlere özel eğlenceli bir oyun",
+    "cinsiyet": "erkek",
+    "name": "Matrak Futbol",
+    "src": "/matrak-futbol.html",
+    "isim": "Matrak Futbol",
+    "image": "/images/matrak_futbol.webp"
+  },
+  {
+    "id": 7,
+    "kategori": "aksiyon",
+    "text": "Bina Yıkıcı ile yıkım yapın",
+    "cinsiyet": "erkek",
+    "name": "Bina Yıkıcı",
+    "src": "/bina-yikici.html",
+    "isim": "Bina Yıkıcı",
+    "image": "/images/bina_yikici.webp"
+  },
+  {
+    "id": 8,
+    "kategori": "aksiyon",
+    "text": "Gladyatör 2 ile arenada savaş",
+    "cinsiyet": "erkek",
+    "name": "Gladyatör 2",
+    "src": "/gladyator-2.html",
+    "isim": "Gladyatör 2",
+    "image": "/images/gladyator_2.webp"
+  },
+  {
+    "id": 9,
+    "kategori": "strateji",
+    "text": "Çağlar Boyu Savaş 2'de farklı çağlarda savaş",
+    "cinsiyet": "erkek",
+    "name": "Çağlar Boyu Savaş 2",
+    "src": "/caglar-boyu-savas.html",
+    "isim": "Çağlar Boyu Savaş 2",
+    "image": "/images/caglar_boyu_savas.webp"
+  },
+  {
+    "id": 10,
+    "kategori": "bilgi yarışması",
+    "text": "Kim Bir Milyon İster'de büyük ödül için yarışın",
+    "cinsiyet": "erkek",
+    "name": "Kim Bir Milyon İster",
+    "src": "/kim-bir-milyon-ister.html",
+    "isim": "Kim Bir Milyon İster",
+    "image": "/images/kim_bir_milyon_ister.webp"
+  },
+  {
+    "id": 11,
+    "kategori": "spor",
+    "text": "Penaltı atışlarını kazanın",
+    "cinsiyet": "erkek",
+    "name": "Penaltı",
+    "src": "/penalti.html",
+    "isim": "Penaltı",
+    "image": "/images/penalti.webp"
+  },
+  {
+    "id": 12,
+    "kategori": "strateji",
+    "text": "Saldırı Timi ile zafere ulaşın",
+    "cinsiyet": "erkek",
+    "name": "Saldırı Timi",
+    "src": "/saldiri-timi.html",
+    "isim": "Saldırı Timi",
+    "image": "/images/saldiri_timi.webp"
+  },
+  {
+    "id": 13,
+    "kategori": "aksiyon",
+    "text": "Silahlı Arena'da hayatta kalmaya çalışın",
+    "cinsiyet": "erkek",
+    "name": "Silahlı Arena",
+    "src": "/silahli-arena.html",
+    "isim": "Silahlı Arena",
+    "image": "/images/silahli_arena.webp"
+  },
+  {
+    "id": 14,
+    "kategori": "komedi",
+    "text": "Aptallık Testi ile eğlenceli soruları yanıtla",
+    "cinsiyet": "erkek",
+    "name": "Aptallık Testi",
+    "src": "/aptallik-testi.html",
+    "isim": "Aptallık Testi",
+    "image": "/images/aptallik_testi.webp"
+  },
+  {
+    "id": 15,
+    "kategori": "kız oyunu",
+    "text": "Merve'nin alışveriş macerasına katıl",
+    "cinsiyet": "kadın",
+    "name": "Merve Alışverişte",
+    "src": "/merve-alisveriste.html",
+    "isim": "Merve Alışverişte",
+    "image": "/images/merve_alisveriste.webp"
+  },
+  {
+    "id": 16,
+    "kategori": "aksiyon",
+    "text": "Son Samuray ile efsanevi bir macera",
+    "cinsiyet": "erkek",
+    "name": "Son Samuray",
+    "src": "/son-samuray.html",
+    "isim": "Son Samuray",
+    "image": "/images/son_samuray.webp"
+  },
+  {
+    "id": 17,
+    "kategori": "macera",
+    "text": "Hazine Avcısı ile altınları bulun",
+    "cinsiyet": "erkek",
+    "name": "Hazine Avcısı",
+    "src": "/hazine-avcisi.html",
+    "isim": "Hazine Avcısı",
+    "image": "/images/hazine_avcisi.webp"
+  },
+  {
+    "id": 18,
+    "kategori": "aksiyon",
+    "text": "Yüzü Vur oyunu ile zorlu görevleri tamamlayın",
+    "cinsiyet": "erkek",
+    "name": "Yüzü Vur",
+    "src": "/yuzu-vur.html",
+    "isim": "Yüzü Vur",
+    "image": "/images/yuzu_vur.webp"
+  }
+]
