@@ -87,6 +87,31 @@
 .orta-reklam-inner{
   margin-top: 25px;
 }
+.alt-reklam{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; /* Yatayda ortalar */
+  align-items: center;     /* Dikeyde ortalamak istersen */
+  width: 100%;             /* Genişlik tanımlı olmalı */
+  margin-bottom: 25px;
+}
+.alt-reklam-banner {
+  background-color: #e3005b;
+  color: white;
+  border: none;
+  width: 1000px;
+  height: 250px;
+  font-size: 16px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center; /* İçeriği ortalar */
+  align-items: center;     /* İçeriği dikeyde ortalar */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.alt-reklam-inner{
+  margin-top: 25px;
+}
 .button-container {
   margin-top: 50px;
   display: flex;
@@ -133,7 +158,7 @@ a:hover {
   top: 0;
   z-index: 100; /* Navbar'ın üstte kalmasını sağlar */
   margin: 0 auto;
-  height: 70px;
+  height: 100px;
   width: 100%;
   background-color: #FF6F00;
   background-image: -moz-linear-gradient(top, #f0f0ee, #d4dbe0);
@@ -155,6 +180,43 @@ a:hover {
   margin: 0 auto;
   margin-bottom: 15px;
 }
+ul.kategori {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FF6F00;
+  margin: 0;
+  list-style: none;
+  font-family: Arial, sans-serif;
+  border: none;
+}
+
+.kategori-item {
+  margin: 0 8px;
+  padding-right: 25px;
+}
+
+.kategori-link {
+  display: inline-block;
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.kategori-link:hover {
+  color: #000000; /* Aynı renk kalması için tekrar tanımla */
+}
+
+.kategori-link::before {
+  content: "•"; /* Unicode nokta karakteri */
+  color: #000000; /* Noktanın rengi */
+  font-size: 20px;
+  margin-right: 3px;
+
+}
+
 #kategoriler {
   width: 457px;
   float: left;
@@ -498,13 +560,20 @@ input:focus ~ span > #araClick {
   padding-top: 2px;
 }
 #eniyioyunlar {
-  width: 1350px;
+    max-width: 1350px;
+    margin: 0 auto;
+padding-left: 40px;
+  /*width: 1350px;*/
+  justify-content: center;
   overflow: hidden;
 }
 #eniyioyunlar ol {
   margin: 0 0 0 -15px;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 #eniyioyunlar ol li {
   background: #eee;
@@ -515,11 +584,11 @@ input:focus ~ span > #araClick {
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   border-radius: 7px;
-  float: left;
+  /* float: left; --> bunu kaldır */
+  display: inline-block; /* veya hiç yazma, flex zaten işler */
   margin-left: 15px;
   margin-right: 0;
   margin-bottom: 15px;
-  display: inline;
   text-align: center;
 }
 #eniyioyunlar ol li:hover {

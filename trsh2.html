@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--
+   ______     ___    _ _   _ _  ___    _ _______    _  _____ _    _ 
+  / __ \ \   / / |  | | \ | | |/ / |  | |___  / |  | |/ ____| |  | |
+ | |  | \ \_/ /| |  | |  \| | ' /| |  | |  / /| |  | | (___ | |  | |
+ | |  | |\   / | |  | | . ` |  < | |  | | / / | |  | |\___ \| |  | |
+ | |__| | | |  | |__| | |\  | . \| |__| |/ /__| |__| |____) | |__| |
+  \____/  |_|   \____/|_| \_|_|\_\\____//_____|\____/|_____/ \____/ 
+                                                                    
+-->
+    <title>OYUN KUZUSU OYUNLAR ++</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="Keywords"
+      content="oyun, oyunlar, oyunkuzusu, oyun kuzusu, kuzu, oyun skor kaydet, güzel oyunlar, türkçe oyunlar"
+    />
+    <meta
+      name="Description"
+      content="Oyun Kuzusu Türkiye'nin en büyük Türkçe oyunlar sitesidir, en güzel oyunlar burada oynanır ve yapılan skor da kaydedilir. Oyun kuzusu türkçe oyunlar."
+    />
+    <meta
+      name="google-site-verification"
+      content="gikWdvxh1lJCSYpdfc1bndA8QsHZawRsdj9SUvFdUKA"
+    />
+    <meta name="msvalidate.01" content="7F1D33D596B5FB56E2B8C06172A141F9" />
+    <meta name="google" content="notranslate" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon-32x32-new.png"
+    />
+    <style type="text/css">
+      @font-face {
+        font-family: "Segoe";
+        src: url(segoeuisl.woff) format("woff");
+      }
+      body {
+        background-color: #fff;
+        font-family: "Segoe", Verdana, Geneva, sans-serif;
+        font-size: 12px;
+        margin: 0;
+        color: #666;
+      }
+      a {
+        text-decoration: none;
+        color: #666;
+      }
+      a:hover {
+        text-decoration: none;
+        color: #000;
+      }
+      #ustz {
+        margin: 0 auto;
+        width: 100%;
+        background-color: #d4dbe0;
+        background-image: -moz-linear-gradient(top, #f0f0ee, #d4dbe0);
+        background-image: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          color-stop(0, #f0f0ee),
+          color-stop(1, #d4dbe0)
+        );
+        background-image: url(images/z1.webp);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      #ust {
+        width: 1322px;
+        height: 55px;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-bottom: 15px;
+      }
+      #kategoriler {
+        width: 457px;
+        height: 55px;
+        float: left;
+        margin: 0;
+        padding: 11px 0 0;
+      }
+      .button1 {
+        padding: 4px 8px;
+        margin: 0 5px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+        display: inline-block;
+        font-family: "Segoe", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+        letter-spacing: 0.3px;
+        font-size: 17px;
+        border: 1px solid rgba(0, 0, 0, 0);
+        -webkit-border-radius: 11px;
+        -moz-border-radius: 11px;
+        border-radius: 11px;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
+      .kiz {
+        border: 1px solid rgba(229, 31, 250, 0.6);
+        background-color: rgba(255, 255, 255, 0.6);
+        color: #e51ffa;
+        margin-left: 85px;
+      }
+      .kiz:hover {
+        border: 1px solid #e51ffa;
+        background-color: rgba(255, 255, 255, 0.9);
+        color: #e51ffa;
+      }
+      .erkek {
+        border: 1px solid rgba(74, 134, 255, 0.6);
+        background-color: rgba(255, 255, 255, 0.6);
+        color: #4a86ff;
+      }
+      .erkek:hover {
+        border: 1px solid #4a86ff;
+        background-color: rgba(255, 255, 255, 0.9);
+        color: #4a86ff;
+      }
+      .kategori {
+        border: 1px solid rgba(7, 159, 0, 06);
+        background-color: rgba(255, 255, 255, 0.6);
+        color: #079f00;
+      }
+      .kategori:hover {
+        border: 1px solid #093;
+        background-color: rgba(255, 255, 255, 0.9);
+        color: #079f00;
+      }
+      .imparator {
+        border: 1px solid rgba(237, 28, 36, 06);
+        background-color: rgba(255, 255, 255, 0.9);
+        color: #ed1c24;
+      }
+      .imparator:hover {
+        border: 1px solid #ed1c24;
+        background-color: rgba(255, 255, 255, 0.9);
+        color: #930006;
+      }
+      #logo {
+        width: 444px;
+        height: 55px;
+        float: left;
+      }
+      #arama {
+        width: 300px;
+        height: 55px;
+        float: left;
+      }
+      #eski {
+        width: 150px;
+        height: 55px;
+        text-align: right;
+        float: left;
+      }
+      .esite {
+        padding: 18px 1px;
+        text-decoration: none;
+        display: inline-block;
+        font-family: "Segoe", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+        letter-spacing: 0.3px;
+        font-size: 13px;
+      }
+      .ara {
+        width: 250px;
+        margin: 9px 0 0 65px;
+      }
+      .ara input {
+        width: 202px;
+        height: 14px;
+        font-size: 15px;
+        padding: 10px 5px;
+        float: left;
+        border: 1px solid #cecece;
+        -moz-border-radius: 7px 0 0 7px;
+        -webkit-border-radius: 7px 0 0 7px;
+        border-radius: 7px 0 0 7px;
+        background-color: rgba(255, 255, 255, 0.6);
+        color: #666;
+      }
+      .ara input:focus {
+        height: 12px;
+        border-left: 2px solid #d83c3c;
+        border-bottom: 2px solid #d83c3c;
+        border-top: 2px solid #d83c3c;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-right: none;
+        box-shadow: none;
+        outline: 0;
+      }
+      .ara button {
+        overflow: visible;
+        position: relative;
+        float: right;
+        border: 0;
+        padding: 0;
+        cursor: pointer;
+        height: 36px;
+        width: 36px;
+        -moz-border-radius: 0 7px 7px 0;
+        -webkit-border-radius: 0 7px 7px 0;
+        border-radius: 0 7px 7px 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        background-image: url(images/ara.png);
+        background-repeat: no-repeat;
+        background-position: 7px 8px;
+      }
+      input:focus ~ span > #araClick {
+        background: #d83c3c;
+        background-image: url(images/ara.png);
+        background-repeat: no-repeat;
+        background-position: 7px 8px;
+      }
+      .ara button:active,
+      .ara button:hover,
+      .ara button:disabled {
+        background: #d83c3c;
+        background-image: url(images/ara.png);
+        background-repeat: no-repeat;
+        background-position: 7px 8px;
+        outline: none;
+      }
+      #oyunlar1 {
+        background: #eee;
+        width: 330px;
+        height: 250px;
+        overflow: hidden;
+        border: 1px solid #000;
+        -webkit-border-radius: 11px;
+        -moz-border-radius: 11px;
+        border-radius: 11px;
+        float: left;
+        margin-left: 0;
+        margin-right: 18px;
+        margin-bottom: 18px;
+        display: inline;
+      }
+      #oyunlar1 img {
+        width: 336px;
+        height: 256px;
+        margin-left: -3px;
+        margin-top: -3px;
+      }
+      #oyunlar1 a:hover img {
+        width: 348px;
+        height: 268px;
+        margin-left: -5px;
+        margin-top: -5px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+      }
+      #reklam1 {
+        width: 968px;
+        height: 248px;
+        border: 1px solid #000;
+        -webkit-border-radius: 11px;
+        -moz-border-radius: 11px;
+        border-radius: 11px;
+        float: left;
+        overflow: hidden;
+        margin: 0 0 30px;
+      }
+      #reklam2 {
+        width: 968px;
+        height: 88px;
+        float: left;
+        overflow: hidden;
+        background-color: #fff;
+        border: 1px solid #000;
+        -webkit-border-radius: 11px;
+        -moz-border-radius: 11px;
+        border-radius: 11px;
+        margin: 0 0 10px;
+        text-align: center;
+      }
+      #oyunlar2 {
+        width: 1350px;
+        overflow: hidden;
+      }
+      #oyunlar2 ol {
+        margin: 0 0 0 -23px;
+        padding: 0;
+        list-style-type: none;
+      }
+      #oyunlar2 ol li {
+        background: #eee;
+        width: 244px;
+        height: 168px;
+        overflow: hidden;
+        border: 1px solid #000;
+        -webkit-border-radius: 11px;
+        -moz-border-radius: 11px;
+        border-radius: 11px;
+        float: left;
+        margin-left: 23px;
+        margin-right: 0;
+        margin-bottom: 23px;
+        display: inline;
+        text-align: center;
+      }
+      #oyunlar2 ol li:hover {
+        width: 240px;
+        height: 164px;
+        border: 3px solid #000;
+      }
+      #oyunlar2 ol li img {
+        width: 250px;
+        height: 174px;
+        margin-left: -2px;
+        margin-top: -2px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+      }
+      #oyunlar2 ol li a:hover img {
+        width: 258px;
+        height: 182px;
+        margin-left: -7px;
+        margin-top: -7px;
+      }
+      #oyunlar2 ol li b {
+        font-size: 11px;
+        color: #666;
+        text-shadow: 1px 1px 3px silver;
+        margin-top: 157px;
+        margin-left: 15px;
+        position: absolute;
+        text-align: center;
+        height: 15px;
+        font-weight: lighter;
+        border: 1px solid #000;
+        background: #eee;
+        -webkit-border-radius: 13px;
+        -moz-border-radius: 13px;
+        border-radius: 13px;
+        padding: 2px 8px;
+      }
+      #oyunlar2 ol li a:hover b {
+        font-size: 12px;
+        color: #fff;
+        background-color: #36f;
+        height: 17px;
+        margin-left: 13px;
+        padding-top: 2px;
+      }
+      #oyunlar3 {
+        width: 1350px;
+        overflow: hidden;
+      }
+      #oyunlar3 ol {
+        margin: 0 0 0 -21px;
+        padding: 0;
+        list-style-type: none;
+      }
+      #oyunlar3 ol li {
+        background: #eee;
+        width: 424px;
+        height: 302px;
+        overflow: hidden;
+        border: 1px solid #000;
+        -webkit-border-radius: 11px;
+        -moz-border-radius: 11px;
+        border-radius: 11px;
+        float: left;
+        margin-left: 21px;
+        margin-right: 1px;
+        margin-bottom: 21px;
+        display: inline;
+        text-align: center;
+      }
+      #oyunlar3 ol li:hover {
+        width: 420px;
+        height: 298px;
+        border: 3px solid #000;
+      }
+      #oyunlar3 ol li img {
+        width: 424px;
+        height: 302px;
+        margin-left: 0;
+        margin-top: 0;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+      }
+      #oyunlar3 ol li a:hover img {
+        width: 424px;
+        height: 302px;
+      }
+      #oyunlar3 ol li b {
+        font-size: 11px;
+        color: #666;
+        text-shadow: 1px 1px 3px silver;
+        margin-top: 293px;
+        margin-left: 15px;
+        position: absolute;
+        text-align: center;
+        height: 15px;
+        font-weight: lighter;
+        border: 1px solid #000;
+        background: #eee;
+        -webkit-border-radius: 13px;
+        -moz-border-radius: 13px;
+        border-radius: 13px;
+        padding: 2px 8px;
+      }
+      #oyunlar3 ol li a:hover b {
+        font-size: 12px;
+        color: #fff;
+        background-color: #36f;
+        height: 17px;
+        margin-left: 13px;
+        padding-top: 2px;
+      }
+      #eniyioyunlar {
+        width: 1350px;
+        overflow: hidden;
+      }
+      #eniyioyunlar ol {
+        margin: 0 0 0 -15px;
+        padding: 0;
+        list-style-type: none;
+      }
+      #eniyioyunlar ol li {
+        background: #eee;
+        width: 147px;
+        height: 115px;
+        overflow: hidden;
+        border: 1px solid #000;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        border-radius: 7px;
+        float: left;
+        margin-left: 15px;
+        margin-right: 0;
+        margin-bottom: 15px;
+        display: inline;
+        text-align: center;
+      }
+      #eniyioyunlar ol li:hover {
+        width: 143px;
+        height: 111px;
+        border: 3px solid #000;
+      }
+      #eniyioyunlar ol li img {
+        width: 150px;
+        height: 119px;
+        margin-left: -2px;
+        margin-top: -2px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+      }
+      #eniyioyunlar ol li a:hover img {
+        width: 160px;
+        height: 129px;
+        margin-left: -7px;
+        margin-top: -7px;
+        -webkit-filter: brightness(150%);
+        filter: brightness(150%);
+      }
+      #altz {
+        margin: 0 auto;
+        width: 100%;
+        background-color: #d4dbe0;
+        float: left;
+      }
+      #alt {
+        width: 1322px;
+        margin: 0 auto;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      if (window.orientation > 1) {
+        window.location = "http://www.oyunkuzusu.com/mobil/";
+      }
+
+      if (
+        navigator.userAgent.match(/Android/i) ||
+        navigator.userAgent.match(/webOS/i) ||
+        navigator.userAgent.match(/iPhone/i) ||
+        navigator.userAgent.match(/iPad/i) ||
+        navigator.userAgent.match(/iPod/i) ||
+        navigator.userAgent.match(/BlackBerry/i) ||
+        navigator.userAgent.match(/Windows Phone/i)
+      ) {
+        window.location = "http://www.oyunkuzusu.com/mobil/";
+      }
+    </script>
+    <div id="ustz">
+      <div id="ust">
+        <div id="kategoriler">
+          <a href="/kizlar-icin-oyunlar.html" class="button1 kiz">KIZLAR</a
+          ><a href="/erkekler-icin-oyunlar.html" class="button1 erkek"
+            >ERKEKLER</a
+          ><a href="/kategoriler.html" class="button1 kategori">KATEGORİLER</a
+          ><a href="/imparator/" class="button1 imparator">İMP.</a>
+        </div>
+        <div id="logo">
+          <a href="https://www.oyunkuzusu.com/" title="OYUN KUZUSU OYUNLAR"
+            ><img
+              src="images/oyunkuzusu-logo.png"
+              border="0"
+              alt="OYUN KUZUSU OYUNLAR"
+          /></a>
+        </div>
+        <div id="arama">
+          <form class="ara" method="get" action="/oyun-ara.asp">
+            <input
+              name="aranan"
+              type="text"
+              placeholder="Oyun Ara.."
+              required
+            /><span><button id="araClick" type="submit"></button></span>
+          </form>
+        </div>
+        <div id="eski">
+          <a
+            href="http://www.oyunkuzusu.org/default.asp"
+            title="OyunKuzusu eski siteye gitmek için tıkla"
+            target="_blank"
+            class="esite"
+            rel="nofollow"
+            >Eski Site</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div style="margin: 0 auto; width: 1322px">
+      <a href="/yeni-oyunlar.html"
+        ><img
+          src="images/yeni-oyunlar1.gif"
+          alt="Tüm Yeni Oyunlar"
+          width="1322"
+          height="24"
+          border="0"
+      /></a>
+    </div>
+    <div style="margin: 0 auto; width: 1322px; margin-top: 15px">
+      <div id="oyunlar3">
+        <ol>
+          <li>
+            <a href="/obby-bisiklet.html" title="Obby Bisiklet - 46"
+              ><b>Obby Bisiklet</b
+              ><img src="/images/obby_bisiklet_b.webp" alt="Obby Bisiklet"
+            /></a>
+          </li>
+          <li>
+            <a href="/olum-yolu-2.html" title="Ölüm Yolu 2 - 321"
+              ><b>Ölüm Yolu 2</b
+              ><img src="/images/olum_yolu_2_b.webp" alt="Ölüm Yolu 2"
+            /></a>
+          </li>
+          <li>
+            <a href="/alev-okcu.html" title="Alev Okçu - 257"
+              ><b>Alev Okçu</b
+              ><img src="/images/alev_okcu_b.webp" alt="Alev Okçu"
+            /></a>
+          </li>
+        </ol>
+      </div>
+
+      <div id="oyunlar2">
+        <ol>
+          <li>
+            <a href="/ejderha-avcisi.html" title="Ejderha Avcısı - 301"
+              ><b>Ejderha Avcısı</b
+              ><img src="/images/ejderha_avcisi.webp" alt="Ejderha Avcısı"
+            /></a>
+          </li>
+          <li>
+            <a href="/yumurta-macerasi-2.html" title="Yumurta Macerası 2 - 254"
+              ><b>Yumurta Macerası 2</b
+              ><img
+                src="/images/yumurta_macerasi_2.webp"
+                alt="Yumurta Macerası 2"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="/boksorun-yukselisi-2077.html"
+              title="Boksörün Yükselişi 2077 - 393"
+              ><b>Boksörün Yükselişi 2077</b
+              ><img
+                src="/images/boksorun_yukselisi_2077.webp"
+                alt="Boksörün Yükselişi 2077"
+            /></a>
+          </li>
+          <li>
+            <a href="/tirnak-boya-2.html" title="Tırnak Boya 2 - 482"
+              ><b>Tırnak Boya 2</b
+              ><img src="/images/tirnak_boya_2.webp" alt="Tırnak Boya 2"
+            /></a>
+          </li>
+          <li>
+            <a href="/magara-macerasi.html" title="Mağara Macerası - 393"
+              ><b>Mağara Macerası</b
+              ><img src="/images/magara_macerasi.webp" alt="Mağara Macerası"
+            /></a>
+          </li>
+          <li>
+            <a href="/counter-craft-mw2.html" title="Counter Craft MW2 - 614"
+              ><b>Counter Craft MW2</b
+              ><img
+                src="/images/counter_craft_mw2.webp"
+                alt="Counter Craft MW2"
+            /></a>
+          </li>
+          <li>
+            <a href="/kizgin-boga.html" title="Kızgın Boğa - 480"
+              ><b>Kızgın Boğa</b
+              ><img src="/images/kizgin_boga.webp" alt="Kızgın Boğa"
+            /></a>
+          </li>
+          <li>
+            <a href="/yasamak-icin-yanla.html" title="Yaşamak İçin Yanla - 544"
+              ><b>Yaşamak İçin Yanla</b
+              ><img
+                src="/images/yasamak_icin_yanla.webp"
+                alt="Yaşamak İçin Yanla"
+            /></a>
+          </li>
+          <li>
+            <a href="/super-d.html" title="Süper D - 133067"
+              ><b>Süper D</b><img src="/images/super_d.webp" alt="Süper D"
+            /></a>
+          </li>
+          <li>
+            <a href="/hizli-top-zipla.html" title="Hızlı Top Zıpla - 777"
+              ><b>Hızlı Top Zıpla</b
+              ><img src="/images/hizli_top_zipla.webp" alt="Hızlı Top Zıpla"
+            /></a>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <div style="margin: 0 auto; width: 1322px; margin-top: 5px">
+      <img
+        src="/images/io-mıultiplayer.webp"
+        width="1322"
+        height="112"
+        border="0"
+        usemap="#io_oyunlar"
+      /><map name="io_oyunlar" id="io_oyunlar"
+        ><area
+          shape="rect"
+          coords="556,0,844,112"
+          href="/harac/"
+          target="_blank"
+          alt="Haraç" /><area
+          shape="rect"
+          coords="71,27,138,89"
+          href="http://www.oyuncenneti.com/io/slither-io.htm"
+          target="_blank"
+          alt="Slither.io" /><area
+          shape="rect"
+          coords="144,25,207,87"
+          href="https://agar.io/"
+          target="_blank"
+          alt="Agar.io" /><area
+          shape="rect"
+          coords="214,28,277,90"
+          href="/io/bellum-io.htm"
+          target="_blank"
+          alt="Bellum.io" /><area
+          shape="rect"
+          coords="283,26,346,88"
+          href="/io/snix-io.htm"
+          target="_blank"
+          alt="Snix.io" /><area
+          shape="rect"
+          coords="354,29,416,92"
+          href="/io/kugeln-io.htm"
+          target="_blank"
+          alt="Kugeln.io" /><area
+          shape="rect"
+          coords="422,25,485,87"
+          href="/io/goons-io.htm"
+          target="_blank"
+          alt="Goons.io" /><area
+          shape="rect"
+          coords="493,26,555,88"
+          href="/io/oceanar-io.htm"
+          target="_blank"
+          alt="Oceanar.io" /><area
+          shape="rect"
+          coords="845,28,908,90"
+          href="/io/pockey-io.htm"
+          target="_blank"
+          alt="Pockey.io" /><area
+          shape="rect"
+          coords="916,26,978,88"
+          href="/io/ghostz-io.htm"
+          target="_blank"
+          alt="Ghostz.io" /><area
+          shape="rect"
+          coords="984,29,1046,91"
+          href="/io/gartic-io.htm"
+          target="_blank"
+          alt="Gartic.io" /><area
+          shape="rect"
+          coords="1054,26,1116,88"
+          href="/io/wormate-io.htm"
+          target="_blank"
+          alt="Wormate.io" /><area
+          shape="rect"
+          coords="1122,29,1184,92"
+          href="/io/blastarena-io.htm"
+          target="_blank"
+          alt="Blastarena.io" /><area
+          shape="rect"
+          coords="1189,26,1253,88"
+          href="/io/yorg-io.htm"
+          target="_blank"
+          alt="Yorg.io"
+      /></map>
+    </div>
+
+    <div style="margin: 0 auto; width: 1322px; margin-top: 20px">
+      <div id="reklam1">
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        ></script>
+        <!-- OC-970x250-1 -->
+        <ins
+          class="adsbygoogle"
+          style="display: inline-block; width: 970px; height: 250px"
+          data-ad-client="ca-pub-5677366256710241"
+          data-ad-slot="3429573746"
+        ></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+      <div id="oyunlar1" style="margin: 0px 0px 0px 20px">
+        <a
+          href="/among-squid-online.html"
+          title="Among Squid Online - 575"
+          target="_blank"
+          ><img
+            src="/images/among_squid_online.webp"
+            alt="Among Squid Online - 575"
+        /></a>
+      </div>
+    </div>
+
+    <div style="margin: 0 auto; width: 1322px; margin-bottom: 12px">
+      <img
+        src="/images/en-guzel-oyunlar.webp"
+        width="1322"
+        height="100"
+        border="0"
+        usemap="#eg_oyunlar"
+      /><map name="eg_oyunlar" id="eg_oyunlar"
+        ><area
+          shape="rect"
+          coords="1174,7,1289,93"
+          href="https://play.google.com/store/apps/details?id=air.psikopatsenaryolar"
+          target="_blank"
+          alt="Psikopat Senaryolar" /><area
+          shape="rect"
+          coords="1046,9,1164,95"
+          href="https://play.google.com/store/apps/details?id=air.trasetbeni"
+          target="_blank"
+          alt="Traş Et Beni Oyunu" /><area
+          shape="rect"
+          coords="919,3,1038,91"
+          href="https://play.google.com/store/apps/details?id=air.hedefivedik"
+          target="_blank"
+          alt="Hedef İvedik Oyunu" /><area
+          shape="rect"
+          coords="793,7,910,94"
+          href="https://play.google.com/store/apps/details?id=air.mineblock"
+          target="_blank"
+          alt="MineBlocks Oyunu" /><area
+          shape="rect"
+          coords="669,4,785,90"
+          href="https://play.google.com/store/apps/details?id=air.sekerlicay"
+          target="_blank"
+          alt="Şekerli Çay Oyunu" /><area
+          shape="rect"
+          coords="544,9,657,97"
+          href="/super-atis.html"
+          target="_blank"
+          alt="SÜPER ATIŞ OYUNU" /><area
+          shape="rect"
+          coords="417,6,532,90"
+          href="/dinlebil/"
+          target="_blank"
+          alt="DinleBil oyunu" /><area
+          shape="rect"
+          coords="289,8,407,95"
+          href="/turkce-oyunlar.html"
+          target="_blank"
+          alt="TÜRKÇE OYUNLAR" /><area
+          shape="rect"
+          coords="165,3,282,89"
+          href="https://www.oyunkuzusu.com/shakes-fidget-tam-ekran.html"
+          target="_blank"
+          alt="Çok Oyunculu Bir Hiciv RPG Oyunu" /><area
+          shape="rect"
+          coords="23,1,157,98"
+          href="/imparator/"
+          target="_blank"
+          alt="İMPARATOR OYUNU"
+      /></map>
+    </div>
+
+    <div style="margin: 0 auto; width: 1322px">
+      <a href="/en-guzel-oyunlar.html"
+        ><img
+          src="images/en-iyi-oyunlar.gif"
+          alt="En iyi ve en sevilen Oyunlar"
+          width="1322"
+          height="23"
+          border="0"
+      /></a>
+    </div>
+    <div
+      style="
+        margin: 0 auto;
+        width: 1322px;
+        margin-top: 15px;
+        margin-bottom: 25px;
+      "
+    >
+      <div id="eniyioyunlar">
+        <ol>
+          <li>
+            <a
+              href="/psikopat-senaryolar.html"
+              title="Psikopat Senaryolar"
+              target="_blank"
+              ><img
+                src="/images/psikopat_senaryolar.webp"
+                alt="Psikopat Senaryolar"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="/tavuklar-kumese.html"
+              title="Tavuklar Kümese"
+              target="_blank"
+              ><img src="/images/tavuklar_kumese.webp" alt="Tavuklar Kümese"
+            /></a>
+          </li>
+          <li>
+            <a href="/aya-seyahat.html" title="Aya Seyahat" target="_blank"
+              ><img src="/images/aya_seyahat.webp" alt="Aya Seyahat"
+            /></a>
+          </li>
+          <li style="margin-right: 25px">
+            <a href="/tras-et-beni.html" title="Traş Et Beni" target="_blank"
+              ><img src="/images/tras_et_beni.webp" alt="Traş Et Beni"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="/en_iyi_50_oyun.htm"
+              title="En Güzel 50 Oyunumuz"
+              target="_blank"
+              ><img src="/images/en_iyi_50.gif" alt="En Güzel 50 Oyunumuz"
+            /></a>
+          </li>
+          <li>
+            <a href="/matrak-futbol.html" title="Matrak Futbol" target="_blank"
+              ><img src="/images/matrak_futbol.webp" alt="Matrak Futbol"
+            /></a>
+          </li>
+          <li>
+            <a href="/bina-yikici.html" title="Bina Yıkıcı" target="_blank"
+              ><img src="/images/bina_yikici.webp" alt="Bina Yıkıcı"
+            /></a>
+          </li>
+          <li style="margin-right: 25px">
+            <a href="/gladyator-2.html" title="Gladyatör 2" target="_blank"
+              ><img src="/images/gladyator_2.webp" alt="Gladyatör 2"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="/caglar-boyu-savas.html"
+              title="Çağlar Boyu Savaş 2"
+              target="_blank"
+              ><img
+                src="/images/caglar_boyu_savas.webp"
+                alt="Çağlar Boyu Savaş 2"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="/kolsuz-milyoner.html"
+              title="Kolsuz Milyoner"
+              target="_blank"
+              ><img src="/images/kolsuz_milyoner.webp" alt="Kolsuz Milyoner"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="/futbol-kariyerim.html"
+              title="Futbol Kariyerim"
+              target="_blank"
+              ><img src="/images/futbol_kariyerim.webp" alt="Futbol Kariyerim"
+            /></a>
+          </li>
+          <li style="margin-right: 25px">
+            <a href="/topuk-kir.html" title="Topuk Kır" target="_blank"
+              ><img src="/images/topuk_kir.webp" alt="Topuk Kır"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="/cop-adam-savaslari.html"
+              title="Çöp Adam Savaşları"
+              target="_blank"
+              ><img
+                src="/images/cop_adam_savaslari.webp"
+                alt="Çöp Adam Savaşları"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="/kim-bir-milyon-ister.html"
+              title="Kim Bir Milyon İster"
+              target="_blank"
+              ><img
+                src="/images/kim_bir_milyon_ister.webp"
+                alt="Kim Bir Milyon İster"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="/yonet-ve-fethet.html"
+              title="Yönet ve Fethet"
+              target="_blank"
+              ><img src="/images/yonet_ve_fethet.webp" alt="Yönet ve Fethet"
+            /></a>
+          </li>
+          <li style="margin-right: 25px">
+            <a href="/penalti.html" title="Penaltı" target="_blank"
+              ><img src="/images/penalti.webp" alt="Penaltı"
+            /></a>
+          </li>
+          <li>
+            <a href="/saldiri-timi.html" title="Saldırı Timi" target="_blank"
+              ><img src="/images/saldiri_timi.webp" alt="Saldırı Timi"
+            /></a>
+          </li>
+          <li>
+            <a href="/silahli-arena.html" title="Silahlı Arena" target="_blank"
+              ><img src="/images/silahli_arena.webp" alt="Silahlı Arena"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="/aptallik-testi.html"
+              title="Aptallık Testi"
+              target="_blank"
+              ><img src="/images/aptallik_testi.webp" alt="Aptallık Testi"
+            /></a>
+          </li>
+          <li style="margin-right: 25px">
+            <a
+              href="/merve-alisveriste.html"
+              title="Merve Alışverişte"
+              target="_blank"
+              ><img
+                src="/images/merve_alisveriste.webp"
+                alt="Merve Alışverişte"
+            /></a>
+          </li>
+          <li>
+            <a href="/son-samuray.html" title="Son Samuray" target="_blank"
+              ><img src="/images/son_samuray.webp" alt="Son Samuray"
+            /></a>
+          </li>
+          <li>
+            <a href="/hazine-avcisi.html" title="Hazine Avcısı" target="_blank"
+              ><img src="/images/hazine_avcisi.webp" alt="Hazine Avcısı"
+            /></a>
+          </li>
+          <li>
+            <a href="/yuzu-vur.html" title="Yüzü Vur" target="_blank"
+              ><img src="/images/yuzu_vur.webp" alt="Yüzü Vur"
+            /></a>
+          </li>
+          <li style="margin-right: 25px">
+            <a
+              href="/ali-babanin-ciftligi.html"
+              title="Ali Babanın Çiftliği"
+              target="_blank"
+              ><img
+                src="/images/ali_babanin_ciftligi.webp"
+                alt="Ali Babanın Çiftliği"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="/maymunu-mutlu-et.html"
+              title="Maymunu Mutlu Et"
+              target="_blank"
+              ><img src="/images/maymunu_mutlu_et.webp" alt="Maymunu Mutlu Et"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="/gece-surusu-turbo.html"
+              title="Gece Sürüşü Turbo"
+              target="_blank"
+              ><img
+                src="/images/gece_surusu_turbo.webp"
+                alt="Gece Sürüşü Turbo"
+            /></a>
+          </li>
+          <li>
+            <a href="/zorlu-yaris-6.html" title="Zorlu Yarış 6" target="_blank"
+              ><img src="/images/zorlu_yaris_6.webp" alt="Zorlu Yarış 6"
+            /></a>
+          </li>
+          <li style="margin-right: 25px">
+            <a
+              href="/koturum-et-onu-2.html"
+              title="Kötürüm Et Onu 2"
+              target="_blank"
+              ><img src="/images/koturum_et_onu_2.webp" alt="Kötürüm Et Onu 2"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="/sinirboyu-akincibeyleri.html"
+              title="Sınırboyu Akıncıbeyleri"
+              target="_blank"
+              ><img
+                src="/images/sinirboyu_akincibeyleri.webp"
+                alt="Sınırboyu Akıncıbeyleri"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="/ferhat-ile-sirin.html"
+              title="Ferhat ile Şirin"
+              target="_blank"
+              ><img src="/images/ferhat_ile_sirin.webp" alt="Ferhat ile Şirin"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="/tek-bolumluk-oyun.html"
+              title="Tek Bölümlük Oyun"
+              target="_blank"
+              ><img
+                src="/images/tek_bolumluk_oyun.webp"
+                alt="Tek Bölümlük Oyun"
+            /></a>
+          </li>
+          <li style="margin-right: 25px">
+            <a href="/catlak-planor.html" title="Çatlak Planör" target="_blank"
+              ><img src="/images/catlak_planor.webp" alt="Çatlak Planör"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="/dinamit-lokumu.html"
+              title="Dinamit Lokumu"
+              target="_blank"
+              ><img src="/images/dinamit_lokumu.webp" alt="Dinamit Lokumu"
+            /></a>
+          </li>
+          <li>
+            <a href="/top-kovaya.html" title="Top Kovaya" target="_blank"
+              ><img src="/images/top_kovaya.webp" alt="Top Kovaya"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="/hazine-avcisi-2.html"
+              title="Hazine Avcısı 2"
+              target="_blank"
+              ><img src="/images/hazine_avcisi_2.webp" alt="Hazine Avcısı 2"
+            /></a>
+          </li>
+          <li style="margin-right: 25px">
+            <a
+              href="/cengel-ustasi-2.html"
+              title="Çengel Ustası 2"
+              target="_blank"
+              ><img src="/images/cengel_ustasi_2.webp" alt="Çengel Ustası 2"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="/besiktas-bursaspor-derbisi.html"
+              title="Beşiktaş Bursaspor Derbisi"
+              target="_blank"
+              ><img
+                src="/images/besiktas_bursaspor_derbisi.webp"
+                alt="Beşiktaş Bursaspor Derbisi"
+            /></a>
+          </li>
+          <li>
+            <a href="/dev-kurtcuk.html" title="Dev Kurtçuk" target="_blank"
+              ><img src="/images/dev_kurtcuk.webp" alt="Dev Kurtçuk"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="/cilgin-kamyoncu.html"
+              title="Çılgın Kamyoncu"
+              target="_blank"
+              ><img src="/images/cilgin_kamyoncu.webp" alt="Çılgın Kamyoncu"
+            /></a>
+          </li>
+          <li style="margin-right: 25px">
+            <a
+              href="/taktik-suikastci-2.html"
+              title="Taktik Suikastçı 2"
+              target="_blank"
+              ><img
+                src="/images/taktik_suikastci_2.webp"
+                alt="Taktik Suikastçı 2"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="/dunyanin-en-gicik-oyunu.html"
+              title="Dünyanın En Gıcık Oyunu"
+              target="_blank"
+              ><img
+                src="/images/dunyanin_en_gicik_oyunu.webp"
+                alt="Dünyanın En Gıcık Oyunu"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="/maymunu-mutlu-et-5.html"
+              title="Maymunu Mutlu Et 5"
+              target="_blank"
+              ><img
+                src="/images/maymunu_mutlu_et_5.webp"
+                alt="Maymunu Mutlu Et 5"
+            /></a>
+          </li>
+          <li>
+            <a href="/bola-futbol.html" title="Bola Futbol 3D" target="_blank"
+              ><img src="/images/bola_futbol.webp" alt="Bola Futbol 3D"
+            /></a>
+          </li>
+          <li style="margin-right: 25px">
+            <a href="/amudi.html" title="Amudi" target="_blank"
+              ><img src="/images/amudi.webp" alt="Amudi"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="/psikopat-senaryolar-4.html"
+              title="Psikopat Senaryolar 4"
+              target="_blank"
+              ><img
+                src="/images/psikopat_senaryolar_4.webp"
+                alt="Psikopat Senaryolar 4"
+            /></a>
+          </li>
+          <li>
+            <a href="/spartakus.html" title="Spartaküs" target="_blank"
+              ><img src="/images/spartakus.webp" alt="Spartaküs"
+            /></a>
+          </li>
+          <li>
+            <a href="/pirana.html" title="Pirana" target="_blank"
+              ><img src="/images/pirana.webp" alt="Pirana"
+            /></a>
+          </li>
+          <li style="margin-right: 25px">
+            <a
+              href="/turuncu-pantolon-3.html"
+              title="Turuncu Pantolon 3"
+              target="_blank"
+              ><img
+                src="/images/turuncu_pantolon_3.webp"
+                alt="Turuncu Pantolon 3"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="/demirci-ustasi.html"
+              title="Demirci Ustası"
+              target="_blank"
+              ><img src="/images/demirci_ustasi.webp" alt="Demirci Ustası"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="/katil-kopekbaligi-3.html"
+              title="Katil Köpekbalığı 3"
+              target="_blank"
+              ><img
+                src="/images/katil_kopekbaligi_3.webp"
+                alt="Katil Köpekbalığı 3"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="/taktik-suikastci-6.html"
+              title="Taktik Suikastçı 6"
+              target="_blank"
+              ><img
+                src="/images/taktik_suikastci_6.webp"
+                alt="Taktik Suikastçı 6"
+            /></a>
+          </li>
+          <li style="margin-right: 25px">
+            <a
+              href="/olumcul-senaryolar.html"
+              title="Ölümcül Senaryolar"
+              target="_blank"
+              ><img
+                src="/images/olumcul_senaryolar.webp"
+                alt="Ölümcül Senaryolar"
+            /></a>
+          </li>
+          <li>
+            <a href="/seker-seker.html" title="Şeker Şeker" target="_blank"
+              ><img src="/images/seker_seker.webp" alt="Şeker Şeker"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="/kabile-buyucusu.html"
+              title="Kabile Büyücüsü"
+              target="_blank"
+              ><img src="/images/kabile_buyucusu.webp" alt="Kabile Büyücüsü"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="/cakma-minecraft.html"
+              title="Çakma Minecraft"
+              target="_blank"
+              ><img src="/images/cakma_minecraft.webp" alt="Çakma Minecraft"
+            /></a>
+          </li>
+          <li style="margin-right: 25px">
+            <a
+              href="/yonet-ve-fethet-2.html"
+              title="Yönet ve Fethet 2"
+              target="_blank"
+              ><img
+                src="/images/yonet_ve_fethet_2.webp"
+                alt="Yönet ve Fethet 2"
+            /></a>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <div id="altz">
+      <div id="alt">
+        <img
+          src="images/sosyal-medya.webp"
+          width="199"
+          height="36"
+          border="0"
+          usemap="#sosyalmedya"
+        /><map name="sosyalmedya"
+          ><area
+            shape="circle"
+            coords="180,18,18"
+            href="https://www.oyunkuzusu.com/iletisim.asp"
+            target="_blank"
+            alt="İletişim" /><area
+            shape="circle"
+            coords="140,18,18"
+            href="https://www.youtube.com/@oyunkuzusucom4011"
+            target="_blank"
+            alt="Youtube" /><area
+            shape="circle"
+            coords="100,18,18"
+            href="https://x.com/oyunkuzusu"
+            target="_blank"
+            alt="X" /><area
+            shape="circle"
+            coords="59,18,18"
+            href="https://www.facebook.com/oyunkuzusucom/"
+            target="_blank"
+            alt="Facebook" /><area
+            shape="circle"
+            coords="18,18,18"
+            href="https://www.instagram.com/oyunkuzusu_com/"
+            target="_blank"
+            alt="Instagram"
+        /></map>
+        <br />
+        <p>
+          OYUN KUZUSU OYUNLAR - 25 Nisan 2025 Cuma -
+          <a href="http://www.oyun-skor.com/" target="_blank">Oyun Skor</a> -
+          <a href="http://www.oyungemisi.net/" target="_blank">Oyun Gemisi</a> -
+          <a href="http://www.oyuncenneti.com/" target="_blank">Oyunlar</a>
+        </p>
+        <p>
+          Türkiye'nin en büyük Türkçe Oyun sitesi OyunKuzusu.com sizler için en
+          güzel oyunları özenle seçip Türkçe oynayabileceğiniz hale getiriyor.
+          OyunKuzusu'nda <br />oynadığınız oyunlar bu oyunları hazırlayan oyun
+          yapımcılarına aittir. Oyun Kuzusu Türkçe ve Skor Kaydetmeli oyunların
+          bir arada toplandığı ücretsiz harika bir oyun sitesidir. - 30.12.1899
+
+          <br /><br /><a href="/iletisim.asp">İletişim</a> -
+          <a href="/gizlilik-politikasi.asp">Gizlilik Politikasi</a> -
+          <a href="/iletisim.asp">Hata Bildir!</a><br /><br /><a
+            href="http://www.oyunkuzusu.org/default.asp"
+            title="OyunKuzusu eski siteye gitmek için tıkla"
+            target="_blank"
+            rel="nofollow"
+            >Eski Site</a
+          >
+          -
+          <a
+            href="https://www.oyunkuzusu.com/mobil/"
+            title="OyunKuzusu Mobil Site"
+            target="_blank"
+            rel="nofollow"
+            >Mobil Site</a
+          ><br /><br />
+          <a
+            href="yeralti-alemi.asp"
+            title="YERALTI ALEMİNE GİDER.."
+            target="_blank"
+            >OYUNKUZUSU YERALTI</a
+          ><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        </p>
+      </div>
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Z2C8BH6MMY"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-Z2C8BH6MMY");
+    </script>
+    <br />
+    <br />
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5677366256710241"
+      crossorigin="anonymous"
+    ></script>
+    <ins
+      class="adsbygoogle"
+      style="display: block"
+      data-ad-format="autorelaxed"
+      data-ad-client="ca-pub-5677366256710241"
+      data-ad-slot="1494897745"
+    ></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+      integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+      data-cf-beacon='{"rayId":"935cc5bacf18b679","version":"2025.4.0-1-g37f21b1","r":1,"token":"3c4a864de27042ebbcda919641835944","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}}}'
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
