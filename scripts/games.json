@@ -1,182 +1,1063 @@
 [
   {
     "id": 1,
-    "kategori": "psikopat",
-    "text": "Psikopat Senaryolar oyunu",
-    "cinsiyet": "erkek",
-    "name": "Psikopat Senaryolar",
-    "src": "/psikopat-senaryolar.html",
-    "isim": "Psikopat Senaryolar",
-    "image": "/images/psikopat_senaryolar.webp"
+    "kategori": "Beceri Oyunları",
+    "text": "Modacı Kızlar ile kendi tasarımlarını oluştur",
+    "cinsiyet": "kadın",
+    "name": "Modacı Kızlar",
+    "src": "/modaci-kizlar.html",
+    "isim": "Modacı Kızlar",
+    "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&auto=format",
+    "code":""
   },
   {
     "id": 2,
-    "kategori": "kız oyunu",
+    "kategori": "Çocuk Oyunları",
     "text": "Kümesin içinde eğlenceli bir tavuk yaşamı",
     "cinsiyet": "kadın",
     "name": "Tavuklar Kümese",
     "src": "/tavuklar-kumese.html",
     "isim": "Tavuklar Kümese",
-    "image": "/images/tavuklar_kumese.webp"
+    "image": "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=600&auto=format"
   },
   {
     "id": 3,
-    "kategori": "macera",
-    "text": "Aya Seyahat oyununda uzayda macera sizi bekliyor",
-    "cinsiyet": "erkek",
-    "name": "Aya Seyahat",
-    "src": "/aya-seyahat.html",
-    "isim": "Aya Seyahat",
-    "image": "/images/aya_seyahat.webp"
+    "kategori": "Macera Oyunları",
+    "text": "Prenses Balo Hazırlığı ile balo öncesi saatleri yaşa",
+    "cinsiyet": "kadın",
+    "name": "Prenses Balo Hazırlığı",
+    "src": "/prenses-balo-hazirligi.html",
+    "isim": "Prenses Balo Hazırlığı",
+    "image": "https://images.unsplash.com/photo-1535083783855-76ae62b2914e?w=600&auto=format"
   },
   {
     "id": 4,
-    "kategori": "komedi",
-    "text": "Traş Et Beni ile komik bir oyun deneyimi",
-    "cinsiyet": "erkek",
-    "name": "Traş Et Beni",
-    "src": "/tras-et-beni.html",
-    "isim": "Traş Et Beni",
-    "image": "/images/tras_et_beni.webp"
+    "kategori": "Beceri Oyunları",
+    "text": "Pasta Şefi ile kendi lezzetli pastalarını yap",
+    "cinsiyet": "kadın",
+    "name": "Pasta Şefi",
+    "src": "/pasta-sefi.html",
+    "isim": "Pasta Şefi",
+    "image": "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&auto=format"
   },
   {
     "id": 5,
-    "kategori": "en iyi oyunlar",
-    "text": "En iyi 50 oyun",
-    "cinsiyet": "erkek",
-    "name": "En Güzel 50 Oyunumuz",
-    "src": "/en_iyi_50_oyun.htm",
-    "isim": "En Güzel 50 Oyunumuz",
-    "image": "/images/en_iyi_50.gif"
-  },
-  {
-    "id": 6,
-    "kategori": "spor",
-    "text": "Futbol severlere özel eğlenceli bir oyun",
-    "cinsiyet": "erkek",
-    "name": "Matrak Futbol",
-    "src": "/matrak-futbol.html",
-    "isim": "Matrak Futbol",
-    "image": "/images/matrak_futbol.webp"
-  },
-  {
-    "id": 7,
-    "kategori": "aksiyon",
-    "text": "Bina Yıkıcı ile yıkım yapın",
-    "cinsiyet": "erkek",
-    "name": "Bina Yıkıcı",
-    "src": "/bina-yikici.html",
-    "isim": "Bina Yıkıcı",
-    "image": "/images/bina_yikici.webp"
-  },
-  {
-    "id": 8,
-    "kategori": "aksiyon",
-    "text": "Gladyatör 2 ile arenada savaş",
-    "cinsiyet": "erkek",
-    "name": "Gladyatör 2",
-    "src": "/gladyator-2.html",
-    "isim": "Gladyatör 2",
-    "image": "/images/gladyator_2.webp"
-  },
-  {
-    "id": 9,
-    "kategori": "strateji",
-    "text": "Çağlar Boyu Savaş 2'de farklı çağlarda savaş",
-    "cinsiyet": "erkek",
-    "name": "Çağlar Boyu Savaş 2",
-    "src": "/caglar-boyu-savas.html",
-    "isim": "Çağlar Boyu Savaş 2",
-    "image": "/images/caglar_boyu_savas.webp"
-  },
-  {
-    "id": 10,
-    "kategori": "bilgi yarışması",
-    "text": "Kim Bir Milyon İster'de büyük ödül için yarışın",
-    "cinsiyet": "erkek",
-    "name": "Kim Bir Milyon İster",
-    "src": "/kim-bir-milyon-ister.html",
-    "isim": "Kim Bir Milyon İster",
-    "image": "/images/kim_bir_milyon_ister.webp"
-  },
-  {
-    "id": 11,
-    "kategori": "spor",
-    "text": "Penaltı atışlarını kazanın",
-    "cinsiyet": "erkek",
-    "name": "Penaltı",
-    "src": "/penalti.html",
-    "isim": "Penaltı",
-    "image": "/images/penalti.webp"
-  },
-  {
-    "id": 12,
-    "kategori": "strateji",
-    "text": "Saldırı Timi ile zafere ulaşın",
-    "cinsiyet": "erkek",
-    "name": "Saldırı Timi",
-    "src": "/saldiri-timi.html",
-    "isim": "Saldırı Timi",
-    "image": "/images/saldiri_timi.webp"
-  },
-  {
-    "id": 13,
-    "kategori": "aksiyon",
-    "text": "Silahlı Arena'da hayatta kalmaya çalışın",
-    "cinsiyet": "erkek",
-    "name": "Silahlı Arena",
-    "src": "/silahli-arena.html",
-    "isim": "Silahlı Arena",
-    "image": "/images/silahli_arena.webp"
-  },
-  {
-    "id": 14,
-    "kategori": "komedi",
-    "text": "Aptallık Testi ile eğlenceli soruları yanıtla",
-    "cinsiyet": "erkek",
-    "name": "Aptallık Testi",
-    "src": "/aptallik-testi.html",
-    "isim": "Aptallık Testi",
-    "image": "/images/aptallik_testi.webp"
-  },
-  {
-    "id": 15,
-    "kategori": "kız oyunu",
+    "kategori": "Beceri Oyunları",
     "text": "Merve'nin alışveriş macerasına katıl",
     "cinsiyet": "kadın",
     "name": "Merve Alışverişte",
     "src": "/merve-alisveriste.html",
     "isim": "Merve Alışverişte",
-    "image": "/images/merve_alisveriste.webp"
+    "image": "https://images.unsplash.com/photo-1573855619003-97b4799dcd8b?w=600&auto=format"
+  },
+  {
+    "id": 6,
+    "kategori": "Beceri Oyunları",
+    "text": "Moda dünyasına adım at!",
+    "cinsiyet": "kadın",
+    "name": "Topuklu Ayakkabı",
+    "src": "/topuklu-ayakkabi.html",
+    "isim": "Topuklu Ayakkabı",
+    "image": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=600&auto=format"
+  },
+  {
+    "id": 7,
+    "kategori": "Beceri Oyunları",
+    "text": "Güzellik Salonu ile makyaj yapma sanatını öğren",
+    "cinsiyet": "kadın",
+    "name": "Güzellik Salonu",
+    "src": "/guzellik-salonu.html",
+    "isim": "Güzellik Salonu",
+    "image": "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=600&auto=format"
+  },
+  {
+    "id": 8,
+    "kategori": "Çocuk Oyunları",
+    "text": "Bebek Bakıcısı ile minik bebeklere bakma zamanı",
+    "cinsiyet": "kadın",
+    "name": "Bebek Bakıcısı",
+    "src": "/bebek-bakicisi.html",
+    "isim": "Bebek Bakıcısı",
+    "image": "https://images.unsplash.com/photo-1519238359922-d8e3f6d4b2c1?w=600&auto=format"
+  },
+  {
+    "id": 9,
+    "kategori": "Beceri Oyunları",
+    "text": "Saç Tasarımı ile hayal ettiğin saçları yarat",
+    "cinsiyet": "kadın",
+    "name": "Saç Tasarımı",
+    "src": "/sac-tasarimi.html",
+    "isim": "Saç Tasarımı",
+    "image": "https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600&auto=format"
+  },
+  {
+    "id": 10,
+    "kategori": "Beceri Oyunları",
+    "text": "Çiçek Bahçesi ile kendi bahçeni tasarla",
+    "cinsiyet": "kadın",
+    "name": "Çiçek Bahçesi",
+    "src": "/cicek-bahcesi.html",
+    "isim": "Çiçek Bahçesi",
+    "image": "https://images.unsplash.com/photo-1457089328109-e5d9bd499191?w=600&auto=format"
+  },
+  {
+    "id": 11,
+    "kategori": "Spor Oyunları",
+    "text": "Balerin Okulu ile dans etmenin keyfini çıkar",
+    "cinsiyet": "kadın",
+    "name": "Balerin Okulu",
+    "src": "/balerin-okulu.html",
+    "isim": "Balerin Okulu",
+    "image": "https://images.unsplash.com/photo-1516663113688-58c2b5253256?w=600&auto=format"
+  },
+  {
+    "id": 12,
+    "kategori": "Beceri Oyunları",
+    "text": "Dekorasyon Ustası ile evin dekorasyonunu değiştir",
+    "cinsiyet": "kadın",
+    "name": "Dekorasyon Ustası",
+    "src": "/dekorasyon-ustasi.html",
+    "isim": "Dekorasyon Ustası",
+    "image": "https://images.unsplash.com/photo-1484101403633-562f891dc89a?w=600&auto=format"
+  },
+  {
+    "id": 13,
+    "kategori": "Beceri Oyunları",
+    "text": "Meyve Suyu Fabrikası ile lezzetli içecekler hazırla",
+    "cinsiyet": "kadın",
+    "name": "Meyve Suyu Fabrikası",
+    "src": "/meyve-suyu-fabrikasi.html",
+    "isim": "Meyve Suyu Fabrikası",
+    "image": "https://images.unsplash.com/photo-1568909344668-6f14a07b56a0?w=600&auto=format"
+  },
+  {
+    "id": 14,
+    "kategori": "Çocuk Oyunları",
+    "text": "Hayvan Bakımı ile sevimli hayvanlara bakma zamanı",
+    "cinsiyet": "kadın",
+    "name": "Hayvan Bakımı",
+    "src": "/hayvan-bakimi.html",
+    "isim": "Hayvan Bakımı",
+    "image": "https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=600&auto=format"
+  },
+  {
+    "id": 15,
+    "kategori": "Macera Oyunları",
+    "text": "Deniz Kızı Macerası ile okyanusun derinliklerini keşfet",
+    "cinsiyet": "kadın",
+    "name": "Deniz Kızı Macerası",
+    "src": "/deniz-kizi-macerasi.html",
+    "isim": "Deniz Kızı Macerası",
+    "image": "https://images.unsplash.com/photo-1531737212413-667205e1cdb7?w=600&auto=format"
   },
   {
     "id": 16,
-    "kategori": "aksiyon",
+    "kategori": "Beceri Oyunları",
+    "text": "Moda Çizimi ile tasarımcı yeteneklerini göster",
+    "cinsiyet": "kadın",
+    "name": "Moda Çizimi",
+    "src": "/moda-cizimi.html",
+    "isim": "Moda Çizimi",
+    "image": "https://images.unsplash.com/photo-1530075288903-69b60fa3b6a1?w=600&auto=format"
+  },
+  {
+    "id": 17,
+    "kategori": "Macera Oyunları",
+    "text": "Sihirli Prenses Dünyası ile büyülü bir macera",
+    "cinsiyet": "kadın",
+    "name": "Sihirli Prenses Dünyası",
+    "src": "/sihirli-prenses-dunyasi.html",
+    "isim": "Sihirli Prenses Dünyası",
+    "image": "https://images.unsplash.com/photo-1520962922320-2038eebab146?w=600&auto=format"
+  },
+  {
+    "id": 18,
+    "kategori": "Beceri Oyunları",
+    "text": "Takı Tasarımcısı ile kendi takılarını oluştur",
+    "cinsiyet": "kadın",
+    "name": "Takı Tasarımcısı",
+    "src": "/taki-tasarimcisi.html",
+    "isim": "Takı Tasarımcısı",
+    "image": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&auto=format"
+  },
+  {
+    "id": 19,
+    "kategori": "Çocuk Oyunları",
+    "text": "Unicorn Bakımı ile sihirli atları besle ve süsle",
+    "cinsiyet": "kadın",
+    "name": "Unicorn Bakımı",
+    "src": "/unicorn-bakimi.html",
+    "isim": "Unicorn Bakımı",
+    "image": "https://images.unsplash.com/photo-1550747528-cdb45925b3f7?w=600&auto=format"
+  },
+  {
+    "id": 20,
+    "kategori": "Macera Oyunları",
+    "text": "Buzdan Şato ile kendi krallığını yarat",
+    "cinsiyet": "kadın",
+    "name": "Buzdan Şato",
+    "src": "/buzdan-sato.html",
+    "isim": "Buzdan Şato",
+    "image": "https://images.unsplash.com/photo-1514539079130-25950c84af65?w=600&auto=format"
+  },
+  {
+    "id": 21,
+    "kategori": "Yarış Oyunları",
+    "text": "Araba Yarışı ile hız limitlerini zorla",
+    "cinsiyet": "erkek",
+    "name": "Araba Yarışı",
+    "src": "/araba-yarisi.html",
+    "isim": "Araba Yarışı",
+    "image": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=600&auto=format"
+  },
+  {
+    "id": 22,
+    "kategori": "Beceri Oyunları",
+    "text": "Bina Yıkıcı ile yıkım yapın",
+    "cinsiyet": "erkek",
+    "name": "Bina Yıkıcı",
+    "src": "/bina-yikici.html",
+    "isim": "Bina Yıkıcı",
+    "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&auto=format"
+  },
+  {
+    "id": 23,
+    "kategori": "Savaş Oyunları",
+    "text": "Gladyatör 2 ile arenada savaş",
+    "cinsiyet": "erkek",
+    "name": "Gladyatör 2",
+    "src": "/gladyator-2.html",
+    "isim": "Gladyatör 2",
+    "image": "https://images.unsplash.com/photo-1581245340501-167ec2a2b1e9?w=600&auto=format"
+  },
+  {
+    "id": 24,
+    "kategori": "Macera Oyunları",
+    "text": "Psikopat Senaryolar oyunu",
+    "cinsiyet": "erkek",
+    "name": "Psikopat Senaryolar",
+    "src": "/psikopat-senaryolar.html",
+    "isim": "Psikopat Senaryolar",
+    "image": "https://images.unsplash.com/photo-1525824236856-8c0a31dfe3be?w=600&auto=format"
+  },
+  {
+    "id": 25,
+    "kategori": "Savaş Oyunları",
+    "text": "Tank Savaşları ile savaş alanında hakimiyet kur",
+    "cinsiyet": "erkek",
+    "name": "Tank Savaşları",
+    "src": "/tank-savaslari.html",
+    "isim": "Tank Savaşları",
+    "image": "https://images.unsplash.com/photo-1581853232927-1fb5686c475f?w=600&auto=format"
+  },
+  {
+    "id": 26,
+    "kategori": "Zeka Oyunları",
+    "text": "Köy kur ve düşmanlarını alt et",
+    "cinsiyet": "erkek",
+    "name": "Krallık Stratejisi",
+    "src": "/krallik-stratejisi.html",
+    "isim": "Krallık Stratejisi",
+    "image": "https://images.unsplash.com/photo-1590856029826-c7a73142bbf1?w=600&auto=format"
+  },
+  {
+    "id": 27,
+    "kategori": "Savaş Oyunları",
+    "text": "Robot Savaşları ile kendi robotunu test et",
+    "cinsiyet": "erkek",
+    "name": "Robot Savaşları",
+    "src": "/robot-savaslari.html",
+    "isim": "Robot Savaşları",
+    "image": "https://images.unsplash.com/photo-1535378620166-273708d44e4c?w=600&auto=format"
+  },
+  {
+    "id": 28,
+    "kategori": "Spor Oyunları",
+    "text": "Futbol severlere özel eğlenceli bir oyun",
+    "cinsiyet": "erkek",
+    "name": "Matrak Futbol",
+    "src": "/matrak-futbol.html",
+    "isim": "Matrak Futbol",
+    "image": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&auto=format"
+  },
+  {
+    "id": 29,
+    "kategori": "Savaş Oyunları",
+    "text": "Zombi Avı ile korku dolu anlara hazır ol",
+    "cinsiyet": "erkek",
+    "name": "Zombi Avı",
+    "src": "/zombi-avi.html",
+    "isim": "Zombi Avı",
+    "image": "https://images.unsplash.com/photo-1567275451687-e61ab7cc4465?w=600&auto=format"
+  },
+  {
+    "id": 30,
+    "kategori": "Savaş Oyunları",
+    "text": "Savaş Uçağı Pilotu ile gökyüzünde savaş",
+    "cinsiyet": "erkek",
+    "name": "Savaş Uçağı Pilotu",
+    "src": "/savas-ucagi-pilotu.html",
+    "isim": "Savaş Uçağı Pilotu",
+    "image": "https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=600&auto=format"
+  },
+  {
+    "id": 31,
+    "kategori": "Savaş Oyunları",
+    "text": "Çağlar Boyu Savaş 2'de farklı çağlarda savaş",
+    "cinsiyet": "erkek",
+    "name": "Çağlar Boyu Savaş 2",
+    "src": "/caglar-boyu-savas.html",
+    "isim": "Çağlar Boyu Savaş 2",
+    "image": "https://images.unsplash.com/photo-1543536833-2f8be1dce75b?w=600&auto=format"
+  },
+  {
+    "id": 32,
+    "kategori": "Macera Oyunları",
+    "text": "Korsan Macerası ile denizlerde hazine ara",
+    "cinsiyet": "erkek",
+    "name": "Korsan Macerası",
+    "src": "/korsan-macerasi.html",
+    "isim": "Korsan Macerası",
+    "image": "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=600&auto=format"
+  },
+  {
+    "id": 33,
+    "kategori": "Spor Oyunları",
+    "text": "Sokak Basketbolu ile şehrin en iyisi ol",
+    "cinsiyet": "erkek",
+    "name": "Sokak Basketbolu",
+    "src": "/sokak-basketbolu.html",
+    "isim": "Sokak Basketbolu",
+    "image": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=600&auto=format"
+  },
+  {
+    "id": 34,
+    "kategori": "Savaş Oyunları",
     "text": "Son Samuray ile efsanevi bir macera",
     "cinsiyet": "erkek",
     "name": "Son Samuray",
     "src": "/son-samuray.html",
     "isim": "Son Samuray",
-    "image": "/images/son_samuray.webp"
+    "image": "https://images.unsplash.com/photo-1551431009-a802eeec77b1?w=600&auto=format"
   },
   {
-    "id": 17,
-    "kategori": "macera",
-    "text": "Hazine Avcısı ile altınları bulun",
+    "id": 35,
+    "kategori": "Beceri Oyunları",
+    "text": "Oto Tamirhanesi ile arabaları tamir et",
     "cinsiyet": "erkek",
-    "name": "Hazine Avcısı",
-    "src": "/hazine-avcisi.html",
-    "isim": "Hazine Avcısı",
-    "image": "/images/hazine_avcisi.webp"
+    "name": "Oto Tamirhanesi",
+    "src": "/oto-tamirhanesi.html",
+    "isim": "Oto Tamirhanesi",
+    "image": "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=600&auto=format"
   },
   {
-    "id": 18,
-    "kategori": "aksiyon",
+    "id": 36,
+    "kategori": "Savaş Oyunları",
+    "text": "Uzay Savaşçısı ile galaksiler arası yolculuk",
+    "cinsiyet": "erkek",
+    "name": "Uzay Savaşçısı",
+    "src": "/uzay-savascisi.html",
+    "isim": "Uzay Savaşçısı",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&auto=format"
+  },
+  {
+    "id": 37,
+    "kategori": "Beceri Oyunları",
     "text": "Yüzü Vur oyunu ile zorlu görevleri tamamlayın",
     "cinsiyet": "erkek",
     "name": "Yüzü Vur",
     "src": "/yuzu-vur.html",
     "isim": "Yüzü Vur",
-    "image": "/images/yuzu_vur.webp"
+    "image": "https://images.unsplash.com/photo-1601944179066-29786cb9d32a?w=600&auto=format"
+  },
+  {
+    "id": 38,
+    "kategori": "Beceri Oyunları",
+    "text": "Sniper Elite ile nişancılık yeteneklerini test et",
+    "cinsiyet": "erkek",
+    "name": "Sniper Elite",
+    "src": "/sniper-elite.html",
+    "isim": "Sniper Elite",
+    "image": "https://images.unsplash.com/photo-1595429035839-c99c298ffdde?w=600&auto=format"
+  },
+  {
+    "id": 39,
+    "kategori": "Yarış Oyunları",
+    "text": "Monster Truck ile engelleri aş",
+    "cinsiyet": "erkek",
+    "name": "Monster Truck",
+    "src": "/monster-truck.html",
+    "isim": "Monster Truck",
+    "image": "https://images.unsplash.com/photo-1581848339523-324ea75b8e4c?w=600&auto=format"
+  },
+  {
+    "id": 40,
+    "kategori": "Savaş Oyunları",
+    "text": "Silahlı Arena'da hayatta kalmaya çalışın",
+    "cinsiyet": "erkek",
+    "name": "Silahlı Arena",
+    "src": "/silahli-arena.html",
+    "isim": "Silahlı Arena",
+    "image": "https://images.unsplash.com/photo-1559628129-67cf63b72248?w=600&auto=format"
+  },
+  {
+    "id": 41,
+    "kategori": "Macera Oyunları",
+    "text": "Aya Seyahat oyununda uzayda macera sizi bekliyor",
+    "cinsiyet": "unisex",
+    "name": "Aya Seyahat",
+    "src": "/aya-seyahat.html",
+    "isim": "Aya Seyahat",
+    "image": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=600&auto=format"
+  },
+  {
+    "id": 42,
+    "kategori": "Macera Oyunları",
+    "text": "Hazine Avcısı ile altınları bulun",
+    "cinsiyet": "unisex",
+    "name": "Hazine Avcısı",
+    "src": "/hazine-avcisi.html",
+    "isim": "Hazine Avcısı",
+    "image": "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=600&auto=format"
+  },
+  {
+    "id": 43,
+    "kategori": "Zeka Oyunları",
+    "text": "Kim Bir Milyon İster'de büyük ödül için yarışın",
+    "cinsiyet": "unisex",
+    "name": "Kim Bir Milyon İster",
+    "src": "/kim-bir-milyon-ister.html",
+    "isim": "Kim Bir Milyon İster",
+    "image": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=600&auto=format"
+  },
+  {
+    "id": 44,
+    "kategori": "Zeka Oyunları",
+    "text": "Kelime Oyunu ile kelime bilgini test et",
+    "cinsiyet": "unisex",
+    "name": "Kelime Oyunu",
+    "src": "/kelime-oyunu.html",
+    "isim": "Kelime Oyunu",
+    "image": "https://images.unsplash.com/photo-1591040092288-77af0e24556c?w=600&auto=format"
+  },
+  {
+    "id": 45,
+    "kategori": "Zeka Oyunları",
+    "text": "Kare Bulmaca ile zihnini çalıştır",
+    "cinsiyet": "unisex",
+    "name": "Kare Bulmaca",
+    "src": "/kare-bulmaca.html",
+    "isim": "Kare Bulmaca",
+    "image": "https://images.unsplash.com/photo-1588591795084-1770cb3be374?w=600&auto=format"
+  },
+  {
+    "id": 46,
+    "kategori": "Zeka Oyunları",
+    "text": "Şehir Planlamacısı ile kendi şehrini kur",
+    "cinsiyet": "unisex",
+    "name": "Şehir Planlamacısı",
+    "src": "/sehir-planlamacisi.html",
+    "isim": "Şehir Planlamacısı",
+    "image": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=600&auto=format"
+  },
+  {
+    "id": 47,
+    "kategori": "Beceri Oyunları",
+    "text": "Restoran İşletmecisi ile kendi restoranını yönet",
+    "cinsiyet": "unisex",
+    "name": "Restoran İşletmecisi",
+    "src": "/restoran-isletmecisi.html",
+    "isim": "Restoran İşletmecisi",
+    "image": "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600&auto=format"
+  },
+  {
+    "id": 48,
+    "kategori": "Zeka Oyunları",
+    "text": "Puzzle Ustası ile zorlu bilmeceleri çöz",
+    "cinsiyet": "unisex",
+    "name": "Puzzle Ustası",
+    "src": "/puzzle-ustasi.html",
+    "isim": "Puzzle Ustası",
+    "image": "https://images.unsplash.com/photo-1605870445919-838d190e8e1b?w=600&auto=format"
+  },
+  {
+    "id": 49,
+    "kategori": "Beceri Oyunları",
+    "text": "Müzik Yıldızı ile şarkı söyle ve dans et",
+    "cinsiyet": "unisex",
+    "name": "Müzik Yıldızı",
+    "src": "/muzik-yildizi.html",
+    "isim": "Müzik Yıldızı",
+    "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&auto=format"
+  },
+  {
+    "id": 50,
+    "kategori": "Zeka Oyunları",
+    "text": "Hafıza Oyunu ile hafızanı güçlendir",
+    "cinsiyet": "unisex",
+    "name": "Hafıza Oyunu",
+    "src": "/hafiza-oyunu.html",
+    "isim": "Hafıza Oyunu",
+    "image": "https://images.unsplash.com/photo-1606326608690-4e0281b1e588?w=600&auto=format"
+  },
+  {
+    "id": 51,
+    "kategori": "Beceri Oyunları",
+    "text": "Traş Et Beni ile komik bir oyun deneyimi",
+    "cinsiyet": "unisex",
+    "name": "Traş Et Beni",
+    "src": "/tras-et-beni.html",
+    "isim": "Traş Et Beni",
+    "image": "https://images.unsplash.com/photo-1514846226882-28b324ef7f28?w=600&auto=format"
+  },
+  {
+    "id": 52,
+    "kategori": "Zeka Oyunları",
+    "text": "Aptallık Testi ile eğlenceli soruları yanıtla",
+    "cinsiyet": "unisex",
+    "name": "Aptallık Testi",
+    "src": "/aptallik-testi.html",
+    "isim": "Aptallık Testi",
+    "image": "https://images.unsplash.com/photo-1543109740-4bdb38fda756?w=600&auto=format"
+  },
+  {
+    "id": 53,
+    "kategori": "Çocuk Oyunları",
+    "text": "Çiftlik Hayatı ile kendi çiftliğini işlet",
+    "cinsiyet": "unisex",
+    "name": "Çiftlik Hayatı",
+    "src": "/ciftlik-hayati.html",
+    "isim": "Çiftlik Hayatı",
+    "image": "https://images.unsplash.com/photo-1500076656116-558758c991c1?w=600&auto=format"
+  },
+  {
+    "id": 1,
+    "kategori": "Beceri Oyunları",
+    "text": "Modacı Kızlar ile kendi tasarımlarını oluştur",
+    "cinsiyet": "kadın",
+    "name": "Modacı Kızlar",
+    "src": "/modaci-kizlar.html",
+    "isim": "Modacı Kızlar",
+    "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&auto=format"
+  },
+  {
+    "id": 2,
+    "kategori": "Çocuk Oyunları",
+    "text": "Kümesin içinde eğlenceli bir tavuk yaşamı",
+    "cinsiyet": "kadın",
+    "name": "Tavuklar Kümese",
+    "src": "/tavuklar-kumese.html",
+    "isim": "Tavuklar Kümese",
+    "image": "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=600&auto=format"
+  },
+  {
+    "id": 3,
+    "kategori": "Macera Oyunları",
+    "text": "Prenses Balo Hazırlığı ile balo öncesi saatleri yaşa",
+    "cinsiyet": "kadın",
+    "name": "Prenses Balo Hazırlığı",
+    "src": "/prenses-balo-hazirligi.html",
+    "isim": "Prenses Balo Hazırlığı",
+    "image": "https://images.unsplash.com/photo-1535083783855-76ae62b2914e?w=600&auto=format"
+  },
+  {
+    "id": 4,
+    "kategori": "Beceri Oyunları",
+    "text": "Pasta Şefi ile kendi lezzetli pastalarını yap",
+    "cinsiyet": "kadın",
+    "name": "Pasta Şefi",
+    "src": "/pasta-sefi.html",
+    "isim": "Pasta Şefi",
+    "image": "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&auto=format"
+  },
+  {
+    "id": 5,
+    "kategori": "Beceri Oyunları",
+    "text": "Merve'nin alışveriş macerasına katıl",
+    "cinsiyet": "kadın",
+    "name": "Merve Alışverişte",
+    "src": "/merve-alisveriste.html",
+    "isim": "Merve Alışverişte",
+    "image": "https://images.unsplash.com/photo-1573855619003-97b4799dcd8b?w=600&auto=format"
+  },
+  {
+    "id": 6,
+    "kategori": "Beceri Oyunları",
+    "text": "Moda dünyasına adım at!",
+    "cinsiyet": "kadın",
+    "name": "Topuklu Ayakkabı",
+    "src": "/topuklu-ayakkabi.html",
+    "isim": "Topuklu Ayakkabı",
+    "image": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=600&auto=format"
+  },
+  {
+    "id": 7,
+    "kategori": "Beceri Oyunları",
+    "text": "Güzellik Salonu ile makyaj yapma sanatını öğren",
+    "cinsiyet": "kadın",
+    "name": "Güzellik Salonu",
+    "src": "/guzellik-salonu.html",
+    "isim": "Güzellik Salonu",
+    "image": "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=600&auto=format"
+  },
+  {
+    "id": 8,
+    "kategori": "Çocuk Oyunları",
+    "text": "Bebek Bakıcısı ile minik bebeklere bakma zamanı",
+    "cinsiyet": "kadın",
+    "name": "Bebek Bakıcısı",
+    "src": "/bebek-bakicisi.html",
+    "isim": "Bebek Bakıcısı",
+    "image": "https://images.unsplash.com/photo-1519238359922-d8e3f6d4b2c1?w=600&auto=format"
+  },
+  {
+    "id": 9,
+    "kategori": "Beceri Oyunları",
+    "text": "Saç Tasarımı ile hayal ettiğin saçları yarat",
+    "cinsiyet": "kadın",
+    "name": "Saç Tasarımı",
+    "src": "/sac-tasarimi.html",
+    "isim": "Saç Tasarımı",
+    "image": "https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600&auto=format"
+  },
+  {
+    "id": 10,
+    "kategori": "Beceri Oyunları",
+    "text": "Çiçek Bahçesi ile kendi bahçeni tasarla",
+    "cinsiyet": "kadın",
+    "name": "Çiçek Bahçesi",
+    "src": "/cicek-bahcesi.html",
+    "isim": "Çiçek Bahçesi",
+    "image": "https://images.unsplash.com/photo-1457089328109-e5d9bd499191?w=600&auto=format"
+  },
+  {
+    "id": 11,
+    "kategori": "Spor Oyunları",
+    "text": "Balerin Okulu ile dans etmenin keyfini çıkar",
+    "cinsiyet": "kadın",
+    "name": "Balerin Okulu",
+    "src": "/balerin-okulu.html",
+    "isim": "Balerin Okulu",
+    "image": "https://images.unsplash.com/photo-1516663113688-58c2b5253256?w=600&auto=format"
+  },
+  {
+    "id": 12,
+    "kategori": "Beceri Oyunları",
+    "text": "Dekorasyon Ustası ile evin dekorasyonunu değiştir",
+    "cinsiyet": "kadın",
+    "name": "Dekorasyon Ustası",
+    "src": "/dekorasyon-ustasi.html",
+    "isim": "Dekorasyon Ustası",
+    "image": "https://images.unsplash.com/photo-1484101403633-562f891dc89a?w=600&auto=format"
+  },
+  {
+    "id": 13,
+    "kategori": "Beceri Oyunları",
+    "text": "Meyve Suyu Fabrikası ile lezzetli içecekler hazırla",
+    "cinsiyet": "kadın",
+    "name": "Meyve Suyu Fabrikası",
+    "src": "/meyve-suyu-fabrikasi.html",
+    "isim": "Meyve Suyu Fabrikası",
+    "image": "https://images.unsplash.com/photo-1568909344668-6f14a07b56a0?w=600&auto=format"
+  },
+  {
+    "id": 14,
+    "kategori": "Çocuk Oyunları",
+    "text": "Hayvan Bakımı ile sevimli hayvanlara bakma zamanı",
+    "cinsiyet": "kadın",
+    "name": "Hayvan Bakımı",
+    "src": "/hayvan-bakimi.html",
+    "isim": "Hayvan Bakımı",
+    "image": "https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=600&auto=format"
+  },
+  {
+    "id": 15,
+    "kategori": "Macera Oyunları",
+    "text": "Deniz Kızı Macerası ile okyanusun derinliklerini keşfet",
+    "cinsiyet": "kadın",
+    "name": "Deniz Kızı Macerası",
+    "src": "/deniz-kizi-macerasi.html",
+    "isim": "Deniz Kızı Macerası",
+    "image": "https://images.unsplash.com/photo-1531737212413-667205e1cdb7?w=600&auto=format"
+  },
+  {
+    "id": 16,
+    "kategori": "Beceri Oyunları",
+    "text": "Moda Çizimi ile tasarımcı yeteneklerini göster",
+    "cinsiyet": "kadın",
+    "name": "Moda Çizimi",
+    "src": "/moda-cizimi.html",
+    "isim": "Moda Çizimi",
+    "image": "https://images.unsplash.com/photo-1530075288903-69b60fa3b6a1?w=600&auto=format"
+  },
+  {
+    "id": 17,
+    "kategori": "Macera Oyunları",
+    "text": "Sihirli Prenses Dünyası ile büyülü bir macera",
+    "cinsiyet": "kadın",
+    "name": "Sihirli Prenses Dünyası",
+    "src": "/sihirli-prenses-dunyasi.html",
+    "isim": "Sihirli Prenses Dünyası",
+    "image": "https://images.unsplash.com/photo-1520962922320-2038eebab146?w=600&auto=format"
+  },
+  {
+    "id": 18,
+    "kategori": "Beceri Oyunları",
+    "text": "Takı Tasarımcısı ile kendi takılarını oluştur",
+    "cinsiyet": "kadın",
+    "name": "Takı Tasarımcısı",
+    "src": "/taki-tasarimcisi.html",
+    "isim": "Takı Tasarımcısı",
+    "image": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&auto=format"
+  },
+  {
+    "id": 19,
+    "kategori": "Çocuk Oyunları",
+    "text": "Unicorn Bakımı ile sihirli atları besle ve süsle",
+    "cinsiyet": "kadın",
+    "name": "Unicorn Bakımı",
+    "src": "/unicorn-bakimi.html",
+    "isim": "Unicorn Bakımı",
+    "image": "https://images.unsplash.com/photo-1550747528-cdb45925b3f7?w=600&auto=format"
+  },
+  {
+    "id": 20,
+    "kategori": "Macera Oyunları",
+    "text": "Buzdan Şato ile kendi krallığını yarat",
+    "cinsiyet": "kadın",
+    "name": "Buzdan Şato",
+    "src": "/buzdan-sato.html",
+    "isim": "Buzdan Şato",
+    "image": "https://images.unsplash.com/photo-1514539079130-25950c84af65?w=600&auto=format"
+  },
+  {
+    "id": 21,
+    "kategori": "Yarış Oyunları",
+    "text": "Araba Yarışı ile hız limitlerini zorla",
+    "cinsiyet": "erkek",
+    "name": "Araba Yarışı",
+    "src": "/araba-yarisi.html",
+    "isim": "Araba Yarışı",
+    "image": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=600&auto=format"
+  },
+  {
+    "id": 22,
+    "kategori": "Beceri Oyunları",
+    "text": "Bina Yıkıcı ile yıkım yapın",
+    "cinsiyet": "erkek",
+    "name": "Bina Yıkıcı",
+    "src": "/bina-yikici.html",
+    "isim": "Bina Yıkıcı",
+    "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&auto=format"
+  },
+  {
+    "id": 23,
+    "kategori": "Savaş Oyunları",
+    "text": "Gladyatör 2 ile arenada savaş",
+    "cinsiyet": "erkek",
+    "name": "Gladyatör 2",
+    "src": "/gladyator-2.html",
+    "isim": "Gladyatör 2",
+    "image": "https://images.unsplash.com/photo-1581245340501-167ec2a2b1e9?w=600&auto=format"
+  },
+  {
+    "id": 24,
+    "kategori": "Macera Oyunları",
+    "text": "Psikopat Senaryolar oyunu",
+    "cinsiyet": "erkek",
+    "name": "Psikopat Senaryolar",
+    "src": "/psikopat-senaryolar.html",
+    "isim": "Psikopat Senaryolar",
+    "image": "https://images.unsplash.com/photo-1525824236856-8c0a31dfe3be?w=600&auto=format"
+  },
+  {
+    "id": 25,
+    "kategori": "Savaş Oyunları",
+    "text": "Tank Savaşları ile savaş alanında hakimiyet kur",
+    "cinsiyet": "erkek",
+    "name": "Tank Savaşları",
+    "src": "/tank-savaslari.html",
+    "isim": "Tank Savaşları",
+    "image": "https://images.unsplash.com/photo-1581853232927-1fb5686c475f?w=600&auto=format"
+  },
+  {
+    "id": 26,
+    "kategori": "Zeka Oyunları",
+    "text": "Köy kur ve düşmanlarını alt et",
+    "cinsiyet": "erkek",
+    "name": "Krallık Stratejisi",
+    "src": "/krallik-stratejisi.html",
+    "isim": "Krallık Stratejisi",
+    "image": "https://images.unsplash.com/photo-1590856029826-c7a73142bbf1?w=600&auto=format"
+  },
+  {
+    "id": 27,
+    "kategori": "Savaş Oyunları",
+    "text": "Robot Savaşları ile kendi robotunu test et",
+    "cinsiyet": "erkek",
+    "name": "Robot Savaşları",
+    "src": "/robot-savaslari.html",
+    "isim": "Robot Savaşları",
+    "image": "https://images.unsplash.com/photo-1535378620166-273708d44e4c?w=600&auto=format"
+  },
+  {
+    "id": 28,
+    "kategori": "Spor Oyunları",
+    "text": "Futbol severlere özel eğlenceli bir oyun",
+    "cinsiyet": "erkek",
+    "name": "Matrak Futbol",
+    "src": "/matrak-futbol.html",
+    "isim": "Matrak Futbol",
+    "image": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&auto=format"
+  },
+  {
+    "id": 29,
+    "kategori": "Savaş Oyunları",
+    "text": "Zombi Avı ile korku dolu anlara hazır ol",
+    "cinsiyet": "erkek",
+    "name": "Zombi Avı",
+    "src": "/zombi-avi.html",
+    "isim": "Zombi Avı",
+    "image": "https://images.unsplash.com/photo-1567275451687-e61ab7cc4465?w=600&auto=format"
+  },
+  {
+    "id": 30,
+    "kategori": "Savaş Oyunları",
+    "text": "Savaş Uçağı Pilotu ile gökyüzünde savaş",
+    "cinsiyet": "erkek",
+    "name": "Savaş Uçağı Pilotu",
+    "src": "/savas-ucagi-pilotu.html",
+    "isim": "Savaş Uçağı Pilotu",
+    "image": "https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=600&auto=format"
+  },
+  {
+    "id": 31,
+    "kategori": "Savaş Oyunları",
+    "text": "Çağlar Boyu Savaş 2'de farklı çağlarda savaş",
+    "cinsiyet": "erkek",
+    "name": "Çağlar Boyu Savaş 2",
+    "src": "/caglar-boyu-savas.html",
+    "isim": "Çağlar Boyu Savaş 2",
+    "image": "https://images.unsplash.com/photo-1543536833-2f8be1dce75b?w=600&auto=format"
+  },
+  {
+    "id": 32,
+    "kategori": "Macera Oyunları",
+    "text": "Korsan Macerası ile denizlerde hazine ara",
+    "cinsiyet": "erkek",
+    "name": "Korsan Macerası",
+    "src": "/korsan-macerasi.html",
+    "isim": "Korsan Macerası",
+    "image": "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=600&auto=format"
+  },
+  {
+    "id": 33,
+    "kategori": "Spor Oyunları",
+    "text": "Sokak Basketbolu ile şehrin en iyisi ol",
+    "cinsiyet": "erkek",
+    "name": "Sokak Basketbolu",
+    "src": "/sokak-basketbolu.html",
+    "isim": "Sokak Basketbolu",
+    "image": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=600&auto=format"
+  },
+  {
+    "id": 34,
+    "kategori": "Savaş Oyunları",
+    "text": "Son Samuray ile efsanevi bir macera",
+    "cinsiyet": "erkek",
+    "name": "Son Samuray",
+    "src": "/son-samuray.html",
+    "isim": "Son Samuray",
+    "image": "https://images.unsplash.com/photo-1551431009-a802eeec77b1?w=600&auto=format"
+  },
+  {
+    "id": 35,
+    "kategori": "Beceri Oyunları",
+    "text": "Oto Tamirhanesi ile arabaları tamir et",
+    "cinsiyet": "erkek",
+    "name": "Oto Tamirhanesi",
+    "src": "/oto-tamirhanesi.html",
+    "isim": "Oto Tamirhanesi",
+    "image": "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=600&auto=format"
+  },
+  {
+    "id": 36,
+    "kategori": "Savaş Oyunları",
+    "text": "Uzay Savaşçısı ile galaksiler arası yolculuk",
+    "cinsiyet": "erkek",
+    "name": "Uzay Savaşçısı",
+    "src": "/uzay-savascisi.html",
+    "isim": "Uzay Savaşçısı",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&auto=format"
+  },
+  {
+    "id": 37,
+    "kategori": "Beceri Oyunları",
+    "text": "Yüzü Vur oyunu ile zorlu görevleri tamamlayın",
+    "cinsiyet": "erkek",
+    "name": "Yüzü Vur",
+    "src": "/yuzu-vur.html",
+    "isim": "Yüzü Vur",
+    "image": "https://images.unsplash.com/photo-1601944179066-29786cb9d32a?w=600&auto=format"
+  },
+  {
+    "id": 38,
+    "kategori": "Beceri Oyunları",
+    "text": "Sniper Elite ile nişancılık yeteneklerini test et",
+    "cinsiyet": "erkek",
+    "name": "Sniper Elite",
+    "src": "/sniper-elite.html",
+    "isim": "Sniper Elite",
+    "image": "https://images.unsplash.com/photo-1595429035839-c99c298ffdde?w=600&auto=format"
+  },
+  {
+    "id": 39,
+    "kategori": "Yarış Oyunları",
+    "text": "Monster Truck ile engelleri aş",
+    "cinsiyet": "erkek",
+    "name": "Monster Truck",
+    "src": "/monster-truck.html",
+    "isim": "Monster Truck",
+    "image": "https://images.unsplash.com/photo-1581848339523-324ea75b8e4c?w=600&auto=format"
+  },
+  {
+    "id": 40,
+    "kategori": "Savaş Oyunları",
+    "text": "Silahlı Arena'da hayatta kalmaya çalışın",
+    "cinsiyet": "erkek",
+    "name": "Silahlı Arena",
+    "src": "/silahli-arena.html",
+    "isim": "Silahlı Arena",
+    "image": "https://images.unsplash.com/photo-1559628129-67cf63b72248?w=600&auto=format"
+  },
+  {
+    "id": 41,
+    "kategori": "Macera Oyunları",
+    "text": "Aya Seyahat oyununda uzayda macera sizi bekliyor",
+    "cinsiyet": "unisex",
+    "name": "Aya Seyahat",
+    "src": "/aya-seyahat.html",
+    "isim": "Aya Seyahat",
+    "image": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=600&auto=format"
+  },
+  {
+    "id": 42,
+    "kategori": "Macera Oyunları",
+    "text": "Hazine Avcısı ile altınları bulun",
+    "cinsiyet": "unisex",
+    "name": "Hazine Avcısı",
+    "src": "/hazine-avcisi.html",
+    "isim": "Hazine Avcısı",
+    "image": "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=600&auto=format"
+  },
+  {
+    "id": 43,
+    "kategori": "Zeka Oyunları",
+    "text": "Kim Bir Milyon İster'de büyük ödül için yarışın",
+    "cinsiyet": "unisex",
+    "name": "Kim Bir Milyon İster",
+    "src": "/kim-bir-milyon-ister.html",
+    "isim": "Kim Bir Milyon İster",
+    "image": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=600&auto=format"
+  },
+  {
+    "id": 44,
+    "kategori": "Zeka Oyunları",
+    "text": "Kelime Oyunu ile kelime bilgini test et",
+    "cinsiyet": "unisex",
+    "name": "Kelime Oyunu",
+    "src": "/kelime-oyunu.html",
+    "isim": "Kelime Oyunu",
+    "image": "https://images.unsplash.com/photo-1591040092288-77af0e24556c?w=600&auto=format"
+  },
+  {
+    "id": 45,
+    "kategori": "Zeka Oyunları",
+    "text": "Kare Bulmaca ile zihnini çalıştır",
+    "cinsiyet": "unisex",
+    "name": "Kare Bulmaca",
+    "src": "/kare-bulmaca.html",
+    "isim": "Kare Bulmaca",
+    "image": "https://images.unsplash.com/photo-1588591795084-1770cb3be374?w=600&auto=format"
+  },
+  {
+    "id": 46,
+    "kategori": "Zeka Oyunları",
+    "text": "Şehir Planlamacısı ile kendi şehrini kur",
+    "cinsiyet": "unisex",
+    "name": "Şehir Planlamacısı",
+    "src": "/sehir-planlamacisi.html",
+    "isim": "Şehir Planlamacısı",
+    "image": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=600&auto=format"
+  },
+  {
+    "id": 47,
+    "kategori": "Beceri Oyunları",
+    "text": "Restoran İşletmecisi ile kendi restoranını yönet",
+    "cinsiyet": "unisex",
+    "name": "Restoran İşletmecisi",
+    "src": "/restoran-isletmecisi.html",
+    "isim": "Restoran İşletmecisi",
+    "image": "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600&auto=format"
+  },
+  {
+    "id": 48,
+    "kategori": "Zeka Oyunları",
+    "text": "Puzzle Ustası ile zorlu bilmeceleri çöz",
+    "cinsiyet": "unisex",
+    "name": "Puzzle Ustası",
+    "src": "/puzzle-ustasi.html",
+    "isim": "Puzzle Ustası",
+    "image": "https://images.unsplash.com/photo-1605870445919-838d190e8e1b?w=600&auto=format"
+  },
+  {
+    "id": 49,
+    "kategori": "Beceri Oyunları",
+    "text": "Müzik Yıldızı ile şarkı söyle ve dans et",
+    "cinsiyet": "unisex",
+    "name": "Müzik Yıldızı",
+    "src": "/muzik-yildizi.html",
+    "isim": "Müzik Yıldızı",
+    "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&auto=format"
+  },
+  {
+    "id": 50,
+    "kategori": "Zeka Oyunları",
+    "text": "Hafıza Oyunu ile hafızanı güçlendir",
+    "cinsiyet": "unisex",
+    "name": "Hafıza Oyunu",
+    "src": "/hafiza-oyunu.html",
+    "isim": "Hafıza Oyunu",
+    "image": "https://images.unsplash.com/photo-1606326608690-4e0281b1e588?w=600&auto=format"
+  },
+  {
+    "id": 51,
+    "kategori": "Beceri Oyunları",
+    "text": "Traş Et Beni ile komik bir oyun deneyimi",
+    "cinsiyet": "unisex",
+    "name": "Traş Et Beni",
+    "src": "/tras-et-beni.html",
+    "isim": "Traş Et Beni",
+    "image": "https://images.unsplash.com/photo-1514846226882-28b324ef7f28?w=600&auto=format"
+  },
+  {
+    "id": 52,
+    "kategori": "Zeka Oyunları",
+    "text": "Aptallık Testi ile eğlenceli soruları yanıtla",
+    "cinsiyet": "unisex",
+    "name": "Aptallık Testi",
+    "src": "/aptallik-testi.html",
+    "isim": "Aptallık Testi",
+    "image": "https://images.unsplash.com/photo-1543109740-4bdb38fda756?w=600&auto=format"
+  },
+  {
+    "id": 53,
+    "kategori": "Çocuk Oyunları",
+    "text": "Çiftlik Hayatı ile kendi çiftliğini işlet",
+    "cinsiyet": "unisex",
+    "name": "Çiftlik Hayatı",
+    "src": "/ciftlik-hayati.html",
+    "isim": "Çiftlik Hayatı",
+    "image": "https://images.unsplash.com/photo-1500076656116-558758c991c1?w=600&auto=format"
   }
 ]

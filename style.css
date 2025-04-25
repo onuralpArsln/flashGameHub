@@ -65,11 +65,10 @@
 }
 .orta-reklam {
   margin: 0 auto;
-  
+
   display: flex;
   justify-content: center; /* Yatayda ortalar */
   align-items: center; /* Dikeyde ortalamak istersen */
- 
 }
 .orta-reklam-banner {
   background-color: #e3005b;
@@ -100,7 +99,7 @@
   background-color: #e3005b;
   color: white;
   border: none;
-   width: calc(100vw - 4vw - 440px);
+  width: calc(100vw - 4vw - 440px);
   height: 250px;
   font-size: 16px;
   border-radius: 3px;
@@ -126,13 +125,13 @@ body {
   font-size: 12px;
   margin: 0;
   color: #666;
-  scrollbar-width: none; 
+  scrollbar-width: none;
 }
 body::-webkit-scrollbar {
-    display: none;  /* Chrome, Safari */
+  display: none; /* Chrome, Safari */
 }
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 a {
   text-decoration: none;
@@ -248,6 +247,9 @@ ul.kategori {
   border: 1px solid #4a86ff;
   background-color: rgba(255, 255, 255, 0.9);
   color: #4a86ff;
+}
+.button1.active {
+  background-color: #4cacaf;
 }
 #logo {
   width: 450px;
@@ -698,20 +700,24 @@ div.yorumlar a:hover {
 }
 /*player html css*/
 
-.gameGrid{
+.gameGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   padding: 20px;
   border: solid 5px red;
-  margin-left:calc( 2vw + 200px);
-  margin-right:calc(2vw + 200px);
-
+  margin-left: calc(2vw + 200px);
+  margin-right: calc(2vw + 200px);
 }
-.gameCard{
-  background-color: #4CAF50;
+.gameCard {
+  background-color: #4caf50;
   color: rgb(210, 31, 31);
   padding: 40px;
   text-align: center;
   border-radius: 8px;
+}
+.gameCardImg {
+  max-width: 100%; /* Resmin genişliği 300px'i geçemez */
+  max-height: 100px; /* Resmin yüksekliği 200px'i geçemez */
+  object-fit: cover; /* Resmin en iyi şekilde kapsaması için 'cover' kullanılabilir */
 }
