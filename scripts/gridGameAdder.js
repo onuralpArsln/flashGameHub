@@ -15,9 +15,16 @@ fetch('scripts/games.json')
 
       const filteredGames = games.filter(game => game.cinsiyet === gender);
 
+      let gameCount = 0; // Eklenen oyun sayısını tutan sayaç
+      const gameCardWidth = 220; // gameCard genişliğini belirleyin (örnek olarak 220px)
+      const gridWidth = gridUpper.offsetWidth; // gamesUpper'ın genişliği
+      const cardsPerRow = Math.floor(gridWidth / gameCardWidth); // Satır başına kaç kart olacak
+
       filteredGames.forEach((game, index) => {
         const card = document.createElement('div');
         card.className = 'gameCard';
+        const genderClass = gender === 'erkek' ? 'male' : 'female';
+        card.classList.add(genderClass);
         card.innerHTML = `
           <a href="gamePage.html?id=${game.id}">
             <img src="${game.image}" alt="${game.name}" class="gameCardImg" />
@@ -25,11 +32,14 @@ fetch('scripts/games.json')
           </a>
         `;
 
-        if (index < 20) {
+        // Satır başına kaç kart varsa, ona göre upper ve lower'a yerleştir
+        if (gameCount < cardsPerRow * 3) {  // İlk 3 satır
           gridUpper.appendChild(card);
         } else {
           gridLower.appendChild(card);
         }
+
+        gameCount++;
       });
     }
 
@@ -38,9 +48,16 @@ fetch('scripts/games.json')
       gridUpper.innerHTML = '';
       gridLower.innerHTML = '';
 
+      let gameCount = 0; // Eklenen oyun sayısını tutan sayaç
+      const gameCardWidth = 220; // gameCard genişliğini belirleyin (örnek olarak 220px)
+      const gridWidth = gridUpper.offsetWidth; // gamesUpper'ın genişliği
+      const cardsPerRow = Math.floor(gridWidth / gameCardWidth); // Satır başına kaç kart olacak
+
       games.forEach((game, index) => {
         const card = document.createElement('div');
         card.className = 'gameCard';
+        const genderClass = game.cinsiyet === 'erkek' ? 'male' : 'female';
+        card.classList.add(genderClass); // Cinsiyet sınıfını ekliyoruz
         card.innerHTML = `
           <a href="gamePage.html?id=${game.id}">
             <img src="${game.image}" alt="${game.name}" class="gameCardImg" />
@@ -48,11 +65,14 @@ fetch('scripts/games.json')
           </a>
         `;
 
-        if (index < 20) {
+        // Satır başına kaç kart varsa, ona göre upper ve lower'a yerleştir
+        if (gameCount < cardsPerRow * 3) {  // İlk 3 satır
           gridUpper.appendChild(card);
         } else {
           gridLower.appendChild(card);
         }
+
+        gameCount++;
       });
     }
 

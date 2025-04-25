@@ -709,15 +709,66 @@ div.yorumlar a:hover {
   margin-left: calc(2vw + 200px);
   margin-right: calc(2vw + 200px);
 }
+
 .gameCard {
-  background-color: #4caf50;
-  color: rgb(210, 31, 31);
-  padding: 40px;
+  background-color: #f0f0f0; /* Açık gri arka plan */
+  color: #333333; /* Koyu gri yazı rengi */
+  padding: 20px;
   text-align: center;
-  border-radius: 8px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  height: auto;
 }
+
+.gameCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
 .gameCardImg {
-  max-width: 100%; /* Resmin genişliği 300px'i geçemez */
-  max-height: 100px; /* Resmin yüksekliği 200px'i geçemez */
-  object-fit: cover; /* Resmin en iyi şekilde kapsaması için 'cover' kullanılabilir */
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gameCard:hover .gameCardImg {
+  animation: bounceEnd 0.5s ease-in-out forwards;
+}
+
+.gameCard p {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-top: 10px;
+  color: #333333; /* Koyu gri yazı */
+}
+
+.gameCard a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.gameCard.male:hover p {
+  color: #00bbff;
+}
+.gameCard.female:hover p {
+  color: #ff00f2;
+}
+
+@keyframes bounceEnd {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.05);
+  }
+  100% {
+    transform: translateY(0) scale(1.1);
+  }
 }
