@@ -711,6 +711,7 @@ div.yorumlar a:hover {
 }
 
 .gameCard {
+  max-width: 200px;
   background-color: #f0f0f0; /* Açık gri arka plan */
   color: #333333; /* Koyu gri yazı rengi */
   padding: 20px;
