@@ -27,8 +27,8 @@ fetch('scripts/games.json')
         card.classList.add(genderClass);
         card.innerHTML = `
           <a href="gamePage.html?id=${game.id}">
-            <img src="${game.image}" alt="${game.name}" class="gameCardImg" />
-            <p>${game.name}</p>
+            <img src="${game.image}" alt="${game.title}" class="gameCardImg" />
+            <p>${game.title}</p>
           </a>
         `;
 
@@ -60,8 +60,8 @@ fetch('scripts/games.json')
         card.classList.add(genderClass); // Cinsiyet sınıfını ekliyoruz
         card.innerHTML = `
           <a href="gamePage.html?id=${game.id}">
-            <img src="${game.image}" alt="${game.name}" class="gameCardImg" />
-            <p>${game.name}</p>
+            <img src="${game.image}" alt="${game.title}" class="gameCardImg" />
+            <p>${game.title}</p>
           </a>
         `;
 
@@ -102,7 +102,7 @@ fetch('scripts/games.json')
         isFemaleFiltered = false;
         document.getElementById('femaleButton').classList.remove('active'); // 'active' sınıfını kaldır
       } else {
-        filterGamesByGender('kadın'); // Kadınları göster
+        filterGamesByGender('kız'); // Kadınları göster
         isFemaleFiltered = true;
         document.getElementById('femaleButton').classList.add('active'); // 'active' sınıfını ekle
 

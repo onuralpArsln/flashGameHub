@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oyun Sayfası - TubiGame</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+    }
+
+    .gamePageContainer {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .gameTitle {
+      font-size: 32px;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .gameIframeContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .gameIframeContainer iframe {
+      width: 100%;
+      height: 650px;
+      max-width: 1100px;
+      border: none;
+      border-radius: 12px;
+    }
+
+    .gameDescription,
+    .gameInstructions {
+      margin-bottom: 20px;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .gameTags {
+      margin-top: 10px;
+    }
+
+    .gameTags span {
+      display: inline-block;
+      background: #eee;
+      padding: 5px 10px;
+      border-radius: 20px;
+      margin: 5px 5px 0 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="gamePageContainer">
+    <h1 class="gameTitle" id="gameTitle">Yükleniyor...</h1>
+
+    <div class="gameIframeContainer" id="gameIframeContainer">
+      <!-- İframe buraya yüklenecek -->
+    </div>
+
+    <div class="gameDescription" id="gameDescription">
+      <!-- Açıklama buraya gelecek -->
+    </div>
+
+    <div class="gameInstructions" id="gameInstructions">
+      <!-- Talimatlar buraya gelecek -->
+    </div>
+
+    <div class="gameTags" id="gameTags">
+      <!-- Tag'ler buraya gelecek -->
+    </div>
+  </div>
+
+  <script>
+    async function loadGame() {
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get('id');
+
+      const res = await fetch('scripts/games.json');
+      const games = await res.json();
+      const game = games.find(g => g.id == id);
+
+      if (game) {
+        document.getElementById('gameTitle').innerText = game.title;
+
+        // src içindeki {game-path} değiştir
+        let iframeHTML = game.src.replace('{game-path}', game.title.toLowerCase().replace(/\s+/g, '-'));
+
+        document.getElementById('gameIframeContainer').innerHTML = iframeHTML;
+        document.getElementById('gameDescription').innerHTML = `<strong>Açıklama:</strong> ${game.description}`;
+
+        if (game.instructions) {
+          document.getElementById('gameInstructions').innerHTML = `<strong>Nasıl Oynanır:</strong> ${game.instructions}`;
+        }
+
+        if (game.tags) {
+          const tagsArray = game.tags.split(',').map(tag => tag.trim());
+          document.getElementById('gameTags').innerHTML = `<strong>Etiketler:</strong> ` + tagsArray.map(tag => `<span>${tag}</span>`).join('');
+        }
+      } else {
+        document.querySelector('.gamePageContainer').innerHTML = '<h2>Oyun bulunamadı.</h2>';
+      }
+    }
+
+    loadGame();
+  </script>
+
+</body>
+
+</html>
