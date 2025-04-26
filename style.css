@@ -708,6 +708,7 @@ div.yorumlar a:hover {
   border: solid 5px red;
   margin-left: calc(2vw + 200px);
   margin-right: calc(2vw + 200px);
+  justify-content: space-around;
 }
 
 .gameCard {
@@ -772,4 +773,22 @@ div.yorumlar a:hover {
   100% {
     transform: translateY(0) scale(1.1);
   }
+}
+
+.gamePageContainer {
+  margin-right: calc(2vw + 200px);
+  margin-left: calc(2vw + 200px);
+  max-width: calc(100vw - 4vw - 400px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.gameIframeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex;
+  max-width: calc(100vw - 4vw - 400px);
 }
