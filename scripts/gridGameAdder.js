@@ -1,24 +1,26 @@
 fetch('scripts/games.json')
-  .then(res => res.json()) // JSON'a çeviriyoruz
+  .then(res => res.json())
   .then(games => {
     const gridUpper = document.getElementById('gamesUpper');
     const gridLower = document.getElementById('gamesLower');
 
-    let isMaleFiltered = false; // Erkek filtre durumu
-    let isFemaleFiltered = false; // Kadın filtre durumu
+    let isMaleFiltered = false;
+    let isFemaleFiltered = false;
 
-    // Cinsiyete göre oyunları filtrele
     function filterGamesByGender(gender) {
-      // İlk başta gridleri temizle
       gridUpper.innerHTML = '';
       gridLower.innerHTML = '';
 
-      const filteredGames = games.filter(game => game.cinsiyet === gender);
+      const filteredGames = games.filter(game => {
+        if (!game.cinsiyet) return false;
+        const genders = game.cinsiyet.toLowerCase().split(',').map(g => g.trim());
+        return genders.includes(gender);
+      });
 
-      let gameCount = 0; // Eklenen oyun sayısını tutan sayaç
-      const gameCardWidth = 220; // gameCard genişliğini belirleyin (örnek olarak 220px)
-      const gridWidth = gridUpper.offsetWidth; // gamesUpper'ın genişliği
-      const cardsPerRow = Math.floor(gridWidth / gameCardWidth); // Satır başına kaç kart olacak
+      let gameCount = 0;
+      const gameCardWidth = 220;
+      const gridWidth = gridUpper.offsetWidth;
+      const cardsPerRow = Math.floor(gridWidth / gameCardWidth);
 
       filteredGames.forEach((game, index) => {
         const card = document.createElement('div');
@@ -32,8 +34,7 @@ fetch('scripts/games.json')
           </a>
         `;
 
-        // Satır başına kaç kart varsa, ona göre upper ve lower'a yerleştir
-        if (gameCount < cardsPerRow * 3) {  // İlk 3 satır
+        if (gameCount < cardsPerRow * 3) {
           gridUpper.appendChild(card);
         } else {
           gridLower.appendChild(card);
@@ -43,21 +44,20 @@ fetch('scripts/games.json')
       });
     }
 
-    // Tüm oyunları yeniden göster
     function showAllGames() {
       gridUpper.innerHTML = '';
       gridLower.innerHTML = '';
 
-      let gameCount = 0; // Eklenen oyun sayısını tutan sayaç
-      const gameCardWidth = 220; // gameCard genişliğini belirleyin (örnek olarak 220px)
-      const gridWidth = gridUpper.offsetWidth; // gamesUpper'ın genişliği
-      const cardsPerRow = Math.floor(gridWidth / gameCardWidth); // Satır başına kaç kart olacak
+      let gameCount = 0;
+      const gameCardWidth = 220;
+      const gridWidth = gridUpper.offsetWidth;
+      const cardsPerRow = Math.floor(gridWidth / gameCardWidth);
 
       games.forEach((game, index) => {
         const card = document.createElement('div');
         card.className = 'gameCard';
         const genderClass = game.cinsiyet === 'erkek' ? 'male' : 'female';
-        card.classList.add(genderClass); // Cinsiyet sınıfını ekliyoruz
+        card.classList.add(genderClass);
         card.innerHTML = `
           <a href="gamePage.html?id=${game.id}">
             <img src="${game.image}" alt="${game.title}" class="gameCardImg" />
@@ -65,8 +65,7 @@ fetch('scripts/games.json')
           </a>
         `;
 
-        // Satır başına kaç kart varsa, ona göre upper ve lower'a yerleştir
-        if (gameCount < cardsPerRow * 3) {  // İlk 3 satır
+        if (gameCount < cardsPerRow * 3) {
           gridUpper.appendChild(card);
         } else {
           gridLower.appendChild(card);
@@ -76,42 +75,49 @@ fetch('scripts/games.json')
       });
     }
 
-    // Erkek oyunlarını göster ya da filtreyi kaldır
     document.getElementById('maleButton').addEventListener('click', () => {
-      // Eğer erkek filtre aktifse, geri al
       if (isMaleFiltered) {
-        showAllGames(); // Filtreyi kaldır
+        showAllGames();
         isMaleFiltered = false;
-        document.getElementById('maleButton').classList.remove('active'); // 'active' sınıfını kaldır
+        document.getElementById('maleButton').classList.remove('active');
       } else {
-        filterGamesByGender('erkek'); // Erkekleri göster
+        filterGamesByGender('erkek');
         isMaleFiltered = true;
-        document.getElementById('maleButton').classList.add('active'); // 'active' sınıfını ekle
+        document.getElementById('maleButton').classList.add('active');
 
-        // Kadın filtreyi kaldır
         isFemaleFiltered = false;
         document.getElementById('femaleButton').classList.remove('active');
       }
     });
 
-    // Kadın oyunlarını göster ya da filtreyi kaldır
     document.getElementById('femaleButton').addEventListener('click', () => {
-      // Eğer kadın filtre aktifse, geri al
       if (isFemaleFiltered) {
-        showAllGames(); // Filtreyi kaldır
+        showAllGames();
         isFemaleFiltered = false;
-        document.getElementById('femaleButton').classList.remove('active'); // 'active' sınıfını kaldır
+        document.getElementById('femaleButton').classList.remove('active');
       } else {
-        filterGamesByGender('kız'); // Kadınları göster
+        filterGamesByGender('kız');
         isFemaleFiltered = true;
-        document.getElementById('femaleButton').classList.add('active'); // 'active' sınıfını ekle
+        document.getElementById('femaleButton').classList.add('active');
 
-        // Erkek filtreyi kaldır
         isMaleFiltered = false;
         document.getElementById('maleButton').classList.remove('active');
       }
     });
 
-    // Başlangıçta tüm oyunları göster
-    showAllGames();
+    // URL'den otomatik filtre oku
+    const urlParams = new URLSearchParams(window.location.search);
+    const filter = urlParams.get('filter');
+
+    if (filter === 'erkek') {
+      filterGamesByGender('erkek');
+      isMaleFiltered = true;
+      document.getElementById('maleButton').classList.add('active');
+    } else if (filter === 'kiz') {
+      filterGamesByGender('kız');
+      isFemaleFiltered = true;
+      document.getElementById('femaleButton').classList.add('active');
+    } else {
+      showAllGames();
+    }
   });

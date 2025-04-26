@@ -6,83 +6,104 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Oyun Sayfası - TubiGame</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      background-color: #f9f9f9;
-      font-family: Arial, sans-serif;
-    }
-
-    .gamePageContainer {
-      max-width: 1200px;
-      margin: 30px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-
-    .gameTitle {
-      font-size: 32px;
-      margin-bottom: 25px;
-      text-align: center;
-    }
-
-    .gameIframeContainer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 30px;
-    }
-
-    .gameIframeContainer iframe {
-      width: 100%;
-      height: 650px;
-      max-width: 1100px;
-      border: none;
-      border-radius: 12px;
-    }
-
-    .gameDescription,
-    .gameInstructions {
-      margin-bottom: 20px;
-      font-size: 18px;
-      line-height: 1.6;
-    }
-
-    .gameTags {
-      margin-top: 10px;
-    }
-
-    .gameTags span {
-      display: inline-block;
-      background: #eee;
-      padding: 5px 10px;
-      border-radius: 20px;
-      margin: 5px 5px 0 0;
-      font-size: 14px;
-    }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 </head>
 
 <body>
 
-  <div class="gamePageContainer">
-    <h1 class="gameTitle" id="gameTitle">Yükleniyor...</h1>
+  <div id="ustb">
+    <div id="ust">
+      <div id="kategoriler">
+        <a id="maleButton" class="button1 erkek">ERKEK OYUNLARI</a>
+        <a id="femaleButton" class="button1 kiz">KIZ OYUNLARI</a>
+      </div>
+      <div id="logo">
+        <a href="https://www.tubigame.com/" title="TubiGame">
+          <img src="images/1.jpg" border="0" alt="TubiGame" />
+        </a>
+      </div>
+      <div id="arama">
+        <form class="ara" method="get" action="/oyun-ara.asp">
+          <input name="aranan" type="text" placeholder="Oyun Ara.." required />
+          <span><button id="araClick" type="submit"><i class="bi bi-search"></i></button></span>
+        </form>
+      </div>
+    </div>
+  </div>
 
-    <div class="gameIframeContainer" id="gameIframeContainer">
-      <!-- İframe buraya yüklenecek -->
+  <div class="sayfa">
+    <div class="ust-reklam">
+      <div class="ust-reklam-banner">
+        <div class="ust-reklam-inner">
+          <div class="ust-reklam-label">En üst orta reklam alanı</div>
+          <div data-sdg-ad="ust"></div>
+        </div>
+      </div>
     </div>
 
-    <div class="gameDescription" id="gameDescription">
-      <!-- Açıklama buraya gelecek -->
+    <div class="sol-reklam">
+      <div class="sol-reklam-banner">
+        <div class="sol-reklam-inner">
+          <div class="sol-reklam-label">Sol Reklam Alanı</div>
+          <div data-sdg-ad="sol"></div>
+        </div>
+      </div>
     </div>
 
-    <div class="gameInstructions" id="gameInstructions">
-      <!-- Talimatlar buraya gelecek -->
+    <div class="sag-reklam">
+      <div class="sag-reklam-banner">
+        <div class="sag-reklam-inner">
+          <div class="sag-reklam-label">Sağ Reklam Alanı</div>
+          <div data-sdg-ad="sag"></div>
+        </div>
+      </div>
     </div>
 
-    <div class="gameTags" id="gameTags">
-      <!-- Tag'ler buraya gelecek -->
+    <div style="margin: 0 auto; width: 1200px; padding: 20px;">
+      <div class="gamePageContainer">
+        <h1 class="gameTitle" id="gameTitle">Yükleniyor...</h1>
+
+        <div class="gameIframeContainer" id="gameIframeContainer">
+          <!-- İframe buraya yüklenecek -->
+        </div>
+
+        <div class="gameDescription" id="gameDescription">
+          <!-- Açıklama buraya gelecek -->
+        </div>
+
+        <div class="gameInstructions" id="gameInstructions">
+          <!-- Talimatlar buraya gelecek -->
+        </div>
+
+        <div class="gameTags" id="gameTags">
+          <!-- Tag'ler buraya gelecek -->
+        </div>
+      </div>
+    </div>
+
+    <div class="alt-reklam">
+      <div class="alt-reklam-banner">
+        <div class="alt-reklam-inner">
+          <div class="alt-reklam-label">Alt Reklam Alanı</div>
+          <div data-sdg-ad="alt"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="altz">
+    <div id="alt">
+      <br />
+      <p>TUBİGAME OYUNLAR - 25 Nisan 2025 Cuma</p>
+      <p>
+        Türkiye'nin en büyük Oyun sitesi Tubigame.com sizler için en güzel oyunları özenle seçip oynayabileceğiniz hale
+        getiriyor.
+        TubiGame'de oynadığınız oyunlar bu oyunları hazırlayan oyun yapımcılarına aittir. TubiGame ücretsiz ve harika
+        bir oyun sitesidir. - 2025
+        <br /><br />
+        <a href="/iletisim.asp">İletişim</a> - <a href="/gizlilik-politikasi.asp">Gizlilik Politikası</a>
+      </p>
     </div>
   </div>
 
@@ -118,6 +139,15 @@
     }
 
     loadGame();
+
+    // Butonlara basınca anasayfaya filtreli git
+    document.getElementById('maleButton').addEventListener('click', () => {
+      window.location.href = 'index.html?filter=erkek';
+    });
+
+    document.getElementById('femaleButton').addEventListener('click', () => {
+      window.location.href = 'index.html?filter=kiz';
+    });
   </script>
 
 </body>
