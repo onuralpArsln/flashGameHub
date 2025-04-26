@@ -79,26 +79,79 @@ fetch('scripts/games.json')
         return;
       }
 
-      const filteredGames = games.filter(game => {
-        // Check for title match
-        const titleMatch = game.title.toLowerCase().includes(searchQuery);
-        if (!titleMatch) return false;
+      // Split search query into terms (words)
+      const searchTerms = searchQuery.split(/\s+/).filter(term => term.length > 0);
 
-        // Apply gender filter if active
-        if (isMaleFiltered && (!game.cinsiyet || !game.cinsiyet.toLowerCase().includes('erkek'))) {
-          return false;
-        }
-        if (isFemaleFiltered && (!game.cinsiyet || !game.cinsiyet.toLowerCase().includes('kız'))) {
-          return false;
-        }
+      // Score each game based on how well it matches the search query
+      const scoredGames = games.map(game => {
+        const title = game.title.toLowerCase();
+        let score = 0;
 
-        // Apply category filter if active
-        if (currentCategory && !game.genres?.toLowerCase().includes(currentCategory.toLowerCase())) {
-          return false;
+        // Exact match gets highest score
+        if (title === searchQuery) {
+          score += 100;
         }
 
-        return true;
+        // Starts with query gets high score
+        if (title.startsWith(searchQuery)) {
+          score += 75;
+        }
+
+        // Contains full query gets medium score
+        if (title.includes(searchQuery)) {
+          score += 50;
+        }
+
+        // For each search term, add points if title contains it
+        searchTerms.forEach(term => {
+          if (title.includes(term)) {
+            score += 25;
+
+            // Bonus points for words that start with the term
+            const words = title.split(/\s+/);
+            for (const word of words) {
+              if (word.startsWith(term)) {
+                score += 15;
+              }
+            }
+          }
+        });
+
+        // Character-by-character matching (for typos and similar words)
+        let charMatches = 0;
+        for (let i = 0; i < searchQuery.length; i++) {
+          if (title.includes(searchQuery[i])) {
+            charMatches++;
+          }
+        }
+        score += (charMatches / searchQuery.length) * 10;
+
+        return { game, score };
       });
+
+      // Filter games based on minimum score threshold and other filters
+      const filteredGames = scoredGames
+        .filter(({ game, score }) => {
+          // Minimum match score to be included (adjust as needed)
+          if (score < 10) return false;
+
+          // Apply gender filter if active
+          if (isMaleFiltered && (!game.cinsiyet || !game.cinsiyet.toLowerCase().includes('erkek'))) {
+            return false;
+          }
+          if (isFemaleFiltered && (!game.cinsiyet || !game.cinsiyet.toLowerCase().includes('kız'))) {
+            return false;
+          }
+
+          // Apply category filter if active
+          if (currentCategory && !game.genres?.toLowerCase().includes(currentCategory.toLowerCase())) {
+            return false;
+          }
+
+          return true;
+        })
+        .sort((a, b) => b.score - a.score) // Sort by score in descending order
+        .map(({ game }) => game); // Extract just the game objects
 
       renderGames(filteredGames);
     }
@@ -128,6 +181,19 @@ fetch('scripts/games.json')
       const gameCardWidth = 220;
       const gridWidth = gridUpper.offsetWidth || 1200; // fallback
       const cardsPerRow = Math.floor(gridWidth / gameCardWidth);
+
+      if (gamesToRender.length === 0) {
+        // No games found - display a message
+        const noResults = document.createElement('div');
+        noResults.className = 'no-results';
+        noResults.style.width = '100%';
+        noResults.style.textAlign = 'center';
+        noResults.style.padding = '20px';
+        noResults.style.fontSize = '18px';
+        noResults.innerHTML = 'Oyun bulunamadı. Lütfen başka bir arama terimi deneyin.';
+        gridUpper.appendChild(noResults);
+        return;
+      }
 
       gamesToRender.forEach((game) => {
         const card = document.createElement('div');
@@ -210,6 +276,28 @@ fetch('scripts/games.json')
       const searchInput = this.querySelector('input[name="aranan"]');
       searchGames(searchInput.value);
     });
+
+    // Add keyup event for real-time search (optional)
+    const searchInput = document.querySelector('input[name="aranan"]');
+    if (searchInput) {
+      searchInput.addEventListener('keyup', function (event) {
+        // Only trigger search if the user has entered at least 2 characters
+        if (this.value.length >= 2) {
+          searchGames(this.value);
+        } else if (this.value.length === 0) {
+          // If search field is cleared, reset to default view
+          if (isMaleFiltered) {
+            filterGamesByGender('erkek');
+          } else if (isFemaleFiltered) {
+            filterGamesByGender('kız');
+          } else if (currentCategory) {
+            filterGamesByCategory(currentCategory);
+          } else {
+            showAllGames();
+          }
+        }
+      });
+    }
 
     // URL'den filtre veya kategori oku
     const urlParams = new URLSearchParams(window.location.search);
