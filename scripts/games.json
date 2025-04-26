@@ -5,7 +5,7 @@
     "cinsiyet": "erkek",
     "description": "Offroad Muddy Trucks oyununda devasa lastiklere ve gövdelere sahip devasa kamyonlarla harika bir maceraya atılın! Oyunu 1 veya 2 kişilik kariyer modunda oynayabilir ya da bir arkadaşınızla birlikte geniş bir serbest haritayı keşfedebilirsiniz. Oyun keşfetmeniz için sürprizler ve eğlenceli araziler sunuyor. Canavar kamyon simülatörünün çamurlu zeminde başlamasına izin verin ve haritadaki tüm çeşitli arazileri deneyimleyin.",
     "genres": "macera,yarış",
-    "src": "<iframe src=\"https://html5.gamedistribution.com/b92ebd73ad794263880597673306afb5/?gd_sdk_referrer_url=https://www.example.com/games/{game-path}\" width=\"1920\" height=\"1080\" scrolling=\"none\" frameborder=\"0\"></iframe>",
+    "src": "<iframe src=\"https://html5.gamedistribution.com/b92ebd73ad794263880597673306afb5/?gd_sdk_referrer_url=https://flashgamehub.onrender.com/games/player.html{game-path}\" width=\"1920\" height=\"1080\" scrolling=\"none\" frameborder=\"0\"></iframe>",
     "tags": "2 kişilik, 3d, Canavar Kamyon, Offroad, kamyon",
     "image": "images\\Offroad-Muddy-Trucks\\image3.jpg"
   },
