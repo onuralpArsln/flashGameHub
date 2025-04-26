@@ -705,7 +705,6 @@ div.yorumlar a:hover {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   padding: 20px;
-  border: solid 5px red;
   margin-left: calc(2vw + 200px);
   margin-right: calc(2vw + 200px);
   justify-content: space-around;
