@@ -4,7 +4,7 @@
     "title": "Offroad Çamurlu Kamyonlar",
     "cinsiyet": "erkek",
     "description": "Offroad Muddy Trucks oyununda devasa lastiklere ve gövdelere sahip devasa kamyonlarla harika bir maceraya atılın! Oyunu 1 veya 2 kişilik kariyer modunda oynayabilir ya da bir arkadaşınızla birlikte geniş bir serbest haritayı keşfedebilirsiniz. Oyun keşfetmeniz için sürprizler ve eğlenceli araziler sunuyor. Canavar kamyon simülatörünün çamurlu zeminde başlamasına izin verin ve haritadaki tüm çeşitli arazileri deneyimleyin.",
-    "genres": "macera,yarış",
+    "genres": " macera ,yarış",
     "src": "<iframe src=\"https://html5.gamedistribution.com/eeb8ab27ae274875bced4fff94b8bfd7/?gd_sdk_referrer_url=https://www.example.com/games/{game-path}\" width=\"800\" height=\"450\" scrolling=\"none\" frameborder=\"0\"></iframe>",
     "tags": "2 kişilik, 3d, Canavar Kamyon, Offroad, kamyon",
     "image": "images\\Offroad-Muddy-Trucks\\image3.jpg"
@@ -356,7 +356,7 @@
     "cinsiyet": "erkek,kız",
     "description": "Obby On a Bike, heyecan verici engel parkurlarını eğlenceli parkur oynanışıyla birleştiren heyecan verici bir bisiklet sürme platform oyunudur! İki heyecan verici oynanış moduna sahiptir: Normal ve Challenge. Normal modda, zamanlayıcının stresi olmadan her seviyede dikkatli bir şekilde bisiklet sürebilirsiniz. Challenge modu, zamana karşı yarışırken hızınızı ve becerinizi test etmenizi sağlar. İster tek başınıza oynayın, ister 2 Oyunculu modda kafa kafaya yarışın, sizi her zaman heyecan verici bir meydan okuma bekliyor!",
     "instructions": "Oyuncu 1: Hareket: W,A,S,D veya (OK TUŞLARI - 1 Oyuncu oyun modunda) Koşma: L-SHIFT Zıplama: BOŞLUK Kamera kontrolü: FARE ve SAĞ-TIKLAMA Yakınlaştırma/Uzaklaştırma: FARE KAYDIRMA Oyuncu 2: Hareket: OK TUŞLARI Koşma: K Zıplama: L",
-    "genres": "macera, beceri, 2 kişilk",
+    "genres": "macera, beceri, 2 kişilik",
     "src": "<iframe src=\"https://html5.gamedistribution.com/bc2f52c2d9d04e41aee48bef01075d22/?gd_sdk_referrer_url=https://www.example.com/games/{game-path}\" width=\"900\" height=\"560\" scrolling=\"none\" frameborder=\"0\"></iframe>",
     "tags": "2 kişilik, 3d, bisiklet, renkli",
     "image": "images\\Obby On a Bike\\image1.jpg"
@@ -552,7 +552,7 @@
     "id": 51,
     "title": "Şehir Bisiklet Yarışı Şampiyonu",
     "cinsiyet": "erkek, kız",
-    "description":"Hadi Şampiyonlar Şehri'nde havalı bisikletlerle diğer sürücülere karşı veya City Bike Racing Champion oyununda 2 oyunculu oyun modunda arkadaşınızla bisiklet sürelim! Bir sürü bisiklet, çanta, kask, kostüm ve diğer birçok özelleştirme seçeneği sizi bekliyor. Tek kişilik veya 2 oyunculu oynayın ve Şampiyonlar Şehri'nde eğlenin. Yarışlara katılın veya devasa ücretsiz haritada bisiklet sürün ve bazı akrobasi hareketleri yapın. Hadi sürelim!",
+    "description": "Hadi Şampiyonlar Şehri'nde havalı bisikletlerle diğer sürücülere karşı veya City Bike Racing Champion oyununda 2 oyunculu oyun modunda arkadaşınızla bisiklet sürelim! Bir sürü bisiklet, çanta, kask, kostüm ve diğer birçok özelleştirme seçeneği sizi bekliyor. Tek kişilik veya 2 oyunculu oynayın ve Şampiyonlar Şehri'nde eğlenin. Yarışlara katılın veya devasa ücretsiz haritada bisiklet sürün ve bazı akrobasi hareketleri yapın. Hadi sürelim!",
     "instructions": "Oyuncu 1: Hareket: W, A, S, D veya OK TUŞLARI Zıplama: Q Yeniden Canlanma: R Kamera: C Paraşüt: Z Oyuncu 2: Hareket: OK TUŞLARI Zıplama: J Yeniden Canlanma: U Kamera: K Paraşüt: P",
     "genres": "yarış, spor, 2 l",
     "src": "<iframe src=\"https://html5.gamedistribution.com/f42af7581eae4d85a7a12bdb1934dea1/?gd_sdk_referrer_url=https://www.example.com/games/{game-path}\" width=\"800\" height=\"450\" scrolling=\"none\" frameborder=\"0\"></iframe>",

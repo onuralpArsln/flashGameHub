@@ -17,47 +17,39 @@ fetch('scripts/games.json')
         return genders.includes(gender);
       });
 
-      let gameCount = 0;
-      const gameCardWidth = 220;
-      const gridWidth = gridUpper.offsetWidth;
-      const cardsPerRow = Math.floor(gridWidth / gameCardWidth);
+      renderGames(filteredGames);
+    }
 
-      filteredGames.forEach((game, index) => {
-        const card = document.createElement('div');
-        card.className = 'gameCard';
-        const genderClass = gender === 'erkek' ? 'male' : 'female';
-        card.classList.add(genderClass);
-        card.innerHTML = `
-          <a href="gamePage.html?id=${game.id}">
-            <img src="${game.image}" alt="${game.title}" class="gameCardImg" />
-            <p>${game.title}</p>
-          </a>
-        `;
+    function filterGamesByCategory(category) {
+      gridUpper.innerHTML = '';
+      gridLower.innerHTML = '';
 
-        if (gameCount < cardsPerRow * 3) {
-          gridUpper.appendChild(card);
-        } else {
-          gridLower.appendChild(card);
-        }
-
-        gameCount++;
+      const filteredGames = games.filter(game => {
+        return game.genres?.toLowerCase().includes(category.toLowerCase());
       });
+
+      renderGames(filteredGames);
     }
 
     function showAllGames() {
       gridUpper.innerHTML = '';
       gridLower.innerHTML = '';
+      renderGames(games);
+    }
 
+    function renderGames(gamesToRender) {
       let gameCount = 0;
       const gameCardWidth = 220;
-      const gridWidth = gridUpper.offsetWidth;
+      const gridWidth = gridUpper.offsetWidth || 1200; // fallback
       const cardsPerRow = Math.floor(gridWidth / gameCardWidth);
 
-      games.forEach((game, index) => {
+      gamesToRender.forEach((game) => {
         const card = document.createElement('div');
         card.className = 'gameCard';
-        const genderClass = game.cinsiyet === 'erkek' ? 'male' : 'female';
-        card.classList.add(genderClass);
+        if (game.cinsiyet) {
+          const genderClass = game.cinsiyet.includes('erkek') ? 'male' : 'female';
+          card.classList.add(genderClass);
+        }
         card.innerHTML = `
           <a href="gamePage.html?id=${game.id}">
             <img src="${game.image}" alt="${game.title}" class="gameCardImg" />
@@ -84,7 +76,6 @@ fetch('scripts/games.json')
         filterGamesByGender('erkek');
         isMaleFiltered = true;
         document.getElementById('maleButton').classList.add('active');
-
         isFemaleFiltered = false;
         document.getElementById('femaleButton').classList.remove('active');
       }
@@ -99,15 +90,15 @@ fetch('scripts/games.json')
         filterGamesByGender('kız');
         isFemaleFiltered = true;
         document.getElementById('femaleButton').classList.add('active');
-
         isMaleFiltered = false;
         document.getElementById('maleButton').classList.remove('active');
       }
     });
 
-    // URL'den otomatik filtre oku
+    // URL'den filtre veya kategori oku
     const urlParams = new URLSearchParams(window.location.search);
     const filter = urlParams.get('filter');
+    const category = urlParams.get('kategori');
 
     if (filter === 'erkek') {
       filterGamesByGender('erkek');
@@ -117,6 +108,8 @@ fetch('scripts/games.json')
       filterGamesByGender('kız');
       isFemaleFiltered = true;
       document.getElementById('femaleButton').classList.add('active');
+    } else if (category) {
+      filterGamesByCategory(category);
     } else {
       showAllGames();
     }
