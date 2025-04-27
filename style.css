@@ -148,7 +148,7 @@ a:hover {
   margin: 0 auto;
   height: 80px;
   width: 100%;
-  background-color: #ff6f00;
+  background-color: #00fffb;
   background-image: -moz-linear-gradient(top, #f0f0ee, #d4dbe0);
   background-image: -webkit-gradient(
     linear,
@@ -171,7 +171,7 @@ ul.kategori {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #ff6f00;
+  background: #00fffb;
   margin: 0;
   list-style: none;
   font-family: Arial, sans-serif;

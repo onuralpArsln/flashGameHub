@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TubiGame - En Güzel Oyunlar Burada!!!</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <style>
+#oyun-container {
+      width: 960px;
+      height: 600px;
+      margin: 0 auto;
+      background: #000;
+    }
+#ust-reklam {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+#ust-reklam-banner {
+  background-color: rgb(18, 18, 18);
+  color: white;
+  border: none;
+  margin-top: 0px;
+  width: calc(100vw - 4vw - 440px);
+  height: 250px;
+  font-size: 16px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#ust-reklam-inner {
+  margin-top: 25px;
+}
+#sol-reklam {
+  position: fixed;
+  top: 100px; /* Sayfanın üstünden ne kadar aşağıda başlayacak */
+  left: 2vw; /* Sağ kenara yapıştır */
+  width: 100px;
+  z-index: 999; /* Diğer içeriklerin üstünde kalsın */
+}
+#sol-reklam-banner {
+  background-color: rgb(18, 18, 18);
+  color: white;
+  border: none;
+  width: 200px;
+  height: 800px;
+  font-size: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#sol-reklam-inner {
+  margin-top: 25px;
+}
+#sag-reklam {
+  position: fixed;
+  top: 100px; /* Sayfanın üstünden ne kadar aşağıda başlayacak */
+  right: 2vw; /* Sağ kenara yapıştır */
+  width: 200px;
+  z-index: 999; /* Diğer içeriklerin üstünde kalsın */
+}
+#sag-reklam-banner {
+  background-color: rgb(18, 18, 18);
+  color: white;
+  border: none;
+  width: 200px;
+  height: 800px;
+  font-size: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#sag-reklam-inner {
+  margin-top: 25px;
+}
+#orta-reklam {
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center; /* Yatayda ortalar */
+  align-items: center; /* Dikeyde ortalamak istersen */
+}
+#orta-reklam-banner {
+  background-color: rgb(18, 18, 18);
+  color: white;
+  border: none;
+  width: calc(100vw - 4vw - 440px);
+  height: 250px;
+  font-size: 16px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center; /* İçeriği ortalar */
+  align-items: center; /* İçeriği dikeyde ortalar */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#orta-reklam-inner {
+  margin-top: 25px;
+}
+#alt-reklam {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; /* Yatayda ortalar */
+  align-items: center; /* Dikeyde ortalamak istersen */
+  width: 100%; /* Genişlik tanımlı olmalı */
+  margin-bottom: 25px;
+}
+#alt-reklam-banner {
+  background-color: rgb(18, 18, 18);
+  color: white;
+  border: none;
+  width: calc(100vw - 4vw - 440px);
+  height: 250px;
+  font-size: 16px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center; /* İçeriği ortalar */
+  align-items: center; /* İçeriği dikeyde ortalar */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#alt-reklam-inner {
+  margin-top: 25px;
+}
+#butonlar {
+  width: 804px;
+  height: 29px;
+  float: none; /* Float kaldırıldı */
+  margin: 15px auto 15px auto; /* Ortalanmış margin */
+  display: flex; /* Flexbox kullanıldı */
+  justify-content: center; /* Ortalamak için */
+  align-items: center; /* Dikeyde ortalamak için */
+}
+  </style>
+</head>
+
+<body>
+
+  <div id="ustb">
+    <div id="ust">
+      <div id="kategoriler">
+        <a id="maleButton" class="button1 erkek">ERKEK OYUNLARI</a>
+        <a id="femaleButton" class="button1 kiz">KIZ OYUNLARI</a>
+      </div>
+      <div id="logo">
+        <a href="https://tubigame.onrender.com/" title="TubiGame"
+          ><img src="images\rsz_tubioyun.png" border="0" alt="TubiGame"
+        /></a>
+      </div>
+      <div id="arama">
+        <form class="ara" method="get" action="/oyun-ara.asp">
+          <input name="aranan" type="text" placeholder="Oyun Ara.." required />
+          <span><button id="araClick" type="submit"><i class="bi bi-search"></i></button></span>
+        </form>
+      </div>
+    </div>
+    <ul class="kategori">
+      <li class="kategori-item">
+        <a
+          class="kategori-link"
+          href="index.html?kategori=2 kişilik"
+          title="2-Kisilik-Oyunlar"
+          >2 Kişilik Oyunlar</a
+        >
+      </li>
+      <li class="kategori-item">
+        <a
+          class="kategori-link"
+          href="index.html?kategori=savas"
+          title="Savas-Oyunlari"
+          >Savaş Oyunları</a
+        >
+      </li>
+      <li class="kategori-item">
+        <a
+          class="kategori-link"
+          href="index.html?kategori=yarış"
+          title="Yaris-Oyunlari"
+          >Yarış Oyunları</a
+        >
+      </li>
+      <li class="kategori-item">
+        <a
+          class="kategori-link"
+          href="index.html?kategori=cocuk"
+          title="Cocuk-oyunları"
+          >Çocuk Oyunları</a
+        >
+      </li>
+      <li class="kategori-item">
+        <a
+          class="kategori-link"
+          href="index.html?kategori=macera"
+          title="Macera-Oyunlari"
+          >Macera Oyunları</a
+        >
+      </li>
+      <li class="kategori-item">
+        <a
+          class="kategori-link"
+          href="index.html?kategori=spor"
+          title="Spor-Oyunlari"
+          >Spor Oyunları</a
+        >
+      </li>
+      <li class="kategori-item">
+        <a
+          class="kategori-link"
+          href="index.html?kategori=zeka"
+          title="Zeka-Oyunlari"
+          >Zeka Oyunları</a
+        >
+      </li>
+      <li class="kategori-item">
+        <a
+          class="kategori-link"
+          href="index.html?kategori=beceri"
+          title="Beceri-Oyunlari"
+          >Beceri Oyunları</a
+        >
+      </li>
+    </ul>
+  </div>
+
+  <div class="sayfa">
+    <div id="ust-reklam">
+      <div id="ust-reklam-banner">
+        <div id="ust-reklam-inner">
+          <div id="ust-reklam-label">En üst orta reklam alanı</div>
+          <div data-sdg-ad="ust"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sol-reklam">
+      <div id="sol-reklam-banner">
+        <div id="sol-reklam-inner">
+          <div id="sol-reklam-label">Sol Reklam Alanı</div>
+          <div data-sdg-ad="sol"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sag-reklam">
+      <div id="sag-reklam-banner">
+        <div id="sag-reklam-inner">
+          <div id="sag-reklam-label">Sağ Reklam Alanı</div>
+          <div data-sdg-ad="sag"></div>
+        </div>
+      </div>
+    </div>
+    <div id="oyun-container"></div>
+    <!-- 1. Önce Ruffle'ı yükle -->
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    
+    <script>
+      // 2. Sayfa yüklendiğinde çalıştır
+      window.addEventListener("DOMContentLoaded", () => {
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        const container = document.getElementById("oyun-container");
+        
+        player.style.width = "100%";
+        player.style.height = "100%";
+        container.appendChild(player);
+        
+        player.load({
+          url: "games\\Swf\test.swf", // SWF dosya yolunu güncelleyin
+          allowScriptAccess: true,
+          parameters: ""
+        }).catch(e => {
+          console.error("SWF yükleme hatası:", e);
+          container.innerHTML = `<p>Oyun yüklenemedi: ${e.message}</p>`;
+        });
+      });
+    </script>
+<div id="butonlar"><a href="/kaygan-zemin-tam-ekran.html" class="button">TAM EKRAN OYNA</a><a href="/kaygan-zemin-oyna.html?y=2" class="button">OYUN AÇILMIYORSA TIKLA!</a></div>
+    <div id="alt-reklam">
+      <div id="alt-reklam-banner">
+        <div id="alt-reklam-inner">
+          <div id="alt-reklam-label">Alt Reklam Alanı</div>
+          <div data-sdg-ad="alt"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="altz">
+    <div id="alt">
+      <br />
+      <p>TUBİGAME OYUNLAR - <span id="currentDate"></span></p>
+      <p>
+        Türkiye'nin en güzel Oyun sitesi Tubigame.com sizler için en
+        özel oyunları özenle seçip oynayabileceğiniz hale getiriyor.
+        TubiGame'de <br />oynadığınız oyunlar bu oyunları hazırlayan oyun
+        yapımcılarına aittir. TubiGame ücretsiz ve harika bir oyun sitesidir. - 2025
+        <br /><br />
+        <a href="/iletisim.asp">İletişim</a> - <a href="/gizlilik-politikasi.asp">Gizlilik Politikası</a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    // Türkçe tarih formatı (25 Nisan 2025 Cuma)
+    const options = { 
+      day: 'numeric', 
+      month: 'long', 
+      year: 'numeric', 
+      weekday: 'long' 
+    };
+    const today = new Date();
+    const formattedDate = today.toLocaleDateString('tr-TR', options);
+    
+    // Tarih yazılacak elementi seç ve güncelle
+    document.getElementById('currentDate').textContent = formattedDate;
+
+    async function loadGame() {
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get('id');
+
+      const res = await fetch('scripts/games.json');
+      const games = await res.json();
+      const game = games.find(g => g.id == id);
+
+      if (game) {
+        document.getElementById('gameTitle').innerText = game.title;
+
+        // src içindeki {game-path} değiştir
+        let iframeHTML = game.src.replace('{game-path}', game.title.toLowerCase().replace(/\s+/g, '-'));
+
+        document.getElementById('gameIframeContainer').innerHTML = iframeHTML;
+        document.getElementById('gameDescription').innerHTML = `<strong>Açıklama:</strong> ${game.description}`;
+
+        if (game.instructions) {
+          document.getElementById('gameInstructions').innerHTML = `<strong>Nasıl Oynanır:</strong> ${game.instructions}`;
+        }
+
+        if (game.tags) {
+          const tagsArray = game.tags.split(',').map(tag => tag.trim());
+          document.getElementById('gameTags').innerHTML = `<strong>Etiketler:</strong> ` + tagsArray.map(tag => `<span>${tag}</span>`).join('');
+        }
+      } else {
+        document.querySelector('.gamePageContainer').innerHTML = '<h2>Oyun bulunamadı.</h2>';
+      }
+    }
+
+    loadGame();
+
+    // Butonlara basınca anasayfaya filtreli git
+    document.getElementById('maleButton').addEventListener('click', () => {
+      window.location.href = 'index.html?filter=erkek';
+    });
+
+    document.getElementById('femaleButton').addEventListener('click', () => {
+      window.location.href = 'index.html?filter=kiz';
+    });
+  </script>
+
+</body>
+
+</html>
