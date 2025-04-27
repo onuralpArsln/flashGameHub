@@ -19,81 +19,39 @@
         <a id="femaleButton" class="button1 kiz">KIZ OYUNLARI</a>
       </div>
       <div id="logo">
-        <a href="https://tubigame.onrender.com/" title="TubiGame"
-          ><img src="images\rsz_tubioyun.png" border="0" alt="TubiGame"
-        /></a>
+        <a href="https://tubigame.onrender.com/" title="TubiGame"><img src="images\rsz_tubioyun.png" border="0"
+            alt="TubiGame" /></a>
       </div>
       <div id="arama">
         <form class="ara" method="get" action="/oyun-ara.asp">
           <input name="aranan" type="text" placeholder="Oyun Ara.." required />
-          <span><button id="araClick" type="submit"><i class="bi bi-search"></i></button></span>
         </form>
       </div>
     </div>
     <ul class="kategori">
       <li class="kategori-item">
-        <a
-          class="kategori-link"
-          href="index.html?kategori=2 kişilik"
-          title="2-Kisilik-Oyunlar"
-          >2 Kişilik Oyunlar</a
-        >
+        <a class="kategori-link" href="index.html?kategori=2 kişilik" title="2-Kisilik-Oyunlar">2 Kişilik Oyunlar</a>
       </li>
       <li class="kategori-item">
-        <a
-          class="kategori-link"
-          href="index.html?kategori=savas"
-          title="Savas-Oyunlari"
-          >Savaş Oyunları</a
-        >
+        <a class="kategori-link" href="index.html?kategori=savas" title="Savas-Oyunlari">Savaş Oyunları</a>
       </li>
       <li class="kategori-item">
-        <a
-          class="kategori-link"
-          href="index.html?kategori=yarış"
-          title="Yaris-Oyunlari"
-          >Yarış Oyunları</a
-        >
+        <a class="kategori-link" href="index.html?kategori=yarış" title="Yaris-Oyunlari">Yarış Oyunları</a>
       </li>
       <li class="kategori-item">
-        <a
-          class="kategori-link"
-          href="index.html?kategori=cocuk"
-          title="Cocuk-oyunları"
-          >Çocuk Oyunları</a
-        >
+        <a class="kategori-link" href="index.html?kategori=cocuk" title="Cocuk-oyunları">Çocuk Oyunları</a>
       </li>
       <li class="kategori-item">
-        <a
-          class="kategori-link"
-          href="index.html?kategori=macera"
-          title="Macera-Oyunlari"
-          >Macera Oyunları</a
-        >
+        <a class="kategori-link" href="index.html?kategori=macera" title="Macera-Oyunlari">Macera Oyunları</a>
       </li>
       <li class="kategori-item">
-        <a
-          class="kategori-link"
-          href="index.html?kategori=spor"
-          title="Spor-Oyunlari"
-          >Spor Oyunları</a
-        >
+        <a class="kategori-link" href="index.html?kategori=spor" title="Spor-Oyunlari">Spor Oyunları</a>
       </li>
       <li class="kategori-item">
-        <a
-          class="kategori-link"
-          href="index.html?kategori=zeka"
-          title="Zeka-Oyunlari"
-          >Zeka Oyunları</a
-        >
+        <a class="kategori-link" href="index.html?kategori=zeka" title="Zeka-Oyunlari">Zeka Oyunları</a>
       </li>
       <li class="kategori-item">
-        <a
-          class="kategori-link"
-          href="index.html?kategori=beceri"
-          title="Beceri-Oyunlari"
-          >Beceri Oyunları</a
-        >
+        <a class="kategori-link" href="index.html?kategori=beceri" title="Beceri-Oyunlari">Beceri Oyunları</a>
       </li>
     </ul>
   </div>
@@ -175,15 +133,15 @@
 
   <script>
     // Türkçe tarih formatı (25 Nisan 2025 Cuma)
-    const options = { 
-      day: 'numeric', 
-      month: 'long', 
-      year: 'numeric', 
-      weekday: 'long' 
+    const options = {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+      weekday: 'long'
     };
     const today = new Date();
     const formattedDate = today.toLocaleDateString('tr-TR', options);
-    
+
     // Tarih yazılacak elementi seç ve güncelle
     document.getElementById('currentDate').textContent = formattedDate;
 
