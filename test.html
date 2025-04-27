@@ -274,6 +274,7 @@
       <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 
       <script>
+        app.use('/games', express.static('games'));
         // 2. Sayfa yüklendiğinde çalıştır
         window.addEventListener("DOMContentLoaded", () => {
           const ruffle = window.RufflePlayer.newest();
