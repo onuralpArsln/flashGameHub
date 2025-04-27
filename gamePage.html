@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Oyun Sayfası - TubiGame</title>
+  <title>TubiGame - En Güzel Oyunlar Burada!!!</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
@@ -19,9 +19,9 @@
         <a id="femaleButton" class="button1 kiz">KIZ OYUNLARI</a>
       </div>
       <div id="logo">
-        <a href="https://www.tubigame.com/" title="TubiGame">
-          <img src="images/1.jpg" border="0" alt="TubiGame" />
-        </a>
+        <a href="https://tubigame.onrender.com/" title="TubiGame"
+          ><img src="images\rsz_tubioyun.png" border="0" alt="TubiGame"
+        /></a>
       </div>
       <div id="arama">
         <form class="ara" method="get" action="/oyun-ara.asp">
@@ -95,12 +95,12 @@
   <div id="altz">
     <div id="alt">
       <br />
-      <p>TUBİGAME OYUNLAR - 25 Nisan 2025 Cuma</p>
+      <p>TUBİGAME OYUNLAR - <span id="currentDate"></span></p>
       <p>
-        Türkiye'nin en büyük Oyun sitesi Tubigame.com sizler için en güzel oyunları özenle seçip oynayabileceğiniz hale
-        getiriyor.
-        TubiGame'de oynadığınız oyunlar bu oyunları hazırlayan oyun yapımcılarına aittir. TubiGame ücretsiz ve harika
-        bir oyun sitesidir. - 2025
+        Türkiye'nin en güzel Oyun sitesi Tubigame.com sizler için en
+        özel oyunları özenle seçip oynayabileceğiniz hale getiriyor.
+        TubiGame'de <br />oynadığınız oyunlar bu oyunları hazırlayan oyun
+        yapımcılarına aittir. TubiGame ücretsiz ve harika bir oyun sitesidir. - 2025
         <br /><br />
         <a href="/iletisim.asp">İletişim</a> - <a href="/gizlilik-politikasi.asp">Gizlilik Politikası</a>
       </p>
@@ -108,6 +108,19 @@
   </div>
 
   <script>
+    // Türkçe tarih formatı (25 Nisan 2025 Cuma)
+    const options = { 
+      day: 'numeric', 
+      month: 'long', 
+      year: 'numeric', 
+      weekday: 'long' 
+    };
+    const today = new Date();
+    const formattedDate = today.toLocaleDateString('tr-TR', options);
+    
+    // Tarih yazılacak elementi seç ve güncelle
+    document.getElementById('currentDate').textContent = formattedDate;
+
     async function loadGame() {
       const params = new URLSearchParams(window.location.search);
       const id = params.get('id');
