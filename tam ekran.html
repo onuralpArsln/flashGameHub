@@ -7,17 +7,33 @@
     <title>Game Name</title>
     <link rel="stylesheet" href="style.css" />
    <style>
-    /* Body ve HTML tam yükseklik */
     html, body {
       height: 100%;
       margin: 0;
       padding: 0;
-      overflow: hidden; /* Scroll çıkmasın */
+      overflow: hidden;
     }
 
+    /* Üst menü sabit */
+    #ustb {
+      width: 100%;
+      height: 80px; /* Menü yüksekliği - buna göre ayar yapacağız */
+      background: #333;
+      color: #fff;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Oyun alanı menüden aşağı başlar */
     #oyun-container {
       width: 100%;
-      height: 100vh; /* Tam ekran */
+      height: calc(100vh - 80px); /* Menü yüksekliğini çıkarıyoruz */
+      margin-top: 80px; /* Menü kadar boşluk bırakıyoruz */
       background: #000;
       display: flex;
       justify-content: center;
