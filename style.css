@@ -5,7 +5,7 @@
   gap: 30px;
 }
 .ust-reklam-banner {
-  background-color: #e3005b;
+  background-color: rgb(18, 18, 18);
   color: white;
   border: none;
   margin-top: 0px;
@@ -29,7 +29,7 @@
   z-index: 999; /* Diğer içeriklerin üstünde kalsın */
 }
 .sol-reklam-banner {
-  background-color: #e3005b;
+  background-color: rgb(18, 18, 18);
   color: white;
   border: none;
   width: 200px;
@@ -50,7 +50,7 @@
   z-index: 999; /* Diğer içeriklerin üstünde kalsın */
 }
 .sag-reklam-banner {
-  background-color: #e3005b;
+  background-color: rgb(18, 18, 18);
   color: white;
   border: none;
   width: 200px;
@@ -71,7 +71,7 @@
   align-items: center; /* Dikeyde ortalamak istersen */
 }
 .orta-reklam-banner {
-  background-color: #e3005b;
+  background-color: rgb(18, 18, 18);
   color: white;
   border: none;
   width: calc(100vw - 4vw - 440px);
@@ -96,7 +96,7 @@
   margin-bottom: 25px;
 }
 .alt-reklam-banner {
-  background-color: #e3005b;
+  background-color: rgb(18, 18, 18);
   color: white;
   border: none;
   width: calc(100vw - 4vw - 440px);
@@ -117,7 +117,7 @@
   src: url(segoeuisl.woff) format("woff");
 }
 body {
-  height: 200vh;
+  height: 100vh;
   width: 100vw;
   overflow-x: hidden;
   background-color: #ffffff;
