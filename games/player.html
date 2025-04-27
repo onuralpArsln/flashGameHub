@@ -137,30 +137,49 @@
   <div style="margin: 0 auto; width: 1322px; margin-top: 17px">
     <div id="oyuncerceve">
       <div id="oyunsutunu">
-        <div id="oyun" style="width: 800px">
-          <iframe id="frame"
-            src="https://html5.gamedistribution.com/bc2f52c2d9d04e41aee48bef01075d22?gd_sdk_referrer_url=http://www.oyunkuzusu.com/obby-bisiklet.html"
-            width="800px" height="600px" frameborder="0" marginheight="0" marginwidth="0" allowfullscreen="true"
-            scrolling="no" style="overflow: hidden; border: none" seamless="seamless"></iframe>
-        </div>
-
-        <div id="butonlar">
-          <a href="/obby-bisiklet-tam-ekran.html" class="button">TAM EKRAN OYNA</a><a
-            href="/obby-bisiklet-oyna.html?y=2" class="button">OYUN AÇILMIYORSA TIKLA!</a>
-        </div>
-
-        <div id="aciklama">
-          <h1>Obby Bisiklet :</h1>
-          Obby ile birlikte birbirinden zorlu ama çok eğlenceli parkurlarda
-          kıyasıya pedal çevirin. Yön tuşlarıyla hareket et. L-SHIFT ile
-          hızlan. BOŞLUK tuşuyla kamera açısını değiştir. İki heyecan verici
-          oyun modu bulunuyorr: Normal ve Meydan Okuma. Normal modda,
-          zamanlayıcı stresi olmadan her seviyeyi dikkatlice geçebilirsiniz.
-          Meydan Okuma modu, zamana karşı yarışırken hızınızı ve becerinizi
-          test etmenizi sağlar. İster tek başınıza oynayın ister 2 Oyuncu
-          modunda kafa kafaya yarışın, sizi her zaman heyecan verici bir
-          mücadele bekliyor. (Html5)
-        </div>
+        <div id="oyun" style="display:none;width:960px;height:600px;">
+          <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+          <script>
+                window.RufflePlayer = window.RufflePlayer || {};
+          window.RufflePlayer.config = {
+              // Options affecting the whole page
+              "publicPath": undefined,
+              "polyfills": true,
+              "autoplay": "on",
+              "unmuteOverlay": "hidden",
+              "backgroundColor": null,
+              "wmode": "window",
+              "letterbox": "fullscreen",
+              "warnOnUnsupportedContent": false,
+              "contextMenu": false,
+              "showSwfDownload": false,
+              "maxExecutionDuration": {"secs": 15, "nanos": 0},
+              "logLevel": "error",
+              "base": null,
+              "menu": false,
+              "salign": "",
+              "scale": "showAll",
+            "forceScale": true,
+              "quality": "high",
+              "preloader": false,
+          };
+                      document.addEventListener("DOMContentLoaded", function () {
+                          let swf = '../../Swf/angry_birds.swf';
+                          if (swf) {
+                              let ruffle = window.RufflePlayer.newest();
+                              let player = Object.assign(document.getElementById("oyun").appendChild(ruffle.createPlayer()), {
+                                  style: 'width: 960px; height: 600px',
+                              });
+          
+                              player.load({
+                                  url: swf,
+                                  parameters: ""
+                              });
+                          }
+                      });
+                  </script>
+          <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+          </div>
         <div class="yorumlar">
           <h1>OBBY BİSİKLET ONLINE OYUNU İÇİN YAPILAN YORUMLAR :</h1>
           <h2><br /><br /></h2>
