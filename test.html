@@ -274,20 +274,19 @@
       <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 
       <script>
-        app.use('/games', express.static('games'));
         // 2. Sayfa yüklendiğinde çalıştır
         window.addEventListener("DOMContentLoaded", () => {
           const ruffle = window.RufflePlayer.newest();
           const player = ruffle.createPlayer();
           const container = document.getElementById("oyun-container");
 
-          player.style.width = "100%";
-          player.style.height = "100%";
+          player.style.width = "960px";
+          player.style.height = "600px";
           container.appendChild(player);
 
           player
             .load({
-              url: "games\\Swf\\angry_birds.swf", // SWF dosya yolunu güncelleyin
+              url: "games/Swf/angry_birds.swf", // SWF dosya yolunu güncelleyin
               allowScriptAccess: true,
               parameters: "",
             })
