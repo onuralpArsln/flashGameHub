@@ -805,5 +805,6 @@ div.yorumlar a:hover {
   display: flex;
   align-items: center;
   justify-content: flex;
-  max-width: calc(100vw - 4vw - 400px);
+  max-width: 960px;
+  height: 600px;
 }
