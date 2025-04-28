@@ -203,32 +203,29 @@ fetch('scripts/games.json')
         }
       }
     });
-
-    const urlParams = new URLSearchParams(window.location.search);
-    const filter = urlParams.get('filter');
-    const category = urlParams.get('kategori');
-    const search = urlParams.get('aranan');
-
-    if (search) {
-      searchGames(search);
-      const searchInput = document.querySelector('input[name="aranan"]');
-      if (searchInput) searchInput.value = search;
-    } else if (filter === 'erkek') {
-      isMaleFiltered = true;
-      document.getElementById('maleButton')?.classList.add('active');
-      filterGamesByGender('erkek');
-    } else if (filter === 'kiz') {
-      isFemaleFiltered = true;
-      document.getElementById('femaleButton')?.classList.add('active');
-      filterGamesByGender('kız');
-    } else if (category) {
-      filterGamesByCategory(category);
-    } else {
-      showAllGames();
-    }
-
   });
+  const urlParams = new URLSearchParams(window.location.search);
+  const filter = urlParams.get('filter');
+  const category = urlParams.get('kategori');
+  const search = urlParams.get('aranan');
 
+  if (search) {
+    searchGames(search);
+    const searchInput = document.querySelector('input[name="aranan"]');
+    if (searchInput) searchInput.value = search;
+  } else if (filter === 'erkek') {
+    isMaleFiltered = true;
+    document.getElementById('maleButton')?.classList.add('active');
+    filterGamesByGender('erkek');
+  } else if (filter === 'kiz') {
+    isFemaleFiltered = true;
+    document.getElementById('femaleButton')?.classList.add('active');
+    filterGamesByGender('kız');
+  } else if (category) {
+    filterGamesByCategory(category);
+  } else {
+    showAllGames();
+  }
 // Türkçe tarih formatı
 const options = { day: 'numeric', month: 'long', year: 'numeric', weekday: 'long' };
 const today = new Date();
