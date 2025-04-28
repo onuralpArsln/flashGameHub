@@ -567,19 +567,21 @@
     "instructions": "Oyuncu 1: Hareket: W, A, S, D veya OK TUŞLARI (Sadece 1P Modu) Zıplama: Q Paraşüt: Z Nitro: SHIFT Araç Değiştirme: TAB Kamera: C Yeniden Başlatma: R Oyuncu 2: Hareket: OK TUŞLARI Zıplama: K Paraşüt: P Nitro: M Seçme: ENTER Kamera: K Yeniden Başlatma: L",
     "genres": "macera, beceri, 2 kişilik",
     "src": "<iframe src=\"https://html5.gamedistribution.com/8512423452614a72a446c4f956546cad/?gd_sdk_referrer_url=https://www.example.com/games/{game-path}\" width=\"800\" height=\"450\" scrolling=\"none\" frameborder=\"0\"></iframe>",
-    "tags": "2kişilik, bisiklet, sürüş, macera",
+    "tags": "2kişilik , bisiklet , sürüş , macera ",
     "image": "images\\Riders Downhill Racing\\image4.jpg"
   },
   {
     "id": 53,
-    "title": "",
-    "cinsiyet": "",
-    "description": "",
-    "instructions": "",
-    "genres": "",
-    "src": "",
-    "tags": "",
-    "image": ""
+    "title": "Çatlak Planör",
+    "cinsiyet": "erkek",
+    "description": "uçak oyunu",
+    "instructions": "sağ sola gider",
+    "genres": "macera, beceri",
+    "src": "games\\Swf\\PLANÖR.swf",
+    "tags": "2 kişilik, 3d, bisiklet, renkli",
+    "image": "images\\Riders Downhill Racing\\image4.jpg",
+    "gameWidth": 800,
+    "gameHeight": 600
   },
   {
     "id": 54,
