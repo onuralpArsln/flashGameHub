@@ -339,3 +339,13 @@ fetch('scripts/games.json')
     
     // Tarih yazılacak elementi seç ve güncelle
     document.getElementById('currentDate').textContent = formattedDate;
+
+const iframeContainer = document.getElementById("gameIframeContainer");
+iframeContainer.innerHTML = `
+  <iframe 
+    src="your-game-url" 
+    width="960" 
+    height="600" 
+    frameborder="0"
+  ></iframe>
+`;

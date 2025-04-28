@@ -792,38 +792,42 @@ div.yorumlar a:hover {
 .gamePageContainerMain {
   margin: 0 auto;
   display: flex;
-  justify-content: center; /* Yatayda ortalamak için */
-  align-items: center; /* Dikeyde ortalamak için */
-  min-height: 100vh; /* Sayfanın yüksekliğini tamamen kapsar */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f9f9f9; /* Optional: Just for visibility */
 }
 
 .gamePageContainer {
- width: 960px;
-  height: 600px; /* Yükseklik */
+  width: 960px;
   display: flex;
-  margin: 0 auto;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  overflow: hidden;
-  padding: 0; /* İçeride ekstra boşluk bırakma */
+  gap: 20px; /* Adds spacing between elements */
+  padding: 20px 0; /* Optional: Adds top/bottom padding */
 }
 
 .gameIframeContainer {
+  width: 960px; /* Fixed width */
+  height: 600px; /* Fixed height */
+  background: #f0f0f0;
+  border: 1px solid #ddd;
   display: flex;
-  align-items: center; /* Dikeyde ortalamak için */
-  justify-content: center; /* Yatayda ortalamak için */
-  max-width: calc(100vw - 4vw - 400px);
-  max-width: 960px; /* Maksimum genişlik */
-  height: 600px; /* Yükseklik */
-  margin: 0 auto; /* Sayfanın ortasında yer almasını sağlar */
-  background-color: #f0f0f0; /* Arka plan rengi */
-  border: 1px solid #ddd; /* Kenarlık */
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevents scrollbars */
 }
 
 .gameIframeContainer iframe {
-  width: 100%;  /* container'ın tam genişliğinde */
-  height: 100%; /* container'ın tam yüksekliğinde */
+  width: 960px !important; /* Forces exact width */
+  height: 600px !important; /* Forces exact height */
   border: none;
-  object-fit: contain; /* İçeriğin tamamının görünmesini sağlar */
+}
+
+/* Optional: Styling for other elements */
+.gameTitle, .gameDescription, .gameInstructions, .gameTags {
+  width: 100%;
+  max-width: 960px;
+  text-align: center;
+  margin: 10px 0;
 }
