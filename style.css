@@ -813,7 +813,10 @@ div.yorumlar a:hover {
   border: 1px solid #ddd; /* Kenarlık */
 }
 .gameIframeContainer iframe {
-  width: 100%;  /* container'ın tam genişliğinde */
-  height: 100%; /* container'ın tam yüksekliğinde */
+  display: flex;
+  align-items: center; /* Dikeyde ortalamak için */
+  justify-content: center; /* Yatayda ortalamak için */
+  width: 960px; /* Maksimum genişlik */
+  height: 600px; /* Yükseklik */
   border: none; /* iframe kenarlığını kaldır */
 }
