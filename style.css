@@ -789,7 +789,13 @@ div.yorumlar a:hover {
     transform: translateY(0) scale(1.1);
   }
 }
-
+.gamePageContainerMain{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
 .gamePageContainer {
   margin-right: calc(2vw + 200px);
   margin-left: calc(2vw + 200px);
