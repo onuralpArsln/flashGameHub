@@ -812,12 +812,9 @@ div.yorumlar a:hover {
   background-color: #f0f0f0; /* Arka plan rengi */
   border: 1px solid #ddd; /* Kenarlık */
 }
+
 .gameIframeContainer iframe {
-  display: flex;
-  align-items: center; /* Dikeyde ortalamak için */
-  margin: 0 auto; /* Sayfanın ortasında yer almasını sağlar */
-  justify-content: center; /* Yatayda ortalamak için */
-  width: 960px; /* Maksimum genişlik */
-  height: 600px; /* Yükseklik */
+  width: 100%;  /* container'ın tam genişliğinde */
+  height: 100%; /* container'ın tam yüksekliğinde */
   border: none; /* iframe kenarlığını kaldır */
 }
