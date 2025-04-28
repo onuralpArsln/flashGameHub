@@ -789,16 +789,15 @@ div.yorumlar a:hover {
     transform: translateY(0) scale(1.1);
   }
 }
-.gamePageContainerMain{
+.gamePageContainerMain {
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  height: 100vh; /* Sayfanın yüksekliğini tamamen kapsar */
 }
+
 .gamePageContainer {
-  margin-right: calc(2vw + 200px);
-  margin-left: calc(2vw + 200px);
   width: 960px; /* Maksimum genişlik */
   height: 600px; /* Yükseklik */
   display: flex;
@@ -823,5 +822,5 @@ div.yorumlar a:hover {
   width: 100%;
   height: 100%;
   border: none;
-  object-fit: cover; /* İçeriğin alanı tam doldurmasını sağlar */
+  object-fit: contain; /* İçeriğin tamamının görünmesini sağlar */
 }
