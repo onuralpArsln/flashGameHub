@@ -792,9 +792,9 @@ div.yorumlar a:hover {
 .gamePageContainerMain {
   margin: 0 auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Sayfanın yüksekliğini tamamen kapsar */
+  justify-content: center; /* Yatayda ortalamak için */
+  align-items: center; /* Dikeyde ortalamak için */
+  min-height: 100vh; /* Sayfanın yüksekliğini tamamen kapsar */
 }
 
 .gamePageContainer {
@@ -805,13 +805,15 @@ div.yorumlar a:hover {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  padding: 0; /* İçeride ekstra boşluk bırakma */
 }
 
 .gameIframeContainer {
   display: flex;
   align-items: center; /* Dikeyde ortalamak için */
   justify-content: center; /* Yatayda ortalamak için */
-  width: 960px; /* Maksimum genişlik */
+  width: 100%; /* Genişlik %100 */
+  max-width: 960px; /* Maksimum genişlik */
   height: 600px; /* Yükseklik */
   margin: 0 auto; /* Sayfanın ortasında yer almasını sağlar */
   background-color: #f0f0f0; /* Arka plan rengi */
@@ -819,8 +821,8 @@ div.yorumlar a:hover {
 }
 
 .gameIframeContainer iframe {
-  width: 100%;
-  height: 100%;
+  width: 100%;  /* container'ın tam genişliğinde */
+  height: 100%; /* container'ın tam yüksekliğinde */
   border: none;
   object-fit: contain; /* İçeriğin tamamının görünmesini sağlar */
 }
