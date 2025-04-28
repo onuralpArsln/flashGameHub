@@ -327,8 +327,15 @@ fetch('scripts/games.json')
       showAllGames();
     }
   });
-// Türkçe tarih formatı
-const options = { day: 'numeric', month: 'long', year: 'numeric', weekday: 'long' };
-const today = new Date();
-const formattedDate = today.toLocaleDateString('tr-TR', options);
-document.getElementById('currentDate')?.textContent = formattedDate;
+    // Türkçe tarih formatı (25 Nisan 2025 Cuma)
+    const options = { 
+      day: 'numeric', 
+      month: 'long', 
+      year: 'numeric', 
+      weekday: 'long' 
+    };
+    const today = new Date();
+    const formattedDate = today.toLocaleDateString('tr-TR', options);
+    
+    // Tarih yazılacak elementi seç ve güncelle
+    document.getElementById('currentDate').textContent = formattedDate;
