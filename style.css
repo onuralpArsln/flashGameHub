@@ -814,7 +814,8 @@ div.yorumlar a:hover {
 }
 
 .gameIframeContainer iframe {
-  width: 100%;  /* container'ın tam genişliğinde */
-  height: 100%; /* container'ın tam yüksekliğinde */
-  border: none; /* iframe kenarlığını kaldır */
+  width: 100%;
+  height: 100%;
+  border: none;
+  object-fit: cover; /* İçeriğin alanı tam doldurmasını sağlar */
 }
