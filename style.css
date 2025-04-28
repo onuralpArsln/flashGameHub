@@ -793,7 +793,8 @@ div.yorumlar a:hover {
 .gamePageContainer {
   margin-right: calc(2vw + 200px);
   margin-left: calc(2vw + 200px);
-  max-width: calc(100vw - 4vw - 400px);
+  width: 960px; /* Maksimum genişlik */
+  height: 600px; /* Yükseklik */
   display: flex;
   flex-direction: column;
   justify-content: center;
