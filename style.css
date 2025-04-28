@@ -803,8 +803,11 @@ div.yorumlar a:hover {
 
 .gameIframeContainer {
   display: flex;
-  align-items: center;
-  justify-content: flex;
-  max-width: 960px;
-  height: 600px;
+  align-items: center; /* Dikeyde ortalamak için */
+  justify-content: center; /* Yatayda ortalamak için */
+  width: 960px; /* Maksimum genişlik */
+  height: 600px; /* Yükseklik */
+  margin: 0 auto; /* Sayfanın ortasında yer almasını sağlar */
+  background-color: #f0f0f0; /* Arka plan rengi */
+  border: 1px solid #ddd; /* Kenarlık */
 }
