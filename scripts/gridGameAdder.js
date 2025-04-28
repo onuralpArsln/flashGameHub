@@ -214,12 +214,13 @@ fetch('scripts/games.json')
           </a>
         `;
 
-        if (gameCount < cardsPerRow * 3) {
+        if (gameCount < cardsPerRow * 2) {
           gridUpper.appendChild(card);
-        } else {
+        } else if (gameCount < cardsPerRow * 4) {
           gridLower.appendChild(card);
+        } else {
+          gridSame.appendChild(card);
         }
-
         gameCount++;
       });
     }
