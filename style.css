@@ -789,15 +789,6 @@ div.yorumlar a:hover {
     transform: translateY(0) scale(1.1);
   }
 }
-.gamePageContainerMain {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: #f9f9f9; /* Optional: Just for visibility */
-}
-
 .gamePageContainer {
   width: 960px;
   display: flex;
