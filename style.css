@@ -798,7 +798,7 @@ div.yorumlar a:hover {
 }
 
 .gamePageContainer {
-  max-width: 1000px;
+ width: 960px;
   height: 600px; /* Yükseklik */
   display: flex;
   margin: 0 auto;
