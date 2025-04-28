@@ -801,6 +801,7 @@ div.yorumlar a:hover {
   max-width: calc(100vw - 4vw - 400px);
   height: 600px; /* Yükseklik */
   display: flex;
+  margin: 0 auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
