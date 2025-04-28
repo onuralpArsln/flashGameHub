@@ -3,6 +3,7 @@ fetch('scripts/games.json')
   .then(games => {
     const gridUpper = document.getElementById('gamesUpper');
     const gridLower = document.getElementById('gamesLower');
+    const gridSame = document.getElementById('gamesSame');
 
     let isMaleFiltered = false;
     let isFemaleFiltered = false;
@@ -12,6 +13,7 @@ fetch('scripts/games.json')
     function filterGamesByGender(gender) {
       gridUpper.innerHTML = '';
       gridLower.innerHTML = '';
+      gridSame.innerHTML = '';
 
       // Clear search when gender filter is applied
       clearSearch();
@@ -34,6 +36,7 @@ fetch('scripts/games.json')
     function filterGamesByCategory(category) {
       gridUpper.innerHTML = '';
       gridLower.innerHTML = '';
+      gridSame.innerHTML = '';
 
       currentCategory = category;
 
@@ -62,6 +65,7 @@ fetch('scripts/games.json')
     function searchGames(query) {
       gridUpper.innerHTML = '';
       gridLower.innerHTML = '';
+      gridSame.innerHTML = '';
 
       searchQuery = query.trim().toLowerCase();
 
@@ -170,6 +174,7 @@ fetch('scripts/games.json')
     function showAllGames() {
       gridUpper.innerHTML = '';
       gridLower.innerHTML = '';
+      gridSame.innerHTML = '';
       currentCategory = null;
       clearSearch();
 

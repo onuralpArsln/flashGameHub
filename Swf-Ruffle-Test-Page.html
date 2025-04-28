@@ -19,6 +19,7 @@
     />
     <style>
       #oyun-container {
+        clear: both; /* Oyun ve diğer öğelerden bağımsız olsun */
         width: 960px;
         height: 600px;
         margin: 0 auto;
@@ -36,8 +37,8 @@
         color: white;
         border: none;
         margin-top: 0px;
-        width: calc(100vw - 4vw - 440px);
-        height: 250px;
+        width: 728px;
+        height: 90px;
         font-size: 16px;
         border-radius: 3px;
         display: flex;
@@ -59,8 +60,8 @@
         background-color: rgb(18, 18, 18);
         color: white;
         border: none;
-        width: 200px;
-        height: 800px;
+        width: 120px;
+        height: 600px;
         font-size: 16px;
         border-radius: 3px;
         cursor: pointer;
@@ -80,8 +81,8 @@
         background-color: rgb(18, 18, 18);
         color: white;
         border: none;
-        width: 200px;
-        height: 800px;
+        width: 120px;
+        height: 600px;
         font-size: 16px;
         border-radius: 3px;
         cursor: pointer;
@@ -101,8 +102,8 @@
         background-color: rgb(18, 18, 18);
         color: white;
         border: none;
-        width: calc(100vw - 4vw - 440px);
-        height: 250px;
+        width: 728px;
+        height: 90px;
         font-size: 16px;
         border-radius: 3px;
         display: flex;
@@ -126,8 +127,8 @@
         background-color: rgb(18, 18, 18);
         color: white;
         border: none;
-        width: calc(100vw - 4vw - 440px);
-        height: 250px;
+        width: 728px;
+        height: 90px;
         font-size: 16px;
         border-radius: 3px;
         display: flex;
@@ -135,6 +136,7 @@
         align-items: center; /* İçeriği dikeyde ortalar */
         cursor: pointer;
         transition: background-color 0.3s;
+        margin-top: 80px;
       }
       #alt-reklam-inner {
         margin-top: 25px;
@@ -148,6 +150,76 @@
         justify-content: center; /* Ortalamak için */
         align-items: center; /* Dikeyde ortalamak için */
       }
+/*Yıldız Puanlama Sistemi*/
+#oyun-container {
+  position: relative;
+  margin-bottom: 20px; /* Alttan boşluk */
+  border: solid 1px;
+}
+
+#player-alt {
+  display: flex;
+  justify-content: space-between; /* Sağ ve sol hizalama */
+  align-items: center;
+  padding: 10px;
+  border: solid 1px;
+}
+
+#rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: flex-start; /* Puanlama solda hizalanacak */
+}
+
+.star {
+  font-size: 30px;
+  cursor: pointer;
+  color: #ccc; /* Boş yıldız rengi */
+}
+
+.star.filled {
+  color: #ffd700; /* Dolu yıldız rengi */
+}
+
+#user-rating {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+#total-votes {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+#tam-e {
+  display: flex;
+  justify-content: flex-end; /* Tam ekran butonunu sağa hizalar */
+}
+
+#butonlar {
+  display: flex;
+  justify-content: space-between; /* Bu, her iki öğeyi birbirinden ayıracak */
+  width: 100%; /* Butonları tam genişlikte hizalar */
+}
+
+#butonlar a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+#butonlar a:hover {
+  background-color: #0056b3;
+}
+
     </style>
   </head>
 
@@ -164,13 +236,11 @@
           /></a>
         </div>
         <div id="arama">
-          <form class="ara" method="get" action="/oyun-ara.asp">
-            <input
-              name="aranan"
-              type="text"
-              placeholder="Oyun Ara.."
-              required
-            />
+          <form class="ara" method="get">
+            <div class="search-container">
+              <input name="aranan" type="text" placeholder="Oyun Ara.." required />
+              <i class="bi bi-search"></i>
+            </div>
           </form>
         </div>
       </div>
@@ -294,11 +364,65 @@
               console.error("SWF yükleme hatası:", e);
               container.innerHTML = `<p>Oyun yüklenemedi: ${e.message}</p>`;
             });
+      // Oynatıcının altına butonları ekle
+      const playerAlt = document.createElement("div");
+      playerAlt.id = "player-alt";
+      playerAlt.innerHTML = `
+        <div id="butonlar">
+          <div id="rating">
+            <span class="star" data-index="1">&#9733;</span>
+            <span class="star" data-index="2">&#9733;</span>
+            <span class="star" data-index="3">&#9733;</span>
+            <span class="star" data-index="4">&#9733;</span>
+            <span class="star" data-index="5">&#9733;</span>
+            <p>Puanınız: <span id="user-rating">0</span>/5</p>
+            <p>Toplam Puan Veren: <span id="total-votes">0</span></p>
+          </div>
+          <div id="tam-e">
+          <a href="Swf-Ruffle-Fullscrenn-Page.html" class="button">TAM EKRAN OYNA</a>
+          </div>
+        </div>
+      `;
+      container.appendChild(playerAlt);
+
+      let isRated = false; // Kullanıcı puan vermiş mi kontrolü
+      let totalVotes = 0; // Toplam puan veren kişi sayısı
+      let currentRating = 0; // Kullanıcının verdiği puan
+
+      // Yıldız tıklama olayı
+      const stars = document.querySelectorAll('.star');
+      const ratingText = document.getElementById('user-rating');
+      const totalVotesText = document.getElementById('total-votes');
+      
+      stars.forEach(star => {
+        star.addEventListener('click', function() {
+          if (isRated) return; // Eğer kullanıcı puan verdiyse, tekrar tıklanamaz
+          
+          const rating = parseInt(this.getAttribute('data-index'));
+          currentRating = rating;
+          isRated = true;
+          
+          // Puanı güncelle ve yıldızları doldur
+          updateRating(rating);
+          totalVotes++;
+          totalVotesText.textContent = totalVotes;
         });
+      });
+
+      function updateRating(rating) {
+        // Yıldızları güncelle
+        stars.forEach(star => {
+          if (parseInt(star.getAttribute('data-index')) <= rating) {
+            star.classList.add('filled');
+          } else {
+            star.classList.remove('filled');
+          }
+        });
+        // Puanı göster
+        ratingText.textContent = rating;
+      }
+    });
       </script>
-      <div id="butonlar">
-        <a href="Swf-Ruffle-Fullscrenn-Page.html" class="button">TAM EKRAN OYNA</a>
-      </div>
       <div id="alt-reklam">
         <div id="alt-reklam-banner">
           <div id="alt-reklam-inner">
@@ -307,6 +431,7 @@
           </div>
         </div>
       </div>
+      <div id="gamesSame" class="gameGrid"></div>
     </div>
 
     <div id="altz">

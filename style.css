@@ -97,6 +97,7 @@
   justify-content: center; /* Yatayda ortalar */
   align-items: center; /* Dikeyde ortalamak istersen */
   width: 100%; /* Genişlik tanımlı olmalı */
+
   margin-bottom: 25px;
 }
 .alt-reklam-banner {
@@ -112,6 +113,7 @@
   align-items: center; /* İçeriği dikeyde ortalar */
   cursor: pointer;
   transition: background-color 0.3s;
+  margin-top: 25px;
 }
 .alt-reklam-inner {
   margin-top: 25px;
@@ -229,27 +231,29 @@ ul.kategori {
   cursor: pointer;
 }
 .kiz {
-  border: 1px solid rgba(229, 31, 250, 0.6);
+  border: 2px solid rgba(191, 10, 212, 0.6);
   background-color: rgba(255, 255, 255, 0.6);
   color: #e51ffa;
-  padding: 12px 24px; /* Yükseklik ve genişlik için padding değeri */
+  padding: 5px 10px; /* Yükseklik ve genişlik için padding değeri */
   font-size: 15px; /* Yazı boyutunu büyütme */
   margin-left: 0px;
+  font-weight: bold;
 }
 .kiz:hover {
-  border: 1px solid #e51ffa;
+  border: 2px solid #e20ff9;
   background-color: rgba(255, 255, 255, 0.9);
   color: #e51ffa;
 }
 .erkek {
-  border: 1px solid rgba(74, 134, 255, 0.6);
+  border: 2px solid rgba(58, 76, 243, 0.6);
   background-color: rgba(255, 255, 255, 0.6);
-  color: #4a86ff;
-  padding: 12px 24px; /* Yükseklik ve genişlik için padding değeri */
+  color: #4a96f8;
+  font-weight: bold;
+  padding: 5px 10px; /* Yükseklik ve genişlik için padding değeri */
   font-size: 15px; /* Yazı boyutunu büyütme */
 }
 .erkek:hover {
-  border: 1px solid #4a86ff;
+  border: 2px solid #0e2efb;
   background-color: rgba(255, 255, 255, 0.9);
   color: #4a86ff;
 }
@@ -262,30 +266,44 @@ ul.kategori {
   float: left;
 }
 #logo img {
+  border-radius: 5px;
   width: 100%;
   height: 50px;
   display: block;
 }
-
+/*arama bölümü start*/
 #arama {
   width: 300px;
   margin-top: calc(var(--page-banner-top-margin) + 5px);
   height: 55px;
   float: left;
 }
-#eski {
-  width: 150px;
-  height: 55px;
-  text-align: right;
-  float: left;
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
-.esite {
-  padding: 18px 1px;
-  text-decoration: none;
-  display: inline-block;
-  font-family: "Segoe", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-  letter-spacing: 0.3px;
-  font-size: 13px;
+
+.search-container input {
+  width: 100%;
+  padding-right: 40px; /* Sağ boşluk bırak, ikon çakışmasın */
+  height: 40px;
+  font-size: 16px;
+}
+
+.search-container i {
+  position: absolute;
+  right: 45px; /* İkonu input'un sağına koy */
+  color: #666;
+  font-size: 20px;
+  pointer-events: none; /* İkon kliklenmesin */
+}
+/*arama bölümü end*/
+#butonlar {
+  width: 804px;
+  height: 29px;
+  float: left;
+  margin: 0 0 11px -3px;
 }
 .ara {
   width: 250px;
@@ -665,12 +683,7 @@ div.yorumlar a:hover {
   margin: 0 auto 24px; /* Ortalar */
   display: block; /* Ortalamayı garanti altına alır */
 }
-#butonlar {
-  width: 804px;
-  height: 29px;
-  float: left;
-  margin: 0 0 11px -3px;
-}
+
 .button {
   border: none;
   padding: 6px 12px;
