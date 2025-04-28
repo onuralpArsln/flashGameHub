@@ -203,7 +203,7 @@ fetch('scripts/games.json')
           card.classList.add(genderClass);
         }
         card.innerHTML = `
-          <a href="Game-Page-İ-Frame.html?id=${game.id}">
+          <a href="gameCard.html?id=${game.id}">
             <img src="${game.image}" alt="${game.title}" class="gameCardImg" />
             <p>${game.title}</p>
           </a>
