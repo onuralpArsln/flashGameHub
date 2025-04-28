@@ -92,3 +92,45 @@ merhabaaa bunu ben yaptım
   margin-left: 13px;
   padding-top: 2px;
 }
+/*game page 
+    /*  html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* sadece yatay scroll'u kapat 
+      }
+
+       Üst menü sabit 
+      #ustb {
+        width: 100%;
+        background: #00fffb;
+        color: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+      }
+
+      /* Üst içeriği düzgün hizala 
+      #ust {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        margin-top: 0px;
+        padding-top: 0px;
+      }
+
+      /* Kategoriler 
+      ul.kategori {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #00fffb;
+        margin: 0;
+        padding: 10px 0;
+        list-style: none;
+        font-family: Arial, sans-serif;
+      }
+*/

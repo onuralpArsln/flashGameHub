@@ -1,5 +1,5 @@
 :root {
-  --page-banner-top-margin: 1px;
+  --page-banner-top-margin: 5px;
 }
 
 .ust-reklam {
@@ -13,8 +13,8 @@
   color: white;
   border: none;
   margin-top: 0px;
-  width: calc(100vw - 4vw - 440px);
-  height: 250px;
+  width: 728px;
+  height: 90px;
   font-size: 16px;
   border-radius: 3px;
   display: flex;
@@ -36,8 +36,8 @@
   background-color: rgb(18, 18, 18);
   color: white;
   border: none;
-  width: 200px;
-  height: 800px;
+  width: 120px;
+  height: 600px;
   font-size: 16px;
   border-radius: 3px;
   cursor: pointer;
@@ -57,8 +57,8 @@
   background-color: rgb(18, 18, 18);
   color: white;
   border: none;
-  width: 200px;
-  height: 800px;
+  width: 120px;
+  height: 600px;
   font-size: 16px;
   border-radius: 3px;
   cursor: pointer;
@@ -78,8 +78,8 @@
   background-color: rgb(18, 18, 18);
   color: white;
   border: none;
-  width: calc(100vw - 4vw - 440px);
-  height: 250px;
+  width: 728px;
+  height: 90px;
   font-size: 16px;
   border-radius: 3px;
   display: flex;
@@ -103,8 +103,8 @@
   background-color: rgb(18, 18, 18);
   color: white;
   border: none;
-  width: calc(100vw - 4vw - 440px);
-  height: 250px;
+  width: 728px;
+  height: 90px;
   font-size: 16px;
   border-radius: 3px;
   display: flex;
@@ -167,9 +167,10 @@ a:hover {
 }
 #ust {
   width: 1322px;
-  height: 80px;
+  height: 60px;
   overflow: hidden;
   margin: 0 auto;
+  
 }
 ul.kategori {
   display: flex;
