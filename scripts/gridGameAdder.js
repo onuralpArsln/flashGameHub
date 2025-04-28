@@ -340,6 +340,49 @@ fetch('scripts/games.json')
     // Tarih yazılacak elementi seç ve güncelle
     document.getElementById('currentDate').textContent = formattedDate;
 
+    // URL'den oyun ID'sini al
+const urlParams = new URLSearchParams(window.location.search);
+const gameId = urlParams.get('id');
+
+// Oyun verilerini yükle
+fetch('scripts/games.json')
+  .then(response => response.json())
+  .then(oyunlar => {
+    // Oyunu ID'ye göre bul
+    const oyun = oyunlar.find(o => o.id == gameId);
+    
+    const iframeContainer = document.getElementById("gameIframeContainer");
+    
+    if (oyun && oyun.swfFile) {
+      // Ruffle ile SWF yükle
+      iframeContainer.innerHTML = `
+        <iframe 
+          src="Swf-Ruffle-Test-Page.html?swf=${encodeURIComponent(oyun.swfFile)}" 
+          width="960" 
+          height="600" 
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      `;
+    } else {
+      // Hata mesajı göster
+      iframeContainer.innerHTML = `
+        <div style="text-align: center; padding: 50px;">
+          <h2>Oyun bulunamadı!</h2>
+          <p>Lütfen başka bir oyun seçin.</p>
+        </div>
+      `;
+    }
+  })
+  .catch(hata => {
+    console.error("Hata:", hata);
+    document.getElementById("gameIframeContainer").innerHTML = `
+      <div style="color: red; text-align: center;">
+        Oyun yüklenirken bir hata oluştu. Lütfen tekrar deneyin.
+      </div>
+    `;
+  });
+  
 const iframeContainer = document.getElementById("gameIframeContainer");
 iframeContainer.innerHTML = `
   <iframe 
