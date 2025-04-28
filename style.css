@@ -798,7 +798,7 @@ div.yorumlar a:hover {
 }
 
 .gamePageContainer {
-  width: 960px; /* Maksimum genişlik */
+  max-width: calc(100vw - 4vw - 400px);
   height: 600px; /* Yükseklik */
   display: flex;
   flex-direction: column;
@@ -812,7 +812,7 @@ div.yorumlar a:hover {
   display: flex;
   align-items: center; /* Dikeyde ortalamak için */
   justify-content: center; /* Yatayda ortalamak için */
-  width: 100%; /* Genişlik %100 */
+  max-width: calc(100vw - 4vw - 400px);
   max-width: 960px; /* Maksimum genişlik */
   height: 600px; /* Yükseklik */
   margin: 0 auto; /* Sayfanın ortasında yer almasını sağlar */
