@@ -815,6 +815,7 @@ div.yorumlar a:hover {
 .gameIframeContainer iframe {
   display: flex;
   align-items: center; /* Dikeyde ortalamak için */
+  margin: 0 auto; /* Sayfanın ortasında yer almasını sağlar */
   justify-content: center; /* Yatayda ortalamak için */
   width: 960px; /* Maksimum genişlik */
   height: 600px; /* Yükseklik */
