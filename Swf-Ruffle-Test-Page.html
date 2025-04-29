@@ -353,84 +353,111 @@
       <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 
       <script>
-        // 2. Sayfa yüklendiğinde çalıştır
-        window.addEventListener("DOMContentLoaded", () => {
-          const ruffle = window.RufflePlayer.newest();
-          const player = ruffle.createPlayer();
-          const container = document.getElementById("oyun-container");
+window.addEventListener("DOMContentLoaded", () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const swfFileName = urlParams.get('game');
+    
+    if (!swfFileName) {
+        document.getElementById("oyun-container").innerHTML = `
+            <div style="color: white; text-align: center; padding: 20px;">
+                <h3>Hata: Oyun belirtilmemiş</h3>
+                <p>Lütfen ana sayfadan bir oyun seçin.</p>
+                <a href="index.html" class="button">Ana Sayfaya Dön</a>
+            </div>
+        `;
+        return;
+    }
 
-          player.style.width = "960px";
-          player.style.height = "600px";
-          container.appendChild(player);
+    const swfPath = `games/Swf/${swfFileName}`;
+    const container = document.getElementById("oyun-container");
+    
+    try {
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        
+        player.style.width = "960px";
+        player.style.height = "600px";
+        container.appendChild(player);
 
-          player
-            .load({
-              url: "", // SWF dosya yolunu güncelleyin
-              allowScriptAccess: true,
-              parameters: "",
-            })
-            .catch((e) => {
-              console.error("SWF yükleme hatası:", e);
-              container.innerHTML = `<p>Oyun yüklenemedi: ${e.message}</p>`;
-            });
-      // Oynatıcının altına butonları ekle
-      const playerAlt = document.createElement("div");
-      playerAlt.id = "player-alt";
-      playerAlt.innerHTML = `
-        <div id="butonlar">
-          <div id="rating">
-            <span class="star" data-index="1">&#9733;</span>
-            <span class="star" data-index="2">&#9733;</span>
-            <span class="star" data-index="3">&#9733;</span>
-            <span class="star" data-index="4">&#9733;</span>
-            <span class="star" data-index="5">&#9733;</span>
-            <p>Puanınız: <span id="user-rating">0</span>/5</p>
-            <p>Toplam Puan Veren: <span id="total-votes">0</span></p>
-          </div>
-          <div id="tam-e">
-          <a href="Swf-Ruffle-Fullscrenn-Page.html" class="button">TAM EKRAN OYNA</a>
-          </div>
-        </div>
-      `;
-      container.appendChild(playerAlt);
-
-      let isRated = false; // Kullanıcı puan vermiş mi kontrolü
-      let totalVotes = 0; // Toplam puan veren kişi sayısı
-      let currentRating = 0; // Kullanıcının verdiği puan
-
-      // Yıldız tıklama olayı
-      const stars = document.querySelectorAll('.star');
-      const ratingText = document.getElementById('user-rating');
-      const totalVotesText = document.getElementById('total-votes');
-      
-      stars.forEach(star => {
-        star.addEventListener('click', function() {
-          if (isRated) return; // Eğer kullanıcı puan verdiyse, tekrar tıklanamaz
-          
-          const rating = parseInt(this.getAttribute('data-index'));
-          currentRating = rating;
-          isRated = true;
-          
-          // Puanı güncelle ve yıldızları doldur
-          updateRating(rating);
-          totalVotes++;
-          totalVotesText.textContent = totalVotes;
+        player.load({
+            url: swfPath,
+            allowScriptAccess: true,
+            parameters: "",
+        }).catch((e) => {
+            showError(container, e.message, swfFileName);
         });
-      });
 
-      function updateRating(rating) {
-        // Yıldızları güncelle
+        // Oynatıcının altına butonları ekle
+        const playerAlt = document.createElement("div");
+        playerAlt.id = "player-alt";
+        playerAlt.innerHTML = `
+            <div id="butonlar">
+                <div id="rating">
+                    <span class="star" data-index="1">&#9733;</span>
+                    <span class="star" data-index="2">&#9733;</span>
+                    <span class="star" data-index="3">&#9733;</span>
+                    <span class="star" data-index="4">&#9733;</span>
+                    <span class="star" data-index="5">&#9733;</span>
+                    <p>Puanınız: <span id="user-rating">0</span>/5</p>
+                    <p>Toplam Puan Veren: <span id="total-votes">0</span></p>
+                </div>
+                <div id="tam-e">
+                    <a href="Swf-Ruffle-Fullscreen-Page.html?game=${swfFileName}" class="button">TAM EKRAN OYNA</a>
+                </div>
+            </div>
+        `;
+        container.appendChild(playerAlt);
+
+        let isRated = false;
+        let totalVotes = 0;
+        let currentRating = 0;
+
+        const stars = playerAlt.querySelectorAll('.star');
+        const ratingText = playerAlt.querySelector('#user-rating');
+        const totalVotesText = playerAlt.querySelector('#total-votes');
+        
         stars.forEach(star => {
-          if (parseInt(star.getAttribute('data-index')) <= rating) {
-            star.classList.add('filled');
-          } else {
-            star.classList.remove('filled');
-          }
+            star.addEventListener('click', function() {
+                if (isRated) return;
+                
+                const rating = parseInt(this.getAttribute('data-index'));
+                currentRating = rating;
+                isRated = true;
+                
+                updateRating(rating);
+                totalVotes++;
+                totalVotesText.textContent = totalVotes;
+            });
         });
-        // Puanı göster
-        ratingText.textContent = rating;
-      }
-    });
+
+        function updateRating(rating) {
+            stars.forEach(star => {
+                if (parseInt(star.getAttribute('data-index')) <= rating) {
+                    star.classList.add('filled');
+                } else {
+                    star.classList.remove('filled');
+                }
+            });
+            ratingText.textContent = rating;
+        }
+    } catch (e) {
+        showError(container, e.message, swfFileName);
+    }
+});
+
+function showError(container, message, fileName) {
+    const errorDiv = document.createElement("div");
+    errorDiv.style.color = "white";
+    errorDiv.style.textAlign = "center";
+    errorDiv.style.padding = "20px";
+    errorDiv.innerHTML = `
+        <h3>Oyun yüklenemedi</h3>
+        <p>${message}</p>
+        <p>Dosya: ${fileName}</p>
+        <a href="index.html" class="button">Ana Sayfaya Dön</a>
+    `;
+    container.appendChild(errorDiv);
+}
       </script>
       <div id="alt-reklam">
         <div id="alt-reklam-banner">
@@ -442,7 +469,6 @@
       </div>
       <div id="gamesSame"></div>
     </div>
-
     <div id="altz">
       <div id="alt">
         <br />
