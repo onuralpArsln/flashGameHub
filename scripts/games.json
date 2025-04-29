@@ -9,7 +9,7 @@
     "tags": "Bilardo, Top, İstaka, Spor, Maç",
     "type": "Spor,beceri",
     "image": "Swf-oyunlar\\images\\2-billiards-2-play.gif  ",
-    "src": "<iframe src=\"Swf-oyunlar\\\\2-billiards-2-play.swf\" width=\"960\" height=\"600\" scrolling=\"no\" frameborder=\"0\" allowfullscreen></iframe>"
+    "src": "<iframe src='Swf-oyunlar/2-billiards-2-play.swf' width='960' height='600' scrolling='no' frameborder='0' allowfullscreen></iframe>"
   },
   {
     "id": 2,
