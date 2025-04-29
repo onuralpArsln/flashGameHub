@@ -194,7 +194,6 @@ fetch('scripts/games.json')
         gridUpper.appendChild(noResults);
         return;
       }
-
       gamesToRender.forEach((game) => {
         const card = document.createElement('div');
         card.className = 'gameCard';
@@ -202,19 +201,27 @@ fetch('scripts/games.json')
           const genderClass = game.cinsiyet.includes('erkek') ? 'male' : 'female';
           card.classList.add(genderClass);
         }
+      
+        // SWF dosyası kontrolü
+        const isSWF = (game.src && game.src.toLowerCase() === 'swf');
+      
+        // Linki belirleme
+        const gameLink = isSWF ? `Swf-Ruffle-Test-Page.html?game=${encodeURIComponent(game.id)}` 
+                               : `gamePage.html?id=${game.id}`;
+      
         card.innerHTML = `
-          <a href="gamePage.html?id=${game.id}">
+          <a href="${gameLink}">
             <img src="${game.image}" alt="${game.title}" class="gameCardImg" />
             <p>${game.title}</p>
           </a>
         `;
-
+      
         if (gameCount < cardsPerRow * 3) {
           gridUpper.appendChild(card);
         } else {
           gridLower.appendChild(card);
         }
-
+      
         gameCount++;
       });
     }
