@@ -601,7 +601,7 @@
     "description": "aaa",
     "instructions": "aa",
     "genres": "macera",
-    "src": "<iframe src=\"https://flashstorage.games/player/18-wheels-driver\" width=\"720\" height=\"540\" scrolling=\"no\"></iframe>",
+    "src": "<iframe src=\"https://flashstorage.games/player/18-wheels-driver\"  scrolling=\"no\"></iframe>",
     "tags": "ergeg",
     "image": "images\\Muscle Up Master\\image1.jpg"
   },
