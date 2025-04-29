@@ -601,7 +601,7 @@
     "description": "aaa",
     "instructions": "aa",
     "genres": "macera",
-    "src": "<iframe src=\"games\\Swf\\18-wheels-driver (1).swf\"  scrolling=\"no\"></iframe>",
+    "src": "<iframe src=\"games//Swf//18-wheels-driver.swf\"  scrolling=\"no\"></iframe>",
     "tags": "ergeg",
     "image": "images\\Muscle Up Master\\image1.jpg"
   },
