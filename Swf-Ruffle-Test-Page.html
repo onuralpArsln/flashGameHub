@@ -23,8 +23,11 @@
   height: 600px !important;
   margin: 0 auto;
   background: #000;
-  overflow: hidden; /* İçerik taşmasını engeller */
-  resize: none; /* Boyutlandırmayı engeller */
+  overflow: hidden;
+  resize: none;
+  position: relative; /* Eklendi */
+  margin-bottom: 20px; /* Eklendi */
+  border: solid 1px; /* Eklendi */
 }
       #ust-reklam {
         margin-top: 50px;
@@ -152,18 +155,16 @@
         align-items: center; /* Dikeyde ortalamak için */
       }
 /*Yıldız Puanlama Sistemi*/
-#oyun-container {
-  position: relative;
-  margin-bottom: 20px; /* Alttan boşluk */
-  border: solid 1px;
-}
-
 #player-alt {
-  display: flex;
-  justify-content: space-between; /* Sağ ve sol hizalama */
-  align-items: center;
-  padding: 10px;
-  border: solid 1px;
+  width: 960px;
+  margin: 0 auto;
+  padding: 15px;
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  display: flex; /* Eklendi */
+  justify-content: space-between; /* Eklendi */
+  align-items: center; /* Eklendi */
 }
 
 #rating {
@@ -391,25 +392,39 @@
             showError(container, e.message, swfFileName);
         });
 
-        // Oynatıcının altına butonları ekle
-        const playerAlt = document.createElement("div");
-        playerAlt.id = "player-alt";
-        playerAlt.innerHTML = `
-            <div id="butonlar">
-                <div id="rating">
-                    <span class="star" data-index="1">&#9733;</span>
-                    <span class="star" data-index="2">&#9733;</span>
-                    <span class="star" data-index="3">&#9733;</span>
-                    <span class="star" data-index="4">&#9733;</span>
-                    <span class="star" data-index="5">&#9733;</span>
-                    <p>Puanınız: <span id="user-rating">0</span>/5</p>
-                    <p>Toplam Puan Veren: <span id="total-votes">0</span></p>
-                </div>
-                <div id="tam-e">
-                    <a href="Swf-Ruffle-Fullscreen-Page.html?game=${swfFileName}" class="button">TAM EKRAN OYNA</a>
-                </div>
-            </div>
-        `;
+// Oynatıcıyı ekledikten hemen sonra:
+container.appendChild(player);
+
+// PlayerAlt oluşturma
+const playerAlt = document.createElement("div");
+playerAlt.id = "player-alt";
+playerAlt.style.width = "960px";
+playerAlt.style.margin = "10px auto 0";
+playerAlt.style.padding = "15px";
+playerAlt.style.background = "#f8f9fa";
+playerAlt.style.border = "1px solid #dee2e6";
+playerAlt.style.borderRadius = "5px";
+
+playerAlt.innerHTML = `
+  <div id="butonlar">
+    <div id="rating">
+      <span class="star" data-index="1">★</span>
+      <span class="star" data-index="2">★</span>
+      <span class="star" data-index="3">★</span>
+      <span class="star" data-index="4">★</span>
+      <span class="star" data-index="5">★</span>
+      <span style="margin-left: 10px;">Puanınız: <span id="user-rating">0</span>/5</span>
+      <span style="margin-left: 10px;">Toplam: <span id="total-votes">0</span> oy</span>
+    </div>
+    <div id="tam-e">
+      <a href="Swf-Ruffle-Fullscreen-Page.html?game=${swfFileName}" 
+         style="padding: 8px 16px; background: #28a745; color: white; text-decoration: none; border-radius: 4px;">
+        TAM EKRAN OYNA
+      </a>
+    </div>
+  </div>
+`;
+
         container.appendChild(playerAlt);
 
         let isRated = false;
