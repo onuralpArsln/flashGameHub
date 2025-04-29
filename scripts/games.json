@@ -579,20 +579,20 @@
     "genres": "macera, beceri",
     "src": "games\\Swf\\PLANÖR.swf",
     "tags": "2 kişilik, 3d, bisiklet, renkli",
-    "image": "images\\Riders Downhill Racing\\image4.jpg",
+    "image": "",
     "gameWidth": 800,
     "gameHeight": 600
   },
   {
     "id": 54,
-    "title": "",
-    "cinsiyet": "",
-    "description": "",
-    "instructions": "",
-    "genres": "",
-    "src": "",
-    "tags": "",
-    "image": ""
+    "title": "test",
+    "cinsiyet": "erkek",
+    "description": "aa",
+    "instructions": "a",
+    "genres": "macera",
+    "src": "<iframe src=\"https://flashstorage.games/player/toxic-2\" width=\"550\" height=\"400\" scrolling=\"no\"></iframe>",
+    "tags": "oyun",
+    "image": "images\\Riders Downhill Racing\\image4.jpg"
   },
   {
     "id": 55,
