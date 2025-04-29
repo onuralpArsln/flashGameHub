@@ -202,16 +202,25 @@ fetch('scripts/games.json')
           card.classList.add(genderClass);
         }
       
-        // SWF dosyası kontrolü
-        const isSWF = (game.src && game.src.toLowerCase() === 'swf');
+        // SWF dosyası kontrolü - src içinde "Swf" veya ".swf" geçiyor mu diye bak
+        const isSWF = game.src && (game.src.includes('Swf') || game.src.includes('.swf'));
+        
+        // SWF dosya adını çıkarma (src'den)
+        let swfFileName = '';
+        if (isSWF) {
+          const swfMatch = game.src.match(/([^\/\\]+\.swf)/i);
+          if (swfMatch) {
+            swfFileName = swfMatch[1];
+          }
+        }
       
         // Linki belirleme
-        const gameLink = isSWF ? `Swf-Ruffle-Test-Page.html?game=${encodeURIComponent(game.id)}` 
+        const gameLink = isSWF ? `Swf-Ruffle-Test-Page.html?game=${encodeURIComponent(swfFileName)}` 
                                : `gamePage.html?id=${game.id}`;
       
         card.innerHTML = `
           <a href="${gameLink}">
-            <img src="${game.image}" alt="${game.title}" class="gameCardImg" />
+            <img src="${game.image.replace(/\\/g, '/')}" alt="${game.title}" class="gameCardImg" />
             <p>${game.title}</p>
           </a>
         `;
