@@ -18,17 +18,8 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <style>
-#oyun-container {
-  width: 960px !important;
-  height: 600px !important;
-  margin: 0 auto;
-  background: #000;
-  overflow: hidden;
-  resize: none;
-  position: relative; /* Eklendi */
-  margin-bottom: 20px; /* Eklendi */
-  border: solid 1px; /* Eklendi */
-}
+
+/* REKLAMLAR BAŞLANGIÇ */
       #ust-reklam {
         margin-top: 50px;
         display: flex;
@@ -145,15 +136,8 @@
       #alt-reklam-inner {
         margin-top: 25px;
       }
-      #butonlar {
-        width: 804px;
-        height: 29px;
-        float: none; /* Float kaldırıldı */
-        margin: 15px auto 15px auto; /* Ortalanmış margin */
-        display: flex; /* Flexbox kullanıldı */
-        justify-content: center; /* Ortalamak için */
-        align-items: center; /* Dikeyde ortalamak için */
-      }
+      /* REKLAMLAR BİTİŞ */
+
 /*Yıldız Puanlama Sistemi*/
 #player-alt {
   width: 960px;
@@ -220,6 +204,18 @@
 
 #butonlar a:hover {
   background-color: #0056b3;
+}
+/*Yıldız Puanlama Sistemi Bitiş*/
+#oyun-container {
+  width: 960px !important;
+  height: 600px !important;
+  margin: 0 auto;
+  background: #000;
+  overflow: hidden;
+  resize: none;
+  position: relative; /* Eklendi */
+  margin-bottom: 20px; /* Eklendi */
+  border: solid 1px; /* Eklendi */
 }
 .ruffle-container, .ruffle-player {
   width: 960px !important;
@@ -325,7 +321,6 @@
         </li>
       </ul>
     </div>
-
     <div class="sayfa">
       <div id="ust-reklam">
         <div id="ust-reklam-banner">
@@ -335,7 +330,6 @@
           </div>
         </div>
       </div>
-
       <div id="sol-reklam">
         <div id="sol-reklam-banner">
           <div id="sol-reklam-inner">
@@ -344,7 +338,6 @@
           </div>
         </div>
       </div>
-
       <div id="sag-reklam">
         <div id="sag-reklam-banner">
           <div id="sag-reklam-inner">
@@ -356,7 +349,6 @@
       <div id="oyun-container"></div>
       <!-- 1. Önce Ruffle'ı yükle -->
       <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-
       <script>
     window.addEventListener("DOMContentLoaded", () => {
     const urlParams = new URLSearchParams(window.location.search);

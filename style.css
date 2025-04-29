@@ -404,6 +404,15 @@ input:focus ~ span > #araClick {
   transition-duration: 0.2s;
   cursor: pointer;
 }
+#butonlar {
+  width: 804px;
+  height: 29px;
+  float: none; /* Float kaldırıldı */
+  margin: 15px auto 15px auto; /* Ortalanmış margin */
+  display: flex; /* Flexbox kullanıldı */
+  justify-content: center; /* Ortalamak için */
+  align-items: center; /* Dikeyde ortalamak için */
+}
 .button:hover {
   text-decoration: none;
   border: 1px solid #35a3dd;
