@@ -26,12 +26,12 @@
     const player = ruffle.createPlayer();
     const container = document.getElementById("oyun-container");
     
-    player.style.width = "100%";
-    player.style.height = "100%";
+    player.style.width = "960px";
+    player.style.height = "600px";
     container.appendChild(player);
     
     player.load({
-      url: "games\\Swf\test.swf", // SWF dosya yolunu güncelleyin
+      url: "games\\Swf\\18-wheels-driver.swf", // SWF dosya yolunu güncelleyin
       allowScriptAccess: true,
       parameters: ""
     }).catch(e => {
