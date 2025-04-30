@@ -504,10 +504,10 @@
         "gameDescription"
       ).innerHTML = `<strong>Açıklama:</strong> ${game.description}`;
 
-      if (game.instructions) {
+      if (game.controls) {
         document.getElementById(
           "gameInstructions"
-        ).innerHTML = `<strong>Nasıl Oynanır:</strong> ${game.instructions}`;
+        ).innerHTML = `<strong>Nasıl Oynanır:</strong> ${game.controls}`;
       }
 
       if (game.tags) {
@@ -515,6 +515,12 @@
         document.getElementById("gameTags").innerHTML =
           `<strong>Etiketler:</strong> ` +
           tagsArray.map((tag) => `<span>${tag}</span>`).join("");
+      }
+      if (game.type) {
+        const typeArray = game.type.split(",").map((type) => type.trim());
+        document.getElementById("gameTags").innerHTML =
+          `<strong>Tür:</strong> ` +
+          typeArray.map((type) => `<span>${type}</span>`).join("");
       }
     } else {
       document.querySelector(".gamePageContainer").innerHTML =
