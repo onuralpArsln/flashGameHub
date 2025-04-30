@@ -529,7 +529,7 @@ input:focus ~ span > #araClick {
 }
 
 /* Optional: Styling for other elements */
-.gameTitle, .gameDescription, .gameInstructions, .gameTags {
+.gameTypes, .gameDescription, .gameControls, .gameTags {
   width: 100%;
   max-width: 960px;
   text-align: center;

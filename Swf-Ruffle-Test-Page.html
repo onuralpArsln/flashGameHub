@@ -229,13 +229,6 @@
       border: solid 1px;
       z-index: 0;
     }
-    .gameIframeContainer .toolbar, 
-.gameIframeContainer .player-toolbar {
-    display: none !important;
-    height: 0 !important;
-}
-
-
   </style>
 </head>
 
@@ -516,11 +509,11 @@
           `<strong>Etiketler:</strong> ` +
           tagsArray.map((tag) => `<span>${tag}</span>`).join("");
       }
-      if (game.type) {
-        const typeArray = game.type.split(",").map((type) => type.trim());
+      if (game.types) {
+        const typesArray = game.types.split(",").map((type) => type.trim());
         document.getElementById("gameType").innerHTML =
           `<strong>Tür:</strong> ` +
-          typeArray.map((type) => `<span>${type}</span>`).join("");
+          typesArray.map((type) => `<span>${type}</span>`).join("");
       }
     } else {
       document.querySelector(".gamePageContainer").innerHTML =
