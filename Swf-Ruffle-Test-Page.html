@@ -217,7 +217,7 @@
     }
 
     /*Yıldız Puanlama Sistemi Bitiş*/
-    #oyun-container {
+    #gameIframeContainer {
       width: 960px !important;
       height: 600px !important;
       margin: 0 auto;
@@ -311,7 +311,7 @@
     </div>
 
 
-    <div id="oyun-container"></div>
+    <div id="gameIframeContainer"></div>
 
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
     <script>
@@ -320,7 +320,7 @@
         const swfFileName = urlParams.get('game');
 
         if (!swfFileName) {
-          document.getElementById("oyun-container").innerHTML = `
+          document.getElementById("gameIframeContainer").innerHTML = `
           <div style="color: white; text-align: center; padding: 20px;">
               <h3>Hata: Oyun belirtilmemiş</h3>
               <p>Lütfen ana sayfadan bir oyun seçin.</p>
@@ -330,7 +330,7 @@
         }
 
         const swfPath = `swf-games/${swfFileName}`;
-        const container = document.getElementById("oyun-container");
+        const container = document.getElementById("gameIframeContainer");
 
         try {
           const ruffle = window.RufflePlayer.newest();
