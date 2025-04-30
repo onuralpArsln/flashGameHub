@@ -499,7 +499,7 @@
 
       if (game.controls) {
         document.getElementById(
-          "gameInstructions"
+          "gameConrols"
         ).innerHTML = `<strong>Nasıl Oynanır:</strong> ${game.controls}`;
       }
 
@@ -509,11 +509,11 @@
           `<strong>Etiketler:</strong> ` +
           tagsArray.map((tag) => `<span>${tag}</span>`).join("");
       }
-      if (game.types) {
-        const typesArray = game.types.split(",").map((type) => type.trim());
+      if (game.type) {
+        const typeArray = game.type.split(",").map((type) => type.trim());
         document.getElementById("gameType").innerHTML =
           `<strong>Tür:</strong> ` +
-          typesArray.map((type) => `<span>${type}</span>`).join("");
+          typeArray.map((type) => `<span>${type}</span>`).join("");
       }
     } else {
       document.querySelector(".gamePageContainer").innerHTML =
