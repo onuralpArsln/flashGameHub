@@ -229,12 +229,13 @@
       border: solid 1px;
       z-index: 0;
     }
-    #gamePageContainer,#gameIframeContainer {
-    margin-top: -40px;       /* Toolbar'ı yukarı kaydır */
-    height: calc(100% + 40px); /* Yüksekliği artır */
-    overflow: hidden;        /* Fazla kısmı gizle */
-    border: none;           /* Kenarlık olmasın */
+    #gameIframeContainer {
+    position: relative;
+    overflow: hidden;
+    height: calc(100% - 40px); /* Yükseklikten düş */
+    margin-top: 40px;          /* Yukarı kaydır */
 }
+
 
   </style>
 </head>
