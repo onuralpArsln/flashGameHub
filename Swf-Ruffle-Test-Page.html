@@ -518,7 +518,7 @@
       }
       if (game.type) {
         const typeArray = game.type.split(",").map((type) => type.trim());
-        document.getElementById("gameTags").innerHTML =
+        document.getElementById("gameType").innerHTML =
           `<strong>Tür:</strong> ` +
           typeArray.map((type) => `<span>${type}</span>`).join("");
       }
