@@ -225,7 +225,7 @@
     "tags": "",
     "type": "macera,beceri",
     "image": "swf-games\\images\\afacan_karincalar.webp",
-    "src": "<iframe src='swf-games/afacan_karincalar.swf' width='960' height='600' scrolling='no' frameborder='0' allowfullscreen></iframe>"
+    "src": "<iframe src='swf-games/afacan_karincalar_secure.swf' width='960' height='600' scrolling='no' frameborder='0' allowfullscreen></iframe>"
   },
   {
     "id": 20,
