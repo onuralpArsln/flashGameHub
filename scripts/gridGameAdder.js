@@ -1,6 +1,9 @@
+let games = []; // Global olarak tanımla
 fetch('scripts/games.json')
   .then(res => res.json())
-  .then(games => {
+  .then(data => {
+    games = data; // Global games değişkenine ata
+
     const gridUpper = document.getElementById('gamesUpper');
     const gridLower = document.getElementById('gamesLower');
 
@@ -18,10 +21,10 @@ fetch('scripts/games.json')
 
       const filteredGames = games.filter(game => {
         if (!game.cinsiyet) return false;
-        const genders = game.cinsiyet.toLowerCase().split(',').map(g => g.trim());
+        const genders = game.gender.toLowerCase().split(',').map(g => g.trim());
 
         // Apply category filter if there's an active category
-        if (currentCategory && !game.genres?.toLowerCase().includes(currentCategory.toLowerCase())) {
+        if (currentCategory && !game.type?.toLowerCase().includes(currentCategory.toLowerCase())) {
           return false;
         }
 
@@ -197,8 +200,8 @@ fetch('scripts/games.json')
       gamesToRender.forEach((game) => {
         const card = document.createElement('div');
         card.className = 'gameCard';
-        if (game.cinsiyet) {
-          const genderClass = game.cinsiyet.includes('erkek') ? 'male' : 'female';
+        if (game.gender) {
+          const genderClass = game.gender.includes('erkek') ? 'male' : 'female';
           card.classList.add(genderClass);
         }
       
