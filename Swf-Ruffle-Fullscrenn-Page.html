@@ -133,7 +133,9 @@
 
   <!-- Oyun kontrolleri -->
   <div id="game-controls">
-    <button class="control-btn" id="fullscreen-btn">Tam Ekran</button>
+    <a id="dinamik-link" href="#"><button class="control-btn" id="fullscreen-btn">Tam
+        Ekran</button>
+  </div>a>
   </div>
 
   <!-- Puanlama sistemi -->
@@ -163,6 +165,11 @@
       const currentRating = document.getElementById("current-rating");
       const voteCount = document.getElementById("vote-count");
 
+      // tam ekran tuşu toggle büyüt küçült
+      const aTag = document.getElementById('dinamik-link');
+      const newUrl = `Swf-Ruffle-Test-Page.html?game=${encodeURIComponent(gameFile)}`;
+      aTag.href = newUrl;
+
       if (!gameFile) {
         showError("Oyun dosyası belirtilmemiş!");
         return;
@@ -184,15 +191,16 @@
       } catch (error) {
         showError("Ruffle yüklenirken hata oluştu!");
       }
-
-      // Fullscreen functionality
-      fullscreenBtn.addEventListener("click", () => {
-        if (container.requestFullscreen) {
-          container.requestFullscreen();
-        } else if (container.webkitRequestFullscreen) {
-          container.webkitRequestFullscreen();
-        }
-      });
+      /*
+    // Fullscreen functionality orijinal full screen tuşu
+    fullscreenBtn.addEventListener("click", () => {
+      if (container.requestFullscreen) {
+        container.requestFullscreen();
+      } else if (container.webkitRequestFullscreen) {
+        container.webkitRequestFullscreen();
+      }
+    });
+    */
 
       // Rating system logic
       let userRating = 0;
