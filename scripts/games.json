@@ -284,20 +284,20 @@
     "controls": "",
     "tags": "",
     "type": "macera",
-    "image": "swf-games\\images\\",
-    "src": "<iframe src='18_tekerli_tır.swf' width='960' height='600' scrolling='no' frameborder='0' allowfullscreen></iframe>"
+    "image": "swf-games\\images\\18_tekerli_tir_soforu.webp",
+    "src": "<iframe src='swf-games/18_tekerli_tır.swf' width='960' height='600' scrolling='no' frameborder='0' allowfullscreen></iframe>"
   },
   {
     "id": 24,
-    "title": "",
-    "name": "",
-    "gender": "",
+    "title": "Ağrı Dağına Tırmanış",
+    "name": "daga_tirmanis",
+    "gender": "erkek,kız",
     "description": "",
     "controls": "",
     "tags": "",
-    "type": "",
-    "image": "",
-    "src": ""
+    "type": "beceri,macera",
+    "image": "swf-games\\images\\daga_tirmanis.webp",
+    "src": "<iframe src='swf-games/agri_dagina_tirmanis_secure.swf' width='960' height='600' scrolling='no' frameborder='0' allowfullscreen></iframe>"
   },
   {
     "id": 26,
