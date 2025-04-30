@@ -247,7 +247,7 @@
     "description": "",
     "controls": "",
     "tags": "",
-    "type": "macera,2-kisi",
+    "type": "macera,2kisi",
     "image": "swf-games\\images\\fireboy-and-watergirl-1-forest-temple.jpeg",
     "src": "<iframe src='swf-games/fireboy-and-watergirl-1-forest-temple.swf' width='960' height='600' scrolling='no' frameborder='0' allowfullscreen></iframe>"
   },
