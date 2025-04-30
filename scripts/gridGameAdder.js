@@ -45,7 +45,7 @@ fetch('scripts/games.json')
 
       const filteredGames = games.filter(game => {
         // Check for category match
-        const categoryMatch = game.genres?.toLowerCase().includes(category.toLowerCase());
+        const categoryMatch = game.type?.toLowerCase().includes(category.toLowerCase());
         if (!categoryMatch) return false;
 
         // Apply gender filter if active
@@ -147,7 +147,7 @@ fetch('scripts/games.json')
           }
 
           // Apply category filter if active
-          if (currentCategory && !game.genres?.toLowerCase().includes(currentCategory.toLowerCase())) {
+          if (currentCategory && !game.type?.toLowerCase().includes(currentCategory.toLowerCase())) {
             return false;
           }
 
