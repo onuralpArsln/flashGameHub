@@ -204,6 +204,7 @@
         const container = document.getElementById('gameIframeContainer');
         container.innerHTML = iframeHTML;
 
+
         // Create the blocking div
         const blocker = document.createElement('div');
         blocker.className = 'bottom-blocker';
@@ -214,7 +215,9 @@
         if (game.instructions) {
           document.getElementById('gameInstructions').innerHTML = `<strong>Nasıl Oynanır:</strong> ${game.instructions}`;
         }
-
+        if (game.description) {
+          document.getElementById('gameDescription').innerHTML = `<strong>Tanım:</strong> ${game.description}`;
+        }
         if (game.tags) {
           const tagsArray = game.tags.split(',').map(tag => tag.trim());
           document.getElementById('gameTags').innerHTML = `<strong>Etiketler:</strong> ` + tagsArray.map(tag => `<span>${tag}</span>`).join('');
