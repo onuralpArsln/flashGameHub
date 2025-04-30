@@ -229,19 +229,13 @@
       border: solid 1px;
       z-index: 0;
     }
+    #oyun-container iframe {
+    margin-top: -40px;       /* Toolbar'ı yukarı kaydır */
+    height: calc(100% + 40px); /* Yüksekliği artır */
+    overflow: hidden;        /* Fazla kısmı gizle */
+    border: none;           /* Kenarlık olmasın */
+}
 
-    .ruffle-container,
-    .ruffle-player {
-      width: 960px !important;
-      height: 600px !important;
-      max-width: none !important;
-      aspect-ratio: unset !important;
-    }
-
-    .ruffle-player {
-      width: 100% !important;
-      height: 100% !important;
-    }
   </style>
 </head>
 

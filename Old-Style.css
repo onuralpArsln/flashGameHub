@@ -134,3 +134,15 @@ merhabaaa bunu ben yaptım
         font-family: Arial, sans-serif;
       }
 */
+.ruffle-container,
+.ruffle-player {
+  width: 960px !important;
+  height: 600px !important;
+  max-width: none !important;
+  aspect-ratio: unset !important;
+}
+
+.ruffle-player {
+  width: 100% !important;
+  height: 100% !important;
+}
