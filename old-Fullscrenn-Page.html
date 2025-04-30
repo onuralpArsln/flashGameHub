@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="images/rsz_tubioyun.png" as="image" type="image/png" />
+  <link rel="preload" href="https://unpkg.com/@ruffle-rs/ruffle" as="script" />
+  <link rel="preconnect" href="https://unpkg.com" crossorigin />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Name</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Oyun alanı */
+    #oyun-container {
+      width: 100%;
+      height: calc(100vh - 90px);
+      /* 60px üst menü + 50px kategori menü */
+      margin-top: 5px;
+      /* üst menü + kategori boyu kadar boşluk */
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="ustb">
+    <div id="ust">
+      <div id="kategoriler">
+        <a id="maleButton" class="button1 erkek">ERKEK OYUNLARI</a>
+        <a id="femaleButton" class="button1 kiz">KIZ OYUNLARI</a>
+      </div>
+      <div id="logo">
+        <a href="https://tubigame.onrender.com/" title="TubiGame"><img src="images\rsz_tubioyun.png" border="0"
+            alt="TubiGame" /></a>
+      </div>
+      <div id="arama">
+        <form class="ara" method="get" action="/oyun-ara.asp">
+          <input name="aranan" type="text" placeholder="Oyun Ara.." required />
+        </form>
+      </div>
+    </div>
+    <ul class="kategori">
+      <li class="kategori-item">
+        <a class="kategori-link" href="index.html?kategori=2 kişilik" title="2-Kisilik-Oyunlar">2 Kişilik Oyunlar</a>
+      </li>
+      <li class="kategori-item">
+        <a class="kategori-link" href="index.html?kategori=savas" title="Savas-Oyunlari">Savaş Oyunları</a>
+      </li>
+      <li class="kategori-item">
+        <a class="kategori-link" href="index.html?kategori=yarış" title="Yaris-Oyunlari">Yarış Oyunları</a>
+      </li>
+      <li class="kategori-item">
+        <a class="kategori-link" href="index.html?kategori=cocuk" title="Cocuk-oyunları">Çocuk Oyunları</a>
+      </li>
+      <li class="kategori-item">
+        <a class="kategori-link" href="index.html?kategori=macera" title="Macera-Oyunlari">Macera Oyunları</a>
+      </li>
+      <li class="kategori-item">
+        <a class="kategori-link" href="index.html?kategori=spor" title="Spor-Oyunlari">Spor Oyunları</a>
+      </li>
+      <li class="kategori-item">
+        <a class="kategori-link" href="index.html?kategori=zeka" title="Zeka-Oyunlari">Zeka Oyunları</a>
+      </li>
+      <li class="kategori-item">
+        <a class="kategori-link" href="index.html?kategori=beceri" title="Beceri-Oyunlari">Beceri Oyunları</a>
+      </li>
+      <li class="kategori-item">
+        <a class="kategori-link" href="Swf-Ruffle-Test-Page.html" title="ruffle">Ruffle test</a>
+      </li>
+    </ul>
+  </div>
+  <div id="oyun-container"></div>
+  <!-- 1. Önce Ruffle'ı yükle -->
+  <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+
+  <script>
+    // 2. Sayfa yüklendiğinde çalıştır
+    window.addEventListener("DOMContentLoaded", () => {
+      const ruffle = window.RufflePlayer.newest();
+      const player = ruffle.createPlayer();
+      const container = document.getElementById("oyun-container");
+
+      player.style.width = "100%";
+      player.style.height = "100%";
+      container.appendChild(player);
+
+      player
+        .load({
+          url: "", // SWF dosya yolunu güncelleyin
+          allowScriptAccess: true,
+          parameters: "",
+        })
+        .catch((e) => {
+          console.error("SWF yükleme hatası:", e);
+          container.innerHTML = `<p>Oyun yüklenemedi: ${e.message}</p>`;
+        });
+    });
+  </script>
+
+
+</body>
+
+</html>
