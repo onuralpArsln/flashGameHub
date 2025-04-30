@@ -529,15 +529,15 @@
   },
   {
     "id": 45,
-    "title": "",
+    "title": "Kafa topu i frame",
     "name": "",
     "gender": "",
     "description": "",
     "controls": "",
     "tags": "",
     "type": "",
-     "image": "swf-games\\images\\",
-    "src": "<iframe src='swf-games/.swf' width='960' height='600' scrolling='no' frameborder='0' allowfullscreen></iframe>"
+     "image": "swf-games\\images\\big-head-football.jpeg",
+    "src": "<iframe src='https://flashstorage.games/player/big-head-football' width='800' height='540' scrolling='no'></iframe>"
   },
   {
     "id": 46,
