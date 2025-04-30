@@ -20,7 +20,7 @@ fetch('scripts/games.json')
       clearSearch();
 
       const filteredGames = games.filter(game => {
-        if (!game.cinsiyet) return false;
+        if (!game.gender) return false;
         const genders = game.gender.toLowerCase().split(',').map(g => g.trim());
 
         // Apply category filter if there's an active category
@@ -49,10 +49,10 @@ fetch('scripts/games.json')
         if (!categoryMatch) return false;
 
         // Apply gender filter if active
-        if (isMaleFiltered && (!game.cinsiyet || !game.cinsiyet.toLowerCase().includes('erkek'))) {
+        if (isMaleFiltered && (!game.gender || !game.gender.toLowerCase().includes('erkek'))) {
           return false;
         }
-        if (isFemaleFiltered && (!game.cinsiyet || !game.cinsiyet.toLowerCase().includes('kız'))) {
+        if (isFemaleFiltered && (!game.gender || !game.gender.toLowerCase().includes('kız'))) {
           return false;
         }
 
@@ -139,10 +139,10 @@ fetch('scripts/games.json')
           if (score < 10) return false;
 
           // Apply gender filter if active
-          if (isMaleFiltered && (!game.cinsiyet || !game.cinsiyet.toLowerCase().includes('erkek'))) {
+          if (isMaleFiltered && (!game.gender || !game.gender.toLowerCase().includes('erkek'))) {
             return false;
           }
-          if (isFemaleFiltered && (!game.cinsiyet || !game.cinsiyet.toLowerCase().includes('kız'))) {
+          if (isFemaleFiltered && (!game.gender || !game.gender.toLowerCase().includes('kız'))) {
             return false;
           }
 
