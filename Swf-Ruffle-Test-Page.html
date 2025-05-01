@@ -41,12 +41,16 @@
       margin-top: 25px;
     }
 
+    .playZone {
+      display: flex;
+    }
+
     #sol-reklam {
-      position: fixed;
+      margin: 20px;
       top: 100px;
       left: 2vw;
       width: 100px;
-      z-index: 999;
+      z-index: 1;
     }
 
     #sol-reklam-banner {
@@ -66,11 +70,11 @@
     }
 
     #sag-reklam {
-      position: fixed;
+      margin: 20px;
       top: 100px;
       right: 2vw;
       width: 200px;
-      z-index: 999;
+      z-index: 1;
     }
 
     #sag-reklam-banner {
@@ -145,6 +149,12 @@
     }
 
     /* REKLAMLAR BİTİŞ */
+    .mid {
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
     /*Yıldız Puanlama Sistemi*/
     #player-alt {
@@ -221,6 +231,7 @@
       width: 960px !important;
       height: 600px !important;
       margin: 0 auto;
+
       background: #000;
       overflow: hidden;
       resize: none;
@@ -228,6 +239,12 @@
       margin-bottom: 20px;
       border: solid 1px;
       z-index: 0;
+    }
+
+    .playerZone {
+      display: flex;
+      flex-direction: column;
+
     }
 
     #gamesSame {
@@ -315,25 +332,31 @@
         </div>
       </div>
     </div>
-    <div id="sol-reklam">
-      <div id="sol-reklam-banner">
-        <div id="sol-reklam-inner">
-          <div id="sol-reklam-label">Sol Reklam Alanı</div>
-          <div data-sdg-ad="sol"></div>
+
+    <div class="mid">
+      <div class="playZone">
+        <div id="sol-reklam">
+          <div id="sol-reklam-banner">
+            <div id="sol-reklam-inner">
+              <div id="sol-reklam-label">Sol Reklam Alanı</div>
+              <div data-sdg-ad="sol"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="playerZone">
+          <div id="gameIframeContainer"></div>
+        </div>
+        <div id="sag-reklam">
+          <div id="sag-reklam-banner">
+            <div id="sag-reklam-inner">
+              <div id="sag-reklam-label">Sağ Reklam Alanı</div>
+              <div data-sdg-ad="sag"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div id="sag-reklam">
-      <div id="sag-reklam-banner">
-        <div id="sag-reklam-inner">
-          <div id="sag-reklam-label">Sağ Reklam Alanı</div>
-          <div data-sdg-ad="sag"></div>
-        </div>
-      </div>
-    </div>
-
-
-    <div id="gameIframeContainer"></div>
 
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
     <script>
@@ -508,6 +531,7 @@
       );
 
       document.getElementById("gameIframeContainer").innerHTML = iframeHTML;
+
       document.getElementById(
         "gameDescription"
       ).innerHTML = `<strong>Açıklama:</strong> ${game.description}`;

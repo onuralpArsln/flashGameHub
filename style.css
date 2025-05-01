@@ -172,7 +172,6 @@ a:hover {
   height: 60px;
   overflow: hidden;
   margin: 0 auto;
-  
 }
 ul.kategori {
   display: flex;
@@ -529,7 +528,10 @@ input:focus ~ span > #araClick {
 }
 
 /* Optional: Styling for other elements */
-.gameTypes, .gameDescription, .gameControls, .gameTags {
+.gameTypes,
+.gameDescription,
+.gameControls,
+.gameTags {
   width: 100%;
   max-width: 960px;
   text-align: center;
