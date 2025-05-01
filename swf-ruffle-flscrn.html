@@ -3,12 +3,12 @@
 
 <head>
   <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="images/rsz_tubioyun.png" as="image" type="image/png" />
+  <link rel="preload" href="" as="image" type="image/png" />
   <link rel="preload" href="https://unpkg.com/@ruffle-rs/ruffle" as="script" />
   <link rel="preconnect" href="https://unpkg.com" crossorigin />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Game Name</title>
+  <title>Oyun Zamanı | Oyun Oynamanın 1 Numaralı Adresi</title>
   <link rel="stylesheet" href="style.css" />
   <style>
     /* Oyun alanı */
@@ -89,8 +89,8 @@
         <a id="femaleButton" class="button1 kiz">KIZ OYUNLARI</a>
       </div>
       <div id="logo">
-        <a href="https://tubigame.onrender.com/" title="TubiGame"><img src="images\rsz_tubioyun.png" border="0"
-            alt="TubiGame" /></a>
+        <a href="https://oyunzamanı.com/" title="Oyun Zamanı | Oyun Oynamanın 1 Numaralı Adresi"><img src="" border="0"
+            alt="Oyun Zamanı | Oyun Oynamanın 1 Numaralı Adresi" /></a>
       </div>
       <div id="arama">
         <form class="ara" method="get" action="/oyun-ara.asp">
@@ -122,9 +122,6 @@
       </li>
       <li class="kategori-item">
         <a class="kategori-link" href="index.html?kategori=beceri" title="Beceri-Oyunlari">Beceri Oyunları</a>
-      </li>
-      <li class="kategori-item">
-        <a class="kategori-link" href="Swf-Ruffle-Test-Page.html" title="ruffle">Ruffle test</a>
       </li>
     </ul>
   </div>
@@ -167,7 +164,7 @@
 
       // tam ekran tuşu toggle büyüt küçült
       const aTag = document.getElementById('dinamik-link');
-      const newUrl = `Swf-Ruffle-Test-Page.html?game=${encodeURIComponent(gameFile)}`;
+      const newUrl = `swf-ruffle-page.html?game=${encodeURIComponent(gameFile)}`;
       aTag.href = newUrl;
 
       if (!gameFile) {
