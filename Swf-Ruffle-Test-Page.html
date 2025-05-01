@@ -231,6 +231,7 @@
     }
 
     #gamesSame {
+
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
@@ -443,19 +444,7 @@
 
     <!-- Rest of the HTML remains the same -->
 </body>
-<div class="gameDescription" id="gameDescription">
-  <!-- Açıklama buraya gelecek -->
-</div>
-
-<div class="gameControls" id="gameControls">
-  <!-- Talimatlar buraya gelecek -->
-</div>
-<div class="gameType" id="gameType">
-  <!-- Tag'ler buraya gelecek -->
-</div>
-<div class="gameTags" id="gameTags">
-  <!-- Tag'ler buraya gelecek -->
-</div>
+<div id="gameText"></div>
 
 <div class="gamesSameContainer">
   <div id="gamesSame">
@@ -523,24 +512,73 @@
         "gameDescription"
       ).innerHTML = `<strong>Açıklama:</strong> ${game.description}`;
 
+
+      const gameTextContainer = document.getElementById("gameText");
+
+
       if (game.controls) {
-        document.getElementById(
-          "gameConrols"
-        ).innerHTML = `<strong>Nasıl Oynanır:</strong> ${game.controls}`;
+        // Create the "Nasıl Oynanır" label
+        const controlsLabel = document.createElement("strong");
+        controlsLabel.textContent = "Nasıl Oynanır: ";
+
+        // Create the controls description
+        const controlsDescription = document.createElement("span");
+        controlsDescription.textContent = game.controls;
+
+        // Append to the container
+        gameTextContainer.appendChild(controlsLabel);
+        gameTextContainer.appendChild(controlsDescription);
+        gameTextContainer.appendChild(document.createElement("br")); // Add a line break
       }
 
+
+
       if (game.tags) {
-        const tagsArray = game.tags.split(",").map((tag) => tag.trim());
-        document.getElementById("gameTags").innerHTML =
-          `<strong>Etiketler:</strong> ` +
-          tagsArray.map((tag) => `<span>${tag}</span>`).join("");
+        // Create the "Etiketler" label
+        const tagsLabel = document.createElement("strong");
+        tagsLabel.textContent = "Etiketler: ";
+
+        // Create a container for the tags
+        const tagsContainer = document.createElement("div");
+
+        // Split tags into array and append each tag as a span
+        const tagsArray = game.tags.split(",").map(tag => tag.trim());
+        tagsArray.forEach(tag => {
+          const tagElement = document.createElement("span");
+          tagElement.textContent = tag;
+          tagsContainer.appendChild(tagElement);
+          tagsContainer.appendChild(document.createTextNode(" ")); // Space between tags
+        });
+
+        // Append the label and tags container to the gameText div
+        gameTextContainer.appendChild(tagsLabel);
+        gameTextContainer.appendChild(tagsContainer);
+        gameTextContainer.appendChild(document.createElement("br"));
       }
+
       if (game.type) {
-        const typeArray = game.type.split(",").map((type) => type.trim());
-        document.getElementById("gameType").innerHTML =
-          `<strong>Tür:</strong> ` +
-          typeArray.map((type) => `<span>${type}</span>`).join("");
+        // Create the "Tür" label
+        const typeLabel = document.createElement("strong");
+        typeLabel.textContent = "Tür: ";
+
+        // Create a container for the types
+        const typeContainer = document.createElement("div");
+
+        // Split types into array and append each type as a span
+        const typeArray = game.type.split(",").map(type => type.trim());
+        typeArray.forEach(type => {
+          const typeElement = document.createElement("span");
+          typeElement.textContent = type;
+          typeContainer.appendChild(typeElement);
+          typeContainer.appendChild(document.createTextNode(" ")); // Space between types
+        });
+
+        // Append the label and types container to the gameText div
+        gameTextContainer.appendChild(typeLabel);
+        gameTextContainer.appendChild(typeContainer);
       }
+
+
     } else {
       document.querySelector(".gamePageContainer").innerHTML =
         "<h2>Oyun bulunamadı.</h2>";
