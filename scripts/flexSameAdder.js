@@ -21,7 +21,7 @@ fetch('scripts/games.json')
       }
 
       const gameLink = isSWF
-        ? `Swf-Ruffle-Test-Page.html?game=${encodeURIComponent(swfFileName)}`
+        ? `swf-ruffle-page.html?game=${encodeURIComponent(swfFileName)}`
         : `gamePage.html?id=${game.id}`;
 
       card.innerHTML = `

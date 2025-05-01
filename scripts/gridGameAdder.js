@@ -218,7 +218,7 @@ fetch('scripts/games.json')
         }
       
         // Linki belirleme
-        const gameLink = isSWF ? `Swf-Ruffle-Test-Page.html?game=${encodeURIComponent(swfFileName)}` 
+        const gameLink = isSWF ? `swf-ruffle-page?game=${encodeURIComponent(swfFileName)}` 
                                : `gamePage.html?id=${game.id}`;
       
         card.innerHTML = `
